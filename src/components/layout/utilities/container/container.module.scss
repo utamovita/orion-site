@@ -1,0 +1,13 @@
+@use "src/components/layout/styles/utilities/variables" as vr;
+@use "src/components/layout/styles/utilities/mixins" as mx;
+
+.container {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.fullWidth {
+  max-width: 100%;
+}
