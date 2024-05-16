@@ -31,6 +31,7 @@
       }
     }
   },
+  "ignorePatterns": ["**/flex.module.scss"],
   "rules": {
     // strings must use doublequote
     "quotes": [2, "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
@@ -38,14 +39,15 @@
     "react/react-in-jsx-scope": "off",
     // Allow components without display-name
     "react/display-name": "off",
-    "css-modules/no-unused-class": [0, { "camelCase": true }],
+    "css-modules/no-unused-class": [2, { "camelCase": true }],
+    "css-modules/no-undef-class": [2, { "camelCase": true }],
 
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
-    "no-unused-vars": "off",
+    "no-unused-vars": "error",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -68,6 +70,12 @@
       "files": ["**/*.tsx"],
       "rules": {
         "react/prop-types": 0
+      }
+    },
+    {
+      "files": ["**/flex.component.tsx"],
+      "rules": {
+        "css-modules/no-unused-class": "off"
       }
     }
   ]
