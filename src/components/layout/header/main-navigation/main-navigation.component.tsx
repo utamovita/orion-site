@@ -7,6 +7,7 @@ type MainNavigationProps = {
 
 function MainNavigation(props: MainNavigationProps) {
   const { menuData } = props;
+  console.log("test");
 
   console.log("menuData", menuData);
   return <nav className={styles.nav}>nav todo</nav>;
