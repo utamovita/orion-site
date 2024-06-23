@@ -12,10 +12,18 @@ function Header(props: HeaderProps) {
 
   return (
     <header className={styles.header}>
-      <Container>
-        <div>logo</div>
+      <Container className={styles.container}>
+        <div className={styles.logo}>
+          <a href="#">Orion</a>
+        </div>
         <MainNavigation menuData={menuData} />
-        <div>lang switcher</div>
+        <select name="lang" id="lang-select">
+          {" "}
+          <option value="pl">PL</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+        </select>
+        {/*kowal ma to zrobic niby */}
       </Container>
     </header>
   );

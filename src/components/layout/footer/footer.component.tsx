@@ -24,6 +24,7 @@ function Footer(props: FooterProps) {
         <li>
           <a href="https://www.instagram.com/?hl=pl">Instagram</a>
         </li>
+        {/*Nie moge dodac strzalki przez material UI, nie moge zainstalowac paczki? */}
       </ul>
       <ul className={styles.bottomLinks}>
         <li>
