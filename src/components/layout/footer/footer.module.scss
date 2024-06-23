@@ -1,3 +1,61 @@
 .footer {
   display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  list-style-type: none;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0 20px;
+  border-bottom: 2px solid white;
+
+  li {
+    margin: 0px 20px;
+    font-size: 20px;
+
+    &:first-of-type {
+      margin-left: 0px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.bottomLinks {
+  display: flex;
+  list-style-type: none;
+  width: 90%;
+  max-width: 1200px;
+  height: 30px;
+  margin: 20px auto 0;
+  padding: 0px;
+
+  li {
+    margin: 0px 20px;
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+
+    &:first-of-type {
+      margin-left: 0px;
+    }
+
+    &:last-of-type {
+      margin: 0 0 0 auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
 }

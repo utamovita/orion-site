@@ -9,7 +9,6 @@ type HeaderProps = {
 
 function Header(props: HeaderProps) {
   const { menuData } = props;
-  console.log(menuData);
 
   return (
     <header className={styles.header}>
