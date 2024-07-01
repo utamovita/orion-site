@@ -1,9 +1,5 @@
 import { BaseLayout } from "@design-system/layout/base-layout.component";
 
 export default function Page() {
-  return (
-    <BaseLayout>
-      o nas
-    </BaseLayout>
-  );
+  return <BaseLayout>o nas</BaseLayout>;
 }

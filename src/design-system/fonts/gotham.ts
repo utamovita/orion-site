@@ -17,5 +17,5 @@ export const gotham = localFont({
       weight: "600",
       style: "normal",
     },
-  ]
+  ],
 });

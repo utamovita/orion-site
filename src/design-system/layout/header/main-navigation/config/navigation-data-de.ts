@@ -1,30 +1,30 @@
-import {NavigationItem} from "@design-system/layout/header/main-navigation/main-navigation.component";
+import { NavigationItem } from "@design-system/layout/header/main-navigation/main-navigation.component";
 
 const navigationDataDE: NavigationItem[] = [
   {
     title: "Home",
-    link: "/de"
+    link: "/de",
   },
   {
     title: "Über uns",
-    link: "/de/uber-uns"
+    link: "/de/uber-uns",
   },
   {
     title: "Galerie",
-    link: "/de/galerie"
+    link: "/de/galerie",
   },
   {
     title: "Karriere",
-    link: "/de/karriere"
+    link: "/de/karriere",
   },
   {
     title: "Unterlagen",
-    link: "/de/unterlagen"
+    link: "/de/unterlagen",
   },
   {
     title: "Kontakt",
-    link: "/de/kontakt"
-  }
-]
+    link: "/de/kontakt",
+  },
+];
 
-export {navigationDataDE}
+export { navigationDataDE };

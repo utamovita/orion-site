@@ -1,4 +1,4 @@
-@use '@design-system/styles/utilities/variables' as vr;
+@use "@design-system/styles/utilities/variables" as vr;
 
 .nav {
   display: flex;
@@ -10,12 +10,11 @@
 }
 
 .element {
-
 }
 
 .link {
   display: flex;
-  color:  var(--colorWhite);
+  color: var(--colorWhite);
   text-align: center;
   padding: vr.$spacingSizeL;
   border-top: 2px solid transparent;

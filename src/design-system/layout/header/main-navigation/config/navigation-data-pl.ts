@@ -1,30 +1,30 @@
-import {NavigationItem} from "@design-system/layout/header/main-navigation/main-navigation.component";
+import { NavigationItem } from "@design-system/layout/header/main-navigation/main-navigation.component";
 
 const navigationDataPL: NavigationItem[] = [
   {
     title: "Home",
-    link: "/"
+    link: "/",
   },
   {
     title: "O nas",
-    link: "/o-nas"
+    link: "/o-nas",
   },
   {
     title: "Galeria",
-    link: "/galeria"
+    link: "/galeria",
   },
   {
     title: "Kariera",
-    link: "/kariera"
+    link: "/kariera",
   },
   {
     title: "Dokumenty",
-    link: "/dokumenty"
+    link: "/dokumenty",
   },
   {
     title: "Kontakt",
-    link: "/kontakt"
-  }
-]
+    link: "/kontakt",
+  },
+];
 
-export {navigationDataPL}
+export { navigationDataPL };
