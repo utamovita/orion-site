@@ -1,0 +1,12 @@
+@import "reset";
+
+body, html {
+  font-family: var(--fontFamilyPrimary);
+}
+
+:root {
+  --colorBlack: #000;
+  --colorWhite: #fff;
+
+  --fontWeightBold: 700;
+}

@@ -1,0 +1,28 @@
+@use '@design-system/styles/utilities/variables' as vr;
+
+.nav {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  gap: vr.$spacingSizeS;
+}
+
+.element {
+
+}
+
+.link {
+  display: flex;
+  color:  var(--colorWhite);
+  text-align: center;
+  padding: vr.$spacingSizeL;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid var(--colorWhite);
+    font-weight: var(--fontWeightBold);
+  }
+}
