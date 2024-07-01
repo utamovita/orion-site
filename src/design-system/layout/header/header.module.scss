@@ -1,0 +1,14 @@
+@use "@design-system/styles/utilities/variables" as vr;
+
+.header {
+  background-color: var(--colorBlack);
+  border-bottom: 1px solid #4d4d4d;
+  padding: vr.$spacingSizeL 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
