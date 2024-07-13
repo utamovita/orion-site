@@ -1,22 +1,35 @@
+@import "../../styles/utilities/variables";
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+// same xd
+
 .nav {
   display: flex;
-  height: 100%;
-  padding: 20px 0 0;
-  color: rgb(200, 200, 200);
+  width: 100%;
+  .navLinks {
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    padding: $spacingSizeL 0 0;
+    color: var(--colorLightGray);
 
-  li {
-    margin: 0px 20px;
-    padding: 0 15px;
-    font-size: 20px;
+    .navItem {
+      padding: 0 $spacingSizeXXL;
+      @include fontSize(20px);
 
-    &:hover {
-      border-bottom: 2px solid white;
-      color: white;
-    }
+      &:hover {
+        border-bottom: 2px solid var(--colorWhite);
+        color: var(--colorWhite);
+        font-weight: bold;
+      }
 
-    &.active {
-      border-bottom: 2px solid white;
-      color: white;
+      &.active {
+        border-bottom: 2px solid var(--colorWhite);
+        color: var(--colorWhite);
+        font-weight: bold;
+      }
     }
   }
 }

@@ -10,34 +10,34 @@ function MainNavigation(props: MainNavigationProps) {
 
   console.log("menuData", menuData);
   return (
-    <nav>
-      <ul className={styles.nav}>
-        <li className={styles.active}>
+    <nav className={styles.nav}>
+      <ul className={styles.navLinks}>
+        <li className={`${styles.navItem} ${styles.active}`}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             Home
           </a>
         </li>
-        <li>
+        <li className={styles.navItem}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             O nas
           </a>
         </li>
-        <li>
+        <li className={styles.navItem}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             Galeria
           </a>
         </li>
-        <li>
+        <li className={styles.navItem}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             Kariera
           </a>
         </li>
-        <li>
+        <li className={styles.navItem}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             Dokumenty
           </a>
         </li>
-        <li>
+        <li className={styles.navItem}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             Kontakt
           </a>

@@ -1,54 +1,55 @@
+@import "../styles/utilities/variables";
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+// Wiem, ze nie powinno tu tego byc tylko w pliku mixins.scss ale jak dodalem tam to nie dzialalo tutaj idk how to do that
+
 .footer {
   display: flex;
   flex-direction: column;
-  height: 200px;
-  font-family: "Poppins", sans-serif;
-}
 
-.navLinks {
-  display: flex;
-  list-style-type: none;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 0 20px;
-  border-bottom: 2px solid white;
+  .container {
+    .navLinks {
+      display: flex;
+      list-style-type: none;
+      padding: $spacingSize6XL 0 $spacingSizeL;
+      border-bottom: 2px solid var(--colorWhite);
 
-  li {
-    margin: 0px 20px;
-    font-size: 20px;
+      .footerItem {
+        margin: 0 $spacingSizeL;
+        @include fontSize(20px);
 
-    &:first-of-type {
-      margin-left: 0px;
-    }
-  }
-}
-
-.bottomLinks {
-  display: flex;
-  list-style-type: none;
-  width: 90%;
-  max-width: 1200px;
-  height: 30px;
-  margin: 20px auto 0;
-  padding: 0px;
-
-  li {
-    margin: 0px 20px;
-    color: rgb(77, 77, 77);
-    font-size: 14px;
-
-    &:first-of-type {
-      margin-left: 0px;
+        &:first-of-type {
+          margin-left: 0px;
+        }
+      }
     }
 
-    &:last-of-type {
-      margin: 0 0 0 auto;
-    }
+    .bottomLinks {
+      display: flex;
+      list-style-type: none;
+      margin: $spacingSizeL auto 0;
+      padding: 0px;
 
-    a {
-      color: inherit;
-      text-decoration: none;
+      .footerItem {
+        margin: 0px $spacingSizeL;
+        color: var(--colorGray);
+        @include fontSize(14px);
+
+        &:first-of-type {
+          margin-left: 0px;
+        }
+
+        &:last-of-type {
+          margin: 0 0 0 auto;
+        }
+
+        .footerLink {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

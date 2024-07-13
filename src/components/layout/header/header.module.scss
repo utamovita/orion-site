@@ -1,20 +1,24 @@
+@import "../styles/utilities/variables";
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+//Same jak w footer
+
 .header {
   display: flex;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 40px;
-  border-bottom: 1px solid rgb(77, 77, 77);
+  margin-bottom: $spacingSize3XL;
+  border-bottom: 1px solid var(--colorGray);
 
   .container {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1200px;
 
     .logo {
-      font-size: 32px;
-      padding-right: 20px;
-      margin: 20px 20px 20px 0;
+      @include fontSize(32px);
+      padding-right: $spacingSizeL;
+      margin: $spacingSizeL $spacingSizeL $spacingSizeL 0;
       border-right: 2px solid rgb(102, 102, 102);
       text-transform: uppercase;
     }

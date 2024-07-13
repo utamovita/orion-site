@@ -1,5 +1,11 @@
 @import "./reset";
 
+:root {
+  --colorWhite: #fff;
+  --colorGray: rgb(77, 77, 77);
+  --colorLightGray: rgb(200, 200, 200);
+}
+
 body {
   font-family: var(--fontFamilyPrimary);
   background-color: black;
