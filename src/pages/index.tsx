@@ -1,9 +1,10 @@
-import { BaseLayout } from "@/components/layout/base-layout.component";
+import { HomePageView } from "@components/views/home";
+import { BaseLayout } from "@design-system/layout/base-layout.component";
 
 export default function Page() {
   return (
-    <BaseLayout footer={[]} mainMenu={[]}>
-      home
+    <BaseLayout>
+      <HomePageView />
     </BaseLayout>
   );
 }

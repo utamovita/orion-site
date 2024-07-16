@@ -1,0 +1,13 @@
+@use "src/design-system/styles/utilities/variables" as vr;
+@use "src/design-system/styles/utilities/mixins" as mx;
+
+.container {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.fullWidth {
+  max-width: 100%;
+}
