@@ -1,10 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import styles from "./logo.module.scss";
 
 function Logo() {
   return (
-    <Link href={"/"} className={styles.wrapper}>
+    <Link href={"/"}>
       <svg width="121" height="48" viewBox="0 0 121 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask
           id="path-1-outside-1_301_1061"
