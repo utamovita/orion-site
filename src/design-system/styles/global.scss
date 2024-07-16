@@ -6,8 +6,14 @@ html {
 }
 
 :root {
+  // Fonts
+  --fontWeightBold: 700;
+  --fontWeightRegular: 500;
+
+  // Primary colors
   --colorBlack: #000;
   --colorWhite: #fff;
 
-  --fontWeightBold: 700;
+  // Custom colors
+  --colorThunder: #4d4d4d;
 }

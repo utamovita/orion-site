@@ -10,8 +10,8 @@
     "prepare": "husky",
     "eslintCheck": "eslint src --max-warnings=0",
     "tsCheck": "tsc --noEmit",
-    "prettierCheck": "prettier --check src/**/*",
-    "format": "prettier --ignore-path .gitignore --write src/**/* next.config.mjs",
+    "prettierCheck": "prettier --check src",
+    "format": "prettier --ignore-path .gitignore --write src next.config.mjs",
     "test": "npm run lint && npm run eslintCheck && npm run tsCheck && npm run format"
   },
   "dependencies": {
