@@ -1,33 +1,39 @@
 import React from "react";
+import { Container } from "@design-system/layout/utilities";
 import styles from "./footer.module.scss";
 
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <ul className={styles.navLinks}>
-        <li>
-          <a href="https://x.com/?lang=pl">Twitter</a>
-        </li>
-        <li>
-          <a href="https://web.telegram.org/k/">Telegram</a>
-        </li>
-        <li>
-          <a href="https://discord.com/">Discord</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/?hl=pl">Instagram</a>
-        </li>
-        {/*Nie moge dodac strzalki przez material UI, nie moge zainstalowac paczki? */}
-      </ul>
-      <ul className={styles.bottomLinks}>
-        <li>
-          <a href="#">Polityka Prywatności</a>
-        </li>
-        <li>
-          <a href="#">Pliki Cookies</a>
-        </li>
-        <li>Designed by DemoArtStation</li>
-      </ul>
+      <Container className={styles.container}>
+        <ul className={styles.navLinks}>
+          <li className={styles.footerItem}>
+            <a href="https://x.com/?lang=pl">Twitter</a>
+          </li>
+          <li className={styles.footerItem}>
+            <a href="https://web.telegram.org/k/">Telegram</a>
+          </li>
+          <li className={styles.footerItem}>
+            <a href="https://discord.com/">Discord</a>
+          </li>
+          <li className={styles.footerItem}>
+            <a href="https://www.instagram.com/?hl=pl">Instagram</a>
+          </li>
+        </ul>
+        <ul className={styles.bottomLinks}>
+          <li className={styles.footerItem}>
+            <a href="#" className={styles.footerLink}>
+              Polityka Prywatności
+            </a>
+          </li>
+          <li className={styles.footerItem}>
+            <a href="#" className={styles.footerLink}>
+              Pliki Cookies
+            </a>
+          </li>
+          <li className={styles.footerItem}>Designed by DemoArtStation</li>
+        </ul>
+      </Container>
     </footer>
   );
 }
