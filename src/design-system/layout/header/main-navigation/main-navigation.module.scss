@@ -3,27 +3,27 @@
 
 .nav {
   display: flex;
+}
 
-  .list {
-    display: flex;
-    gap: vr.$spacingSizeS;
+.list {
+  display: flex;
+  gap: vr.$spacingSizeS;
+}
 
-    .element {
-      @include mx.fontSize(20px);
+.element {
+  @include mx.fontSize(20px);
+}
 
-      .link {
-        display: flex;
-        color: var(--colorWhite);
-        text-align: center;
-        padding: vr.$spacingSizeL;
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
+.link {
+  display: flex;
+  color: var(--colorWhite);
+  text-align: center;
+  padding: vr.$spacingSizeL;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 
-        &:hover {
-          border-bottom: 2px solid var(--colorWhite);
-          font-weight: var(--fontWeightBold);
-        }
-      }
-    }
+  &:hover {
+    border-bottom: 2px solid var(--colorWhite);
+    font-weight: var(--fontWeightBold);
   }
 }
