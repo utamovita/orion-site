@@ -27,3 +27,37 @@
     font-weight: var(--fontWeightBold);
   }
 }
+
+@include mx.devices(tablet) {
+  .list {
+    gap: 0;
+  }
+
+  .element {
+    @include mx.fontSize(16px);
+  }
+
+  .link {
+    padding: vr.$spacingSizeS;
+  }
+}
+
+@include mx.devices(mobile) {
+  .nav {
+    position: absolute;
+    right: 0;
+    top: -200px;
+    background-color: var(--colorBlack);
+    z-index: -1;
+    transition: top 2s;
+  }
+
+  .active {
+    right: 0;
+    top: 85px;
+    transition: top 2s;
+  }
+  .list {
+    display: block;
+  }
+}

@@ -2,14 +2,23 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .header {
+  position: relative;
   background-color: var(--colorBlack);
   border-bottom: 1px solid var(--colorThunder);
   padding: vr.$spacingSizeL 0;
+  z-index: 3;
 }
 
 .wrapper {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  z-index: 1;
+}
+
+.test {
+  position: relative;
+  z-index: 2;
 }

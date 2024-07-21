@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import styles from "./main-navigation.module.scss";
 import { navigationDataPL } from "@design-system/layout/header/main-navigation/config";
 
@@ -8,11 +7,15 @@ type NavigationItem = {
   link: string;
 };
 
-function MainNavigation() {
+interface MainNavigationProps {
+  isActiveNav: boolean;
+}
+
+function MainNavigation({ isActiveNav }: MainNavigationProps) {
   const data = navigationDataPL; //TODO: get data based on language
 
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${isActiveNav ? styles.active : ""}`}>
       <ul className={styles.list}>
         {data.map((item, index) => (
           <li key={index} className={styles.element}>

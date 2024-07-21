@@ -1,0 +1,15 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.hamburger {
+  display: none;
+  color: var(--colorWhite);
+  margin: 0 vr.$spacingSizeXL;
+  cursor: pointer;
+}
+
+@include mx.devices(mobile) {
+  .hamburger {
+    display: block;
+  }
+}
