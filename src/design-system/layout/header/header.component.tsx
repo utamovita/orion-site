@@ -10,7 +10,7 @@ function Header() {
   const [isActiveNav, setIsActiveNav] = useState(false);
   return (
     <header className={styles.header}>
-      <Container className={styles.test}>
+      <Container>
         <div className={styles.wrapper}>
           <Logo />
           <MainNavigation isActiveNav={isActiveNav} />

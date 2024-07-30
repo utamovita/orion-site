@@ -3,9 +3,11 @@
 
 .hamburger {
   display: none;
+  position: relative;
   color: var(--colorWhite);
   margin: 0 vr.$spacingSizeXL;
   cursor: pointer;
+  z-index: 2;
 }
 
 @include mx.devices(mobile) {
