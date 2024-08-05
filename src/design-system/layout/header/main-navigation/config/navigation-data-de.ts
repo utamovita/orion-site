@@ -3,27 +3,27 @@ import { NavigationItem } from "@design-system/layout/header/main-navigation/mai
 const navigationDataDE: NavigationItem[] = [
   {
     title: "Home",
-    link: "/de",
+    link: "/",
   },
   {
     title: "Über uns",
-    link: "/de/uber-uns",
+    link: "/uber-uns",
   },
   {
     title: "Galerie",
-    link: "/de/galerie",
+    link: "/galerie",
   },
   {
     title: "Karriere",
-    link: "/de/karriere",
+    link: "/karriere",
   },
   {
     title: "Unterlagen",
-    link: "/de/unterlagen",
+    link: "/unterlagen",
   },
   {
     title: "Kontakt",
-    link: "/de/kontakt",
+    link: "/kontakt",
   },
 ];
 

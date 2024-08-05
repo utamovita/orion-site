@@ -20,6 +20,7 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@design-system/*": ["./src/design-system/*"],
+      "@customTypes/*": ["./src/types/*"],
     },
     "baseUrl": "."
   },
