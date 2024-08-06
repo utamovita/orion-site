@@ -44,21 +44,21 @@
     }
   }
 
-  .activeHamburgerTEST span:first-child {
+  .activeHamburger span:first-child {
     top: 9px;
     width: 0;
     left: 50%;
   }
 
-  .activeHamburgerTEST span:nth-child(2) {
+  .activeHamburger span:nth-child(2) {
     transform: rotate(45deg);
   }
 
-  .activeHamburgerTEST span:nth-child(3) {
+  .activeHamburger span:nth-child(3) {
     transform: rotate(-45deg);
   }
 
-  .activeHamburgerTEST span:nth-child(4) {
+  .activeHamburger span:nth-child(4) {
     top: 9px;
     width: 0;
     left: 50%;

@@ -7,15 +7,15 @@ import React, { useState } from "react";
 import styles from "./header.module.scss";
 
 function Header() {
-  const [isActiveHamburger, setIsActiveHamburger] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <header className={styles.header}>
       <Container>
         <div className={styles.wrapper}>
           <Logo />
-          <MainNavigation isActiveHamburger={isActiveHamburger} />
+          <MainNavigation isNavOpen={isNavOpen} />
           <LangSwitcher />
-          <Hamburger setIsActiveHamburger={setIsActiveHamburger} isActiveHamburger={isActiveHamburger} />
+          <Hamburger setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />
         </div>
       </Container>
     </header>

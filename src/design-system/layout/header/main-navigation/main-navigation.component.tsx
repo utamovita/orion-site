@@ -10,16 +10,16 @@ type NavigationItem = {
 };
 
 interface MainNavigationProps {
-  isActiveHamburger: boolean;
+  isNavOpen: boolean;
 }
 
-function MainNavigation({ isActiveHamburger }: MainNavigationProps) {
+function MainNavigation({ isNavOpen }: MainNavigationProps) {
   const { data } = useMainNavigation();
   const router = useRouter();
 
   console.log(router);
   return (
-    <nav className={`${styles.nav} ${isActiveHamburger ? styles.activeHamburger : ""}`}>
+    <nav className={`${styles.nav} ${isNavOpen ? styles.activeNav : ""}`}>
       <ul className={styles.list}>
         {data.map((item, index) => {
           console.log(item.link);
