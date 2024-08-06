@@ -1,17 +1,21 @@
 import styles from "./hamburger.module.scss";
+import cx from "classnames";
 
 interface HamburgerProps {
-  setIsActiveNav: any; // Do zmiany typ (nie Function xd)
-  isActiveNav: boolean;
+  setIsActiveHamburger: any; // Do zmiany typ (nie Function xd)
+  isActiveHamburger: boolean;
 }
 
-function Hamburger({ setIsActiveNav, isActiveNav }: HamburgerProps) {
+function Hamburger({ setIsActiveHamburger, isActiveHamburger }: HamburgerProps) {
   const test = () => {
-    setIsActiveNav(!isActiveNav);
+    setIsActiveHamburger(!isActiveHamburger);
   };
   return (
-    <div className={styles.hamburger}>
-      <p onClick={test}>X</p>
+    <div className={cx(styles.hamburger, { [styles.activeHamburgerTEST]: isActiveHamburger })} onClick={test}>
+      <span className={styles.navHamburgerSpan}></span>
+      <span className={styles.navHamburgerSpan}></span>
+      <span className={styles.navHamburgerSpan}></span>
+      <span className={styles.navHamburgerSpan}></span>
     </div>
   );
 }
