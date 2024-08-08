@@ -1,6 +1,8 @@
 import { AppProps } from "next/app";
 import "@design-system/styles/global.scss";
-import { gotham } from "@design-system/fonts/gotham";
+import { poppins } from "@design-system/fonts/poppins";
+import { bebasNeue } from "@design-system/fonts/bebas-neue";
+import { exo } from "@design-system/fonts/exo";
 import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
@@ -9,7 +11,9 @@ function App({ Component, pageProps }: AppProps) {
       <style jsx global>
         {`
           :root {
-            --fontFamilyPrimary: ${gotham.style.fontFamily};
+            --fontFamilyPrimary: ${poppins.style.fontFamily};
+            --fontFamilySecondary: ${bebasNeue.style.fontFamily};
+            --fontFamilyTertiary: ${exo.style.fontFamily};
           }
         `}
       </style>

@@ -5,59 +5,18 @@
   font-size: fn.calculateRem($size);
 }
 
-@mixin shadow($size) {
-  @if $size == 10 {
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
-  } @else if $size == 20 {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
-  } @else if $size == 30 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
-  } @else if $size == 40 {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.14);
-  } @else if $size == 50 {
-    box-shadow: 0 14px 28.7px 0 rgba(0, 0, 0, 0.24);
-  }
-}
-
 @mixin devices($size) {
   @if $size == mobile {
     @media (max-width: vr.$breakpointMobile - 1) {
       @content;
     }
-  } @else if $size == mobile-up {
-    @media (min-width: vr.$breakpointMobile) {
-      @content;
-    }
   } @else if $size == tablet {
-    @media (max-width: vr.$breakpointDesktop - 1) {
-      @content;
-    }
-  } @else if $size == tablet-only {
-    @media (min-width: vr.$breakpointMobile) and (max-width: vr.$breakpointDesktop - 1) {
+    @media (max-width: vr.$breakpointTablet) {
       @content;
     }
   } @else if $size == desktop {
-    @media (min-width: vr.$breakpointDesktop) {
+    @media (max-width: vr.$breakpointDesktop) {
       @content;
     }
-  }
-}
-
-@mixin styledScrollbar($thumbColor) {
-  &::-webkit-scrollbar-thumb,
-  &::-webkit-scrollbar-track {
-    border-radius: 3.5px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: var(--colorNeutral10);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $thumbColor;
-  }
-
-  &::-webkit-scrollbar {
-    height: 7px;
   }
 }

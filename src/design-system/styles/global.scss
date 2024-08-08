@@ -3,11 +3,12 @@
 body,
 html {
   font-family: var(--fontFamilyPrimary);
+  color: var(--colorWhite);
 }
 
 :root {
   // Fonts
-  --fontWeightBold: 700;
+  --fontWeightBold: 600;
   --fontWeightRegular: 500;
 
   // Primary colors
