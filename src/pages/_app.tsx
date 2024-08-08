@@ -1,8 +1,8 @@
 import { AppProps } from "next/app";
 import "@design-system/styles/global.scss";
 import { poppins } from "@design-system/fonts/poppins";
-import {bebasNeue} from "@design-system/fonts/bebas-neue";
-import {exo} from "@design-system/fonts/exo";
+import { bebasNeue } from "@design-system/fonts/bebas-neue";
+import { exo } from "@design-system/fonts/exo";
 import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {

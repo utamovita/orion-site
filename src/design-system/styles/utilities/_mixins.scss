@@ -14,8 +14,7 @@
     @media (max-width: vr.$breakpointTablet) {
       @content;
     }
-  }
-  @else if $size == desktop {
+  } @else if $size == desktop {
     @media (max-width: vr.$breakpointDesktop) {
       @content;
     }

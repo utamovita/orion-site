@@ -6,7 +6,6 @@ import { AriaButtonProps } from "@react-types/button";
 import { Spinner, SpinnerWrapper } from "@components/shared/spinner/spinner.component";
 import styles from "./button.module.scss";
 
-
 type ButtonProps = {
   children: React.ReactNode;
   onPress?: AriaButtonProps["onPress"];
