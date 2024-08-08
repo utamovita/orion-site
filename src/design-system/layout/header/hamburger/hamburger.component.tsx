@@ -1,17 +1,19 @@
+import { useHeaderDispatch, useHeaderState } from "../providers/header.context";
 import styles from "./hamburger.module.scss";
 import cx from "classnames";
 
-interface HamburgerProps {
-  setIsNavOpen: any; // Do zmiany typ (nie Function xd)
-  isNavOpen: boolean;
-}
+function Hamburger() {
+  const { isMenuOpen } = useHeaderState();
+  const headerDispatch = useHeaderDispatch();
 
-function Hamburger({ setIsNavOpen, isNavOpen }: HamburgerProps) {
-  const test = () => {
-    setIsNavOpen(!isNavOpen);
+  const toggleMenu = () => {
+    if (isMenuOpen) {
+      headerDispatch({ type: "HIDE_MENU" });
+    } else headerDispatch({ type: "SHOW_MENU" });
   };
+
   return (
-    <div className={cx(styles.hamburger, { [styles.activeHamburger]: isNavOpen })} onClick={test}>
+    <div className={cx(styles.hamburger, { [styles.activeHamburger]: isMenuOpen })} onClick={toggleMenu}>
       <span className={styles.navHamburgerSpan}></span>
       <span className={styles.navHamburgerSpan}></span>
       <span className={styles.navHamburgerSpan}></span>
