@@ -55,3 +55,9 @@
   width: 100%;
   min-width: 150px;
 }
+
+@include mx.devices(mobile) {
+  .dropdownWrapper {
+    margin: 0 auto 0 vr.$spacingSizeL;
+  }
+}

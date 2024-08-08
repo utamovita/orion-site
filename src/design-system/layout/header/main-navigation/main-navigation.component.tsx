@@ -1,5 +1,5 @@
+import { useHeaderState } from "../providers/header.context";
 import Link from "next/link";
-import React from "react";
 import styles from "./main-navigation.module.scss";
 import { useMainNavigation } from "@design-system/layout/header/main-navigation/use-main-navigation.hook";
 import { useRouter } from "next/router";
@@ -11,12 +11,13 @@ type NavigationItem = {
 };
 
 function MainNavigation() {
+  const { isMenuOpen } = useHeaderState();
+
   const { data } = useMainNavigation();
   const router = useRouter();
 
-  console.log(router);
   return (
-    <nav className={styles.nav}>
+    <nav className={cx(styles.nav, { [styles.activeNav]: isMenuOpen })}>
       <ul className={styles.list}>
         {data.map((item, index) => {
           console.log(item.link);

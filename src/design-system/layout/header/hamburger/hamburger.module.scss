@@ -1,0 +1,16 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.hamburger {
+  display: none;
+  fill: var(--colorWhite);
+  cursor: pointer;
+}
+
+@include mx.devices(mobile) {
+  .hamburger {
+    display: block;
+    height: 35px;
+    z-index: 2;
+  }
+}
