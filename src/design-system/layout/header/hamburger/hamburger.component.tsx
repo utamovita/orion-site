@@ -1,6 +1,7 @@
 import { useHeaderDispatch, useHeaderState } from "../providers/header.context";
+import HamburgerIcon from "@components/shared/icons/hamburger-icon";
+import CloseIcon from "@components/shared/icons/close-icon";
 import styles from "./hamburger.module.scss";
-import cx from "classnames";
 
 function Hamburger() {
   const { isMenuOpen } = useHeaderState();
@@ -13,11 +14,10 @@ function Hamburger() {
   };
 
   return (
-    <div className={cx(styles.hamburger, { [styles.activeHamburger]: isMenuOpen })} onClick={toggleMenu}>
-      <span className={styles.navHamburgerSpan}></span>
-      <span className={styles.navHamburgerSpan}></span>
-      <span className={styles.navHamburgerSpan}></span>
-      <span className={styles.navHamburgerSpan}></span>
+    <div>
+      <button onClick={toggleMenu}>
+        {isMenuOpen ? <CloseIcon className={styles.hamburger} /> : <HamburgerIcon className={styles.hamburger} />}
+      </button>
     </div>
   );
 }
