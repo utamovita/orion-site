@@ -17,9 +17,10 @@
   .footerList {
     gap: vr.$spacingSizeM;
     padding: vr.$spacingSize4XL 0 vr.$spacingSizeL;
+    flex-wrap: wrap;
   }
 
   .footerItem {
-    @include mx.fontSize(16px);
+    @include mx.fontSize(14px);
   }
 }

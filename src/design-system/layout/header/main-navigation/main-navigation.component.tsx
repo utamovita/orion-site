@@ -20,7 +20,6 @@ function MainNavigation() {
     <nav className={cx(styles.nav, { [styles.activeNav]: isMenuOpen })}>
       <ul className={styles.list}>
         {data.map((item, index) => {
-          console.log(item.link);
           const isActive = router.asPath === item.link;
 
           return (

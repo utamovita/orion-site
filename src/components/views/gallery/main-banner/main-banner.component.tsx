@@ -1,9 +1,9 @@
 import styles from "./main-banner.module.scss";
 import { useTranslation } from "next-i18next";
-import { Container, FlexComponent, Stack } from "@design-system/layout/utilities";
+import { Container } from "@design-system/layout/utilities";
 import backgroundImage from "public/assets/images/home/banner.jpg";
 import Image from "next/image";
-import { ButtonLink } from "@components/shared/button/button-link.component";
+
 
 function MainBanner() {
   const { t } = useTranslation("home");
@@ -23,16 +23,7 @@ function MainBanner() {
         }}
       />
       <Container>
-        <Stack className={styles.content}>
           <h1 className={styles.title}>{t("mainBanner.title")}</h1>
-          <p className={styles.subtitle}>{t("mainBanner.subtitle")}</p>
-          <FlexComponent className={styles.btnWrapper} flexWrap={"wrap"}>
-            <ButtonLink to={"/o-nas"}>{t("mainBanner.aboutUs")}</ButtonLink>
-            <ButtonLink to={"/kontakt"} variant={"secondary"}>
-              {t("mainBanner.contactUs")}
-            </ButtonLink>
-          </FlexComponent>
-        </Stack>
       </Container>
     </div>
   );

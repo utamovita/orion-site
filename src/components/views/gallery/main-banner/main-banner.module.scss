@@ -23,7 +23,6 @@
     width: 100%;
     z-index: 2;
   }
-
 }
 
 .overlay {
@@ -33,16 +32,11 @@
   height: 100%;
   background: rgb(15, 15, 15);
   background: linear-gradient(
-                  90deg,
-                  rgba(5, 5, 5, 1) 0%,
-                  rgba(0, 0, 0, 0.6558998599439776) 38%,
-                  rgba(255, 255, 255, 0) 81%
+    90deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 0.6558998599439776) 38%,
+    rgba(255, 255, 255, 0) 81%
   );
-}
-
-.content {
-  position: relative;
-  z-index: 1;
 }
 
 .title {
@@ -51,19 +45,11 @@
   @include mx.fontSize(64px);
   line-height: 1.2em;
   max-width: 1350px;
+  position: absolute;
+  z-index: 1;
+  bottom: vr.$spacingSize8XL;
 }
 
-.subtitle {
-  @include mx.fontSize(24px);
-  line-height: 1.5em;
-  max-width: 1350px;
-  margin-top: vr.$spacingSizeXL;
-}
-
-.btnWrapper {
-  gap: vr.$spacingSize3XL;
-  margin-top: vr.$spacingSize3XL;
-}
 
 @include mx.devices(desktop) {
   .wrapper {
@@ -73,10 +59,7 @@
   .title {
     @include mx.fontSize(48px);
     max-width: 950px;
-  }
-
-  .subtitle {
-    @include mx.fontSize(18px);
+    bottom: vr.$spacingSizeXXL;
   }
 }
 
@@ -98,15 +81,7 @@
     max-width: 100%;
   }
 
-  .subtitle {
-    @include mx.fontSize(14px);
-    max-width: 100%;
-  }
   .wrapper {
     max-height: 400px;
-  }
-
-  .btnWrapper {
-    gap: vr.$spacingSizeS;
   }
 }
