@@ -4,7 +4,6 @@ import { Container } from "@design-system/layout/utilities";
 import backgroundImage from "public/assets/images/home/banner.jpg";
 import Image from "next/image";
 
-
 function MainBanner() {
   const { t } = useTranslation("home");
 
@@ -23,7 +22,7 @@ function MainBanner() {
         }}
       />
       <Container>
-          <h1 className={styles.title}>{t("mainBanner.title")}</h1>
+        <h1 className={styles.title}>{t("mainBanner.title")}</h1>
       </Container>
     </div>
   );

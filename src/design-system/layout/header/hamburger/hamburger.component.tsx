@@ -14,9 +14,9 @@ function Hamburger() {
   };
 
   return (
-      <button onClick={toggleMenu} className={styles.button}>
-        {isMenuOpen ? <CloseIcon className={styles.hamburger} /> : <HamburgerIcon className={styles.hamburger} />}
-      </button>
+    <button onClick={toggleMenu} className={styles.button}>
+      {isMenuOpen ? <CloseIcon className={styles.hamburger} /> : <HamburgerIcon className={styles.hamburger} />}
+    </button>
   );
 }
 

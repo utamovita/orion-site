@@ -23,7 +23,6 @@
     width: 100%;
     z-index: 2;
   }
-
 }
 
 .overlay {
@@ -33,10 +32,10 @@
   height: 100%;
   background: rgb(15, 15, 15);
   background: linear-gradient(
-                  90deg,
-                  rgba(5, 5, 5, 1) 0%,
-                  rgba(0, 0, 0, 0.6558998599439776) 38%,
-                  rgba(255, 255, 255, 0) 81%
+    90deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 0.6558998599439776) 38%,
+    rgba(255, 255, 255, 0) 81%
   );
 }
 

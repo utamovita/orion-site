@@ -4,10 +4,10 @@ function GalleryView() {
   return (
     <>
       <MainBanner />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

@@ -25,11 +25,10 @@
 .actionWrapper {
   display: flex;
   align-items: center;
-
 }
 
 @include mx.devices(tablet) {
- .header:after {
+  .header:after {
     display: none;
   }
 
