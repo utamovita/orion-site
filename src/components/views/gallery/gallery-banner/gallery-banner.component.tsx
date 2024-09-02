@@ -21,7 +21,7 @@ function GalleryBanner() {
           objectFit: "cover",
         }}
       />
-      <Container>
+      <Container className={styles.container}>
         <Stack className={styles.content}>
           <h1 className={styles.title}>{t("galleryBanner.title")}</h1>
         </Stack>
