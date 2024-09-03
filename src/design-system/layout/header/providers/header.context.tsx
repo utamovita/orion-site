@@ -6,6 +6,7 @@ type State = {
 
 type Action = { type: "SHOW_MENU" } | { type: "HIDE_MENU" };
 
+// eslint-disable-next-line no-unused-vars
 type Dispatch = (action: Action) => void;
 
 const HeaderStateContext = React.createContext<State | undefined>(undefined);
@@ -18,7 +19,7 @@ function reducer(state: State, action: Action): State {
     case "HIDE_MENU":
       return { ...state, isMenuOpen: false };
     default:
-      throw new Error(`Unhandled action type: ${action.type}`);
+      throw new Error("Unhandled action type in header context reducer");
   }
 }
 

@@ -61,3 +61,8 @@
     margin: 0 auto 0 vr.$spacingSizeL;
   }
 }
+@include mx.devices(tablet) {
+  .dropdownWrapper {
+    margin: 0 auto;
+  }
+}

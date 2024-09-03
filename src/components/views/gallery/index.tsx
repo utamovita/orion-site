@@ -1,11 +1,15 @@
-import { GalleryBanner } from "./gallery-banner/gallery-banner.component";
+import { MainBanner } from "./main-banner/main-banner.component";
 
-function GalleryPageView() {
+function GalleryView() {
   return (
     <>
-      <GalleryBanner />
+      <MainBanner />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
 
-export { GalleryPageView };
+export { GalleryView };

@@ -14,11 +14,9 @@ function Hamburger() {
   };
 
   return (
-    <div>
-      <button onClick={toggleMenu}>
-        {isMenuOpen ? <CloseIcon className={styles.hamburger} /> : <HamburgerIcon className={styles.hamburger} />}
-      </button>
-    </div>
+    <button onClick={toggleMenu} className={styles.button}>
+      {isMenuOpen ? <CloseIcon className={styles.hamburger} /> : <HamburgerIcon className={styles.hamburger} />}
+    </button>
   );
 }
 
