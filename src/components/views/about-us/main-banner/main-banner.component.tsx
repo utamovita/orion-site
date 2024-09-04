@@ -1,15 +1,10 @@
 import styles from "./main-banner.module.scss";
-import { useTranslation } from "next-i18next";
-import { Container } from "@design-system/layout/utilities";
-import backgroundImage from "public/assets/images/home/banner.jpg";
+import backgroundImage from "public/assets/images/aboutUs/aboutUsBanner.png";
 import Image from "next/image";
 
 function MainBanner() {
-  const { t } = useTranslation("gallery");
-
   return (
     <div className={styles.wrapper}>
-      <div className={styles.overlay} />
       <Image
         alt="background image"
         src={backgroundImage}
@@ -21,9 +16,6 @@ function MainBanner() {
           objectFit: "cover",
         }}
       />
-      <Container>
-        <h1 className={styles.title}>{t("galleryBanner.title")}</h1>
-      </Container>
     </div>
   );
 }
