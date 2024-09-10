@@ -18,7 +18,7 @@ function MainBanner() {
         fill
         sizes="100vw"
         style={{
-            objectFit: "cover",
+          objectFit: "cover",
         }}
       />
       <Container>
