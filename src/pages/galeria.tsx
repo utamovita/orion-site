@@ -14,7 +14,7 @@ export default function GalleryPage() {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
     props: {
-      ...(await serverSideTranslations(locale as string, ["common", "gallery"])),
+      ...(await serverSideTranslations(locale as string, ["common"])),
     },
   };
 }

@@ -1,0 +1,19 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.sectionWrapper {
+  padding: vr.$spacingSize5XL 0;
+  background: var(--colorBlack);
+  color: var(--colorWhite);
+
+  &:nth-child(odd) {
+    background: var(--colorWhite);
+    color: black;
+  }
+}
+
+.blogItemImage {
+  width: 20%;
+  position: relative;
+  aspect-ratio: 1/1;
+}

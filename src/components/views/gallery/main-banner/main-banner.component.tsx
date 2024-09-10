@@ -5,7 +5,7 @@ import backgroundImage from "public/assets/images/home/banner.jpg";
 import Image from "next/image";
 
 function MainBanner() {
-  const { t } = useTranslation("home");
+  const { t } = useTranslation("common");
 
   return (
     <div className={styles.wrapper}>
@@ -18,11 +18,11 @@ function MainBanner() {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover",
+            objectFit: "cover",
         }}
       />
       <Container>
-        <h1 className={styles.title}>{t("mainBanner.title")}</h1>
+        <h1 className={styles.title}>{t("gallery")}</h1>
       </Container>
     </div>
   );
