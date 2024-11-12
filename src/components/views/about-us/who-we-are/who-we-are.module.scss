@@ -1,0 +1,34 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+.content {
+  z-index: 1;
+  flex-direction: row;
+}
+
+.section {
+  flex-basis: 50%;
+  align-self: center;
+  text-align: right;
+  padding: vr.$spacingSizeL;
+  font-family: var(--fontFamilyTertiary);
+}
+
+.title {
+  @include mx.fontSize(50px);
+  margin-bottom: vr.$spacingSizeL;
+  font-weight: var(--fontWeightBold);
+}
+
+.subtitle {
+  @include mx.fontSize(20px);
+}
