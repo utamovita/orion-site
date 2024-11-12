@@ -3,11 +3,16 @@
 body,
 html {
   font-family: var(--fontFamilyPrimary);
+  color: var(--colorWhite);
+}
+
+body {
+  padding-top: 90px;
 }
 
 :root {
   // Fonts
-  --fontWeightBold: 700;
+  --fontWeightBold: 600;
   --fontWeightRegular: 500;
 
   // Primary colors
@@ -16,4 +21,5 @@ html {
 
   // Custom colors
   --colorThunder: #4d4d4d;
+  --colorCapeHope: #d7d7d7;
 }

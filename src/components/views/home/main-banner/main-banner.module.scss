@@ -2,10 +2,119 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .wrapper {
-  min-height: 700px;
+  position: relative;
+  align-items: end;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgray;
-  color: black;
+  padding: 0;
+  height: 80vh;
+  max-height: 800px;
+
+  &:after {
+    content: "";
+    display: block;
+    background: url("/assets/images/header-shape.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 72px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+    360deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 0.6558998599439776) 18%,
+    rgba(255, 255, 255, 0) 51%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: vr.$spacingSize5XL 0;
+}
+
+.title {
+  font-family: var(--fontFamilySecondary);
+  font-weight: var(--fontWeightBold);
+  @include mx.fontSize(64px);
+  line-height: 1.2em;
+  max-width: 1350px;
+  @include mx.fontGlow(8px);
+}
+
+.subtitle {
+  @include mx.fontSize(24px);
+  line-height: 1.5em;
+  max-width: 1350px;
+  margin-top: vr.$spacingSizeXL;
+}
+
+.btnWrapper {
+  gap: vr.$spacingSize3XL;
+  margin-top: vr.$spacingSize3XL;
+}
+
+@include mx.devices(desktop) {
+  .wrapper {
+    max-height: 700px;
+    min-height: 500px;
+  }
+
+  .title {
+    @include mx.fontSize(48px);
+    max-width: 950px;
+  }
+
+  .subtitle {
+    @include mx.fontSize(18px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .title {
+    @include mx.fontSize(32px);
+    max-width: 650px;
+  }
+
+  .wrapper {
+    max-height: 600px;
+  }
+}
+
+@include mx.devices(mobile) {
+  .wrapper {
+    min-height: 300px;
+  }
+  .title {
+    @include mx.fontSize(20px);
+    max-width: 100%;
+  }
+
+  .subtitle {
+    @include mx.fontSize(14px);
+    max-width: 100%;
+  }
+  .wrapper {
+    max-height: 400px;
+  }
+
+  .btnWrapper {
+    gap: vr.$spacingSizeS;
+  }
+
+  .content {
+    padding: vr.$spacingSize3XL 0;
+  }
 }
