@@ -12,7 +12,7 @@ function Header() {
   return (
     <HeaderProvider>
       <header className={styles.header}>
-        <Container>
+        <Container className={styles.container}>
           <div className={styles.wrapper}>
             <Logo />
             <Actions />

@@ -3,9 +3,9 @@
 
 .wrapper {
   position: relative;
-  align-items: center;
+  align-items: end;
   display: flex;
-  padding: vr.$spacingSize9XL 0;
+  padding: 0;
   height: 80vh;
   max-height: 800px;
 
@@ -32,24 +32,26 @@
   height: 100%;
   background: rgb(15, 15, 15);
   background: linear-gradient(
-    90deg,
+    360deg,
     rgba(5, 5, 5, 1) 0%,
-    rgba(0, 0, 0, 0.6558998599439776) 38%,
-    rgba(255, 255, 255, 0) 81%
+    rgba(0, 0, 0, 0.6558998599439776) 18%,
+    rgba(255, 255, 255, 0) 51%
   );
 }
 
 .content {
   position: relative;
   z-index: 1;
+  padding: vr.$spacingSize5XL 0;
 }
 
 .title {
-  font-family: var(--fontFamilyTertiary);
+  font-family: var(--fontFamilySecondary);
   font-weight: var(--fontWeightBold);
   @include mx.fontSize(64px);
   line-height: 1.2em;
   max-width: 1350px;
+  @include mx.fontGlow(8px);
 }
 
 .subtitle {
@@ -67,6 +69,7 @@
 @include mx.devices(desktop) {
   .wrapper {
     max-height: 700px;
+    min-height: 500px;
   }
 
   .title {
@@ -87,11 +90,13 @@
 
   .wrapper {
     max-height: 600px;
-    padding: vr.$spacingSizeXXL 0;
   }
 }
 
 @include mx.devices(mobile) {
+  .wrapper {
+    min-height: 300px;
+  }
   .title {
     @include mx.fontSize(20px);
     max-width: 100%;
@@ -107,5 +112,9 @@
 
   .btnWrapper {
     gap: vr.$spacingSizeS;
+  }
+
+  .content {
+    padding: vr.$spacingSize3XL 0;
   }
 }

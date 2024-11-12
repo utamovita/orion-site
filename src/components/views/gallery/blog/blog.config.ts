@@ -15,9 +15,9 @@ const imageBasePath = "/assets/images/gallery/";
 const blogConfig: BlogItem[] = [
   {
     title: {
-      en: "en title 1",
-      de: "de title 1",
-      pl: "pl title 1",
+      en: "Integration june 2022",
+      de: "Integration Juni 2022",
+      pl: "Integracja czerwiec 2022",
     },
     images: [
       {
@@ -48,9 +48,9 @@ const blogConfig: BlogItem[] = [
   },
   {
     title: {
-      en: "en title 2",
-      de: "de title 2",
-      pl: "pl title 3",
+      en: "Integration june 2023",
+      de: "Integration Juni 2023",
+      pl: "Integracja czerwiec 2023",
     },
     images: [
       {

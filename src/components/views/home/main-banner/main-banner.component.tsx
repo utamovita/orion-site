@@ -1,7 +1,7 @@
 import styles from "./main-banner.module.scss";
 import { useTranslation } from "next-i18next";
 import { Container, FlexComponent, Stack } from "@design-system/layout/utilities";
-import backgroundImage from "public/assets/images/home/banner.jpg";
+import backgroundImage from "../../../../../public/assets/images/home/hero-banner.jpg";
 import Image from "next/image";
 import { ButtonLink } from "@components/shared/button/button-link.component";
 

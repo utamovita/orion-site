@@ -40,9 +40,10 @@
 }
 
 .title {
-  font-family: var(--fontFamilyTertiary);
+  font-family: var(--fontFamilySecondary);
   font-weight: var(--fontWeightBold);
-  @include mx.fontSize(64px);
+  @include mx.fontSize(125px);
+  @include mx.fontGlow(8px);
   line-height: 1.2em;
   max-width: 1350px;
   position: absolute;
@@ -56,15 +57,16 @@
   }
 
   .title {
-    @include mx.fontSize(48px);
+    @include mx.fontSize(100px);
     max-width: 950px;
     bottom: vr.$spacingSizeXXL;
+
   }
 }
 
 @include mx.devices(tablet) {
   .title {
-    @include mx.fontSize(32px);
+    @include mx.fontSize(80px);
     max-width: 650px;
   }
 
@@ -76,7 +78,7 @@
 
 @include mx.devices(mobile) {
   .title {
-    @include mx.fontSize(20px);
+    @include mx.fontSize(64px);
     max-width: 100%;
   }
 

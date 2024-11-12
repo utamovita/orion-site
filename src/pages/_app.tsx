@@ -2,7 +2,7 @@ import { AppProps } from "next/app";
 import "@design-system/styles/global.scss";
 import { poppins } from "@design-system/fonts/poppins";
 import { bebasNeue } from "@design-system/fonts/bebas-neue";
-import { exo } from "@design-system/fonts/exo";
+import { pd } from "@design-system/fonts/pd";
 import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
@@ -12,8 +12,9 @@ function App({ Component, pageProps }: AppProps) {
         {`
           :root {
             --fontFamilyPrimary: ${poppins.style.fontFamily};
-            --fontFamilySecondary: ${bebasNeue.style.fontFamily};
-            --fontFamilyTertiary: ${exo.style.fontFamily};
+              --fontFamilySecondary: ${pd.style.fontFamily};
+            --fontFamilyTertiary: ${bebasNeue.style.fontFamily};
+            
           }
         `}
       </style>

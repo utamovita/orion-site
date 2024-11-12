@@ -2,18 +2,66 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .sectionWrapper {
-  padding: vr.$spacingSize5XL 0;
+  padding: vr.$spacingSize7XL 0;
   background: var(--colorBlack);
   color: var(--colorWhite);
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background: var(--colorWhite);
     color: black;
   }
 }
 
-.blogItemImage {
-  width: 20%;
+.imageWrapper {
   position: relative;
   aspect-ratio: 1/1;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-gap: vr.$spacingSizeXL;
+  grid-template-columns: [col1-start] 20% [col2-start] 20% [col3-start] 20% [col4-start] 20% [col5-start] 20% [col6-start] 20% [col6-end];
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+
+.gridItem {
+  position: relative;
+  align-self: end;
+  @include mx.fontSize(100px);
+
+  &:nth-child(1) {
+    grid-column: col1-start / col4-start;
+    grid-row: row1-start;
+    font-family: var(--fontFamilySecondary);
+    @include mx.fontGlow(8px);
+    font-weight: var(--fontWeightBold);
+    text-align: right;
+
+  }
+
+  &:nth-child(2) {
+    grid-column: col4-start / col6-start;
+    grid-row: row1-start / row2-end;
+  }
+
+  &:nth-child(3) {
+      grid-column: col1-start;
+      grid-row: row2-start;
+  }
+
+  &:nth-child(4) {
+    grid-column: col2-start;
+    grid-row: row2-start;
+  }
+
+  &:nth-child(5) {
+    grid-column: col3-start;
+    grid-row: row2-start;
+  }
+}
+
+@include mx.devices(desktop) {
+  .grid-item {
+    @include mx.fontSize(80px);
+  }
 }

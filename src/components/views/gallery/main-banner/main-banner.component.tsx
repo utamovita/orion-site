@@ -1,7 +1,7 @@
 import styles from "./main-banner.module.scss";
 import { useTranslation } from "next-i18next";
 import { Container } from "@design-system/layout/utilities";
-import backgroundImage from "public/assets/images/home/banner.jpg";
+import backgroundImage from "../../../../../public/assets/images/gallery/hero-banner.png";
 import Image from "next/image";
 
 function MainBanner() {

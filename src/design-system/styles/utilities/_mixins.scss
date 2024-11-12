@@ -5,6 +5,10 @@
   font-size: fn.calculateRem($size);
 }
 
+@mixin fontGlow($radius) {
+  text-shadow: 0 0 $radius rgba(255,255,255, 0.5);
+}
+
 @mixin devices($size) {
   @if $size == mobile {
     @media (max-width: vr.$breakpointMobile - 1) {
