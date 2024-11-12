@@ -36,7 +36,6 @@
     @include mx.fontGlow(8px);
     font-weight: var(--fontWeightBold);
     text-align: right;
-
   }
 
   &:nth-child(2) {
@@ -45,8 +44,8 @@
   }
 
   &:nth-child(3) {
-      grid-column: col1-start;
-      grid-row: row2-start;
+    grid-column: col1-start;
+    grid-row: row2-start;
   }
 
   &:nth-child(4) {

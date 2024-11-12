@@ -12,9 +12,8 @@ function App({ Component, pageProps }: AppProps) {
         {`
           :root {
             --fontFamilyPrimary: ${poppins.style.fontFamily};
-              --fontFamilySecondary: ${pd.style.fontFamily};
+            --fontFamilySecondary: ${pd.style.fontFamily};
             --fontFamilyTertiary: ${bebasNeue.style.fontFamily};
-            
           }
         `}
       </style>

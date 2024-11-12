@@ -6,7 +6,7 @@
 }
 
 @mixin fontGlow($radius) {
-  text-shadow: 0 0 $radius rgba(255,255,255, 0.5);
+  text-shadow: 0 0 $radius rgba(255, 255, 255, 0.5);
 }
 
 @mixin devices($size) {
