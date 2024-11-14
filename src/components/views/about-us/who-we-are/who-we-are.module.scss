@@ -3,6 +3,7 @@
 
 .wrapper {
   min-height: 500px;
+  font-family: var(--fontFamilySecondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,39 @@
   flex-direction: row;
 }
 
-.section {
+.section_Icons {
+  flex-basis: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.section_Icons_Child {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 5px;
+  @include mx.fontSize(30px);
+}
+
+.section_Icons_Child > p {
+  margin-top: vr.$spacingSizeXL;
+}
+
+.section_Icons_Child:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 2px;
+  background-color: white;
+}
+
+.section_whoWeAre {
   flex-basis: 50%;
   align-self: center;
   text-align: right;
@@ -25,10 +58,79 @@
 
 .title {
   @include mx.fontSize(50px);
+  font-family: var(--fontFamilySecondary);
   margin-bottom: vr.$spacingSizeL;
   font-weight: var(--fontWeightBold);
 }
 
 .subtitle {
   @include mx.fontSize(20px);
+}
+
+@include mx.devices(desktop) {
+  .section_Icons_Child {
+    @include mx.fontSize(25px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .section_Icons_Child {
+    @include mx.fontSize(20px);
+  }
+
+  .svg {
+    width: 55px;
+  }
+
+  .section_Icons_Child:last-child > .svg {
+    width: 75px;
+  }
+
+  .svg_Stars {
+    width: 100px;
+  }
+}
+
+@include mx.devices(mobile) {
+  .content {
+    flex-direction: column;
+  }
+
+  .section_Icons {
+    order: 2;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .section_Icons_Child {
+    padding: 25px 0;
+    @include mx.fontSize(35px);
+  }
+
+  .section_Icons_Child:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    height: 2px;
+    width: 50%;
+    background-color: white;
+  }
+
+  .svg {
+    width: 80px;
+  }
+
+  .section_Icons_Child:last-child > .svg {
+    width: 100px;
+  }
+
+  .svg_Stars {
+    width: 140px;
+  }
+
+  .section_whoWeAre {
+    order: 1;
+    text-align: left;
+  }
 }

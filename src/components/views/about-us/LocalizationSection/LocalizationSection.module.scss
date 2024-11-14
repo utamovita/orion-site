@@ -8,3 +8,21 @@
   justify-content: center;
   position: relative;
 }
+
+.form {
+  padding: vr.$spacingSizeL vr.$spacingSize3XL;
+  width: 50%;
+  height: 600px;
+  border: 1px solid white;
+  border-radius: vr.$spacingSizeS;
+  position: relative;
+  background-color: #000;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.title {
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(58px);
+  margin-bottom: vr.$spacingSizeL;
+}

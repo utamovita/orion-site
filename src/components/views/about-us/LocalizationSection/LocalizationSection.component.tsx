@@ -7,6 +7,13 @@ function LocalizationSection() {
   return (
     <div className={styles.wrapper}>
       <Container>
+        <div className={styles.form}>
+          <h2 className={styles.title}>Nasze nowoczesne biuro</h2>
+          <p className={styles.text}>
+            Jesteśmy zlokalizowani w samym centrum Bydgoszczy. Biuro naszej firmy wyposażone jest w nowoczesny oraz
+            ergonomiczny sprzęt z najwyższej półki, zapewniający wygodę i efektywność pracy.
+          </p>
+        </div>
         <Image
           alt="background image"
           src={backgroundImage}
