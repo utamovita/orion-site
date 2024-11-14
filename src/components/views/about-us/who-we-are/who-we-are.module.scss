@@ -30,7 +30,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 5px;
+  padding: vr.$spacingSizeXXS;
   @include mx.fontSize(30px);
 }
 
@@ -53,7 +53,6 @@
   align-self: center;
   text-align: right;
   padding: vr.$spacingSizeL;
-  font-family: var(--fontFamilyTertiary);
 }
 
 .title {
@@ -65,56 +64,30 @@
 
 .subtitle {
   @include mx.fontSize(20px);
+  font-family: var(--fontFamilyPrimary);
 }
 
 @include mx.devices(desktop) {
   .section_Icons_Child {
     @include mx.fontSize(25px);
   }
+
+  .section_whoWeAre {
+    padding: vr.$spacingSizeS;
+  }
+
+  .subtitle {
+    @include mx.fontSize(18px);
+  }
 }
 
 @include mx.devices(tablet) {
-  .section_Icons_Child {
-    @include mx.fontSize(20px);
-  }
-
-  .svg {
-    width: 55px;
-  }
-
-  .section_Icons_Child:last-child > .svg {
-    width: 75px;
-  }
-
-  .svg_Stars {
-    width: 100px;
-  }
-}
-
-@include mx.devices(mobile) {
   .content {
     flex-direction: column;
   }
 
-  .section_Icons {
-    order: 2;
-    width: 100%;
-    flex-direction: column;
-  }
-
   .section_Icons_Child {
-    padding: 25px 0;
-    @include mx.fontSize(35px);
-  }
-
-  .section_Icons_Child:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 25%;
-    height: 2px;
-    width: 50%;
-    background-color: white;
+    padding: vr.$spacingSizeXL;
   }
 
   .svg {
@@ -129,8 +102,54 @@
     width: 140px;
   }
 
+  .section_Icons {
+    order: 2;
+  }
+
   .section_whoWeAre {
     order: 1;
     text-align: left;
+  }
+}
+
+@include mx.devices(mobile) {
+  .section_Icons {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: vr.$spacingSizeXL;
+  }
+
+  .section_Icons_Child {
+    padding: vr.$spacingSizeXL 0;
+    @include mx.fontSize(35px);
+  }
+
+  .section_Icons_Child:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: calc(50% - 75px);
+    height: 2px;
+    width: 150px;
+    background-color: white;
+  }
+
+  .section_whoWeAre {
+    padding: vr.$spacingSizeXS;
+    margin-top: vr.$spacingSizeXXL;
+  }
+
+  .title {
+    @include mx.fontSize(35px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(17px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .subtitle {
+    @include mx.fontSize(15px);
   }
 }

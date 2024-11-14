@@ -23,6 +23,48 @@
 
 .title {
   font-family: var(--fontFamilySecondary);
-  @include mx.fontSize(58px);
+  @include mx.fontSize(56px);
   margin-bottom: vr.$spacingSizeL;
+}
+
+@include mx.devices(desktop) {
+  .form {
+    width: 60%;
+  }
+
+  .title {
+    @include mx.fontSize(45px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .form {
+    width: 570px;
+  }
+}
+
+@include mx.devices(mobile) {
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    padding: vr.$spacingSizeL vr.$spacingSizeXL;
+  }
+
+  .title {
+    @include mx.fontSize(32px);
+  }
+
+  .text {
+    @include mx.fontSize(14px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .form {
+    width: 100%;
+  }
+
+  .title {
+    @include mx.fontSize(20px);
+  }
 }

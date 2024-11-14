@@ -24,6 +24,7 @@ function More() {
               style={{
                 objectFit: "cover",
               }}
+              className={styles.image}
             />
           </div>
         </Stack>
