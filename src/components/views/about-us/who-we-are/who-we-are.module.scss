@@ -13,17 +13,16 @@
 
 .content {
   z-index: 1;
-  flex-direction: row;
 }
 
-.section_Icons {
+.sectionIcons {
   flex-basis: 50%;
   display: flex;
   align-self: center;
   justify-content: center;
 }
 
-.section_Icons_Child {
+.sectionIconsChild {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -34,11 +33,11 @@
   @include mx.fontSize(30px);
 }
 
-.section_Icons_Child > p {
+.sectionIconsChild > p {
   margin-top: vr.$spacingSizeXL;
 }
 
-.section_Icons_Child:not(:last-child)::after {
+.sectionIconsChild:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 25%;
@@ -48,7 +47,7 @@
   background-color: white;
 }
 
-.section_whoWeAre {
+.sectionWhoWeAre {
   flex-basis: 50%;
   align-self: center;
   text-align: right;
@@ -68,11 +67,11 @@
 }
 
 @include mx.devices(desktop) {
-  .section_Icons_Child {
+  .sectionIconsChild {
     @include mx.fontSize(25px);
   }
 
-  .section_whoWeAre {
+  .sectionWhoWeAre {
     padding: vr.$spacingSizeS;
   }
 
@@ -86,7 +85,7 @@
     flex-direction: column;
   }
 
-  .section_Icons_Child {
+  .sectionIconsChild {
     padding: vr.$spacingSizeXL;
   }
 
@@ -94,37 +93,37 @@
     width: 80px;
   }
 
-  .section_Icons_Child:last-child > .svg {
+  .sectionIconsChild:last-child > .svg {
     width: 100px;
   }
 
-  .svg_Stars {
+  .svgStars {
     width: 140px;
   }
 
-  .section_Icons {
+  .sectionIcons {
     order: 2;
   }
 
-  .section_whoWeAre {
+  .sectionWhoWeAre {
     order: 1;
     text-align: left;
   }
 }
 
 @include mx.devices(mobile) {
-  .section_Icons {
+  .sectionIcons {
     width: 100%;
     flex-direction: column;
     margin-bottom: vr.$spacingSizeXL;
   }
 
-  .section_Icons_Child {
+  .sectionIconsChild {
     padding: vr.$spacingSizeXL 0;
     @include mx.fontSize(35px);
   }
 
-  .section_Icons_Child:not(:last-child)::after {
+  .sectionIconsChild:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -134,7 +133,7 @@
     background-color: white;
   }
 
-  .section_whoWeAre {
+  .sectionWhoWeAre {
     padding: vr.$spacingSizeXS;
     margin-top: vr.$spacingSizeXXL;
   }
