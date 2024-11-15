@@ -6,7 +6,7 @@ import { GalleryView } from "@components/views/gallery";
 export default function GalleryPage() {
   return (
     <BaseLayout>
-      <GalleryView />
+        <GalleryView />
     </BaseLayout>
   );
 }

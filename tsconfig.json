@@ -21,6 +21,8 @@
       "@components/*": ["./src/components/*"],
       "@design-system/*": ["./src/design-system/*"],
       "@customTypes/*": ["./src/types/*"],
+      "@context/*": ["./src/context/*"],
+      "@hooks/*": ["./src/hooks/*"],
     },
     "baseUrl": "."
   },

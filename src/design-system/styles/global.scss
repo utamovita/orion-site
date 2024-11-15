@@ -1,13 +1,9 @@
 @import "reset";
-
+@import "./global/swiper";
 body,
 html {
   font-family: var(--fontFamilyPrimary);
   color: var(--colorWhite);
-}
-
-body {
-  padding-top: 90px;
 }
 
 :root {
