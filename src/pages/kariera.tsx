@@ -1,9 +1,10 @@
 import { BaseLayout } from "@design-system/layout/base-layout.component";
 import { GetStaticPropsContext } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import {CareerView} from "@components/views/career";
 
 export default function CareerPage() {
-  return <BaseLayout>kariera</BaseLayout>;
+  return <BaseLayout><CareerView/></BaseLayout>;
 }
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {

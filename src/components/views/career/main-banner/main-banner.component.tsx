@@ -1,7 +1,7 @@
 import styles from "./main-banner.module.scss";
 import { useTranslation } from "next-i18next";
 import { Container } from "@design-system/layout/utilities";
-import backgroundImage from "../../../../../public/assets/images/gallery/hero-banner.jpg";
+import backgroundImage from "../../../../../public/assets/images/career/hero-banner.jpg";
 import Image from "next/image";
 
 function MainBanner() {
@@ -22,7 +22,7 @@ function MainBanner() {
         }}
       />
       <Container>
-        <h1 className={styles.title}>{t("gallery")}</h1>
+        <h1 className={styles.title}>{t("career")}</h1>
       </Container>
     </div>
   );
