@@ -11,6 +11,13 @@
     "mainTitle": "TODO",
     "whoWeAre": {
       "title": "TODO",
+      "subtitle": "TODO",
+      "punctuality": "Punctuality",
+      "security": "Security",
+      "partnership": "Partnership"
+    },
+    "localization": {
+      "title": "TODO",
       "subtitle": "TODO"
     },
     "more": {

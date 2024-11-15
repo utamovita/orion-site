@@ -11,7 +11,14 @@
     "mainTitle": "O nas",
     "whoWeAre": {
       "title": "Kim jesteśmy?",
-      "subtitle": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków zarówno z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny wzrost firmy. W naszej firmie kładziemy duży nacisk na innowacyjność i ciągły postęp. Wspieramy się nowoczesnymi narzędziami oraz wykorzystujemy sztuczną inteligencję, aby stale podnosić jakość naszych usług."
+      "subtitle": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków zarówno z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny wzrost firmy. W naszej firmie kładziemy duży nacisk na innowacyjność i ciągły postęp. Wspieramy się nowoczesnymi narzędziami oraz wykorzystujemy sztuczną inteligencję, aby stale podnosić jakość naszych usług.",
+      "punctuality": "Terminowość",
+      "security": "Bezpieczeństwo",
+      "partnership": "Partnerstwo"
+    },
+    "localization": {
+      "title": "Nasze nowoczesne biuro",
+      "subtitle": "Jesteśmy zlokalizowani w samym centrum Bydgoszczy. Biuro naszej firmy wyposażone jest w nowoczesny oraz ergonomiczny sprzęt z najwyższej półki, zapewniający wygodę i efektywność pracy."
     },
     "more": {
       "title": "Więcej o nas",
