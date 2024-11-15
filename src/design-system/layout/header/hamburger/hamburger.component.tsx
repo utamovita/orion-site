@@ -1,5 +1,5 @@
 import { useHeaderDispatch, useHeaderState } from "../providers/header.context";
-import HamburgerIcon from "@components/shared/icons/hamburger-icon";
+import { HamburgerIcon } from "@components/shared/icons/hamburger-icon";
 import CloseIcon from "@components/shared/icons/close-icon";
 import styles from "./hamburger.module.scss";
 

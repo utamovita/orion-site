@@ -1,0 +1,66 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  min-height: 500px;
+  font-family: var(--fontFamilySecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+  padding: vr.$spacingSize8XL 0;
+}
+
+.section {
+  flex-basis: 50%;
+  &:first-child {
+    padding-right: vr.$spacingSizeXXL;
+  }
+
+  &:last-child {
+    padding-left: vr.$spacingSizeXXL;
+  }
+}
+
+.title {
+  @include mx.fontSize(58px);
+  margin-bottom: vr.$spacingSizeXL;
+}
+
+.subtitle {
+  @include mx.fontSize(23px);
+  font-family: var(--fontFamilyPrimary);
+}
+
+.xyz {
+  text-align: center;
+  margin: vr.$spacingSizeXL 0;
+}
+
+.xyz2 {
+  max-width: 500px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  //   align-content: center;
+  justify-content: center;
+
+  .button {
+    min-width: 0;
+    height: 40px;
+    font-family: var(--fontFamilyPrimary);
+    @include mx.fontSize(14px);
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    text-transform: none;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: vr.$spacingSizeXXS;
+}
