@@ -22,20 +22,19 @@
 .wrapper {
   padding: vr.$spacingSize6XL 0;
 
-    :global {
-        .swiper-slide {
-            filter: blur(4px);
-            transform: scale(0.8);
-            transition: 0.3s;
+  :global {
+    .swiper-slide {
+      filter: blur(4px);
+      transform: scale(0.8);
+      transition: 0.3s;
 
-          &.swiper-slide-active {
-            filter: blur(0);
-            transform: scale(1);
-          }
-        }
+      &.swiper-slide-active {
+        filter: blur(0);
+        transform: scale(1);
+      }
     }
+  }
 }
-
 
 .slideContent {
   position: relative;
@@ -51,10 +50,10 @@
   height: 100%;
   background: rgb(15, 15, 15);
   background: linear-gradient(
-                  0deg,
-                  rgba(0, 0, 0, 1) 30%,
-                  rgba(0, 0, 0, 0.6558998599439776) 48%,
-                  rgba(255, 255, 255, 0) 81%
+    0deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 0.6558998599439776) 48%,
+    rgba(255, 255, 255, 0) 81%
   );
 }
 
@@ -115,7 +114,6 @@
 
   .wrapper {
     :global {
-
       .swiper-button-prev {
         top: auto;
         left: 0;
