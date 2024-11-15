@@ -15,17 +15,17 @@ function WhoWeAre() {
           <div className={styles.section_Icons}>
             <div className={styles.section_Icons_Child}>
               <PunctualityIcon className={styles.svg} />
-              <p>Terminowość</p>
+              <p>{t("aboutUs.whoWeAre.punctuality")}</p>
               <StarsIcon className={styles.svg_Stars} />
             </div>
             <div className={styles.section_Icons_Child}>
               <SecurityIcon className={styles.svg} />
-              <p>Bezpieczeństwo</p>
+              <p>{t("aboutUs.whoWeAre.security")}</p>
               <StarsIcon className={styles.svg_Stars} />
             </div>
             <div className={styles.section_Icons_Child}>
               <PartnershipIcon className={styles.svg} />
-              <p>Partnerstwo</p>
+              <p>{t("aboutUs.whoWeAre.partnership")}</p>
               <StarsIcon className={styles.svg_Stars} />
             </div>
           </div>

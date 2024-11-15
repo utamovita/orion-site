@@ -1,18 +1,17 @@
 import styles from "./LocalizationSection.module.scss";
+import { useTranslation } from "next-i18next";
 import backgroundImage from "public/assets/images/aboutUs/Map.png";
 import Image from "next/image";
 import { Container } from "@design-system/layout/utilities";
 
 function LocalizationSection() {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.form}>
-          <h2 className={styles.title}>Nasze nowoczesne biuro</h2>
-          <p className={styles.text}>
-            Jesteśmy zlokalizowani w samym centrum Bydgoszczy. Biuro naszej firmy wyposażone jest w nowoczesny oraz
-            ergonomiczny sprzęt z najwyższej półki, zapewniający wygodę i efektywność pracy.
-          </p>
+          <h2 className={styles.title}>{t("aboutUs.localization.title")}</h2>
+          <p className={styles.text}>{t("aboutUs.localization.subtitle")}</p>
         </div>
         <Image
           alt="background image"
