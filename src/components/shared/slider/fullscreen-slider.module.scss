@@ -1,11 +1,10 @@
 @use "@design-system/styles/utilities/variables" as vr;
 @use "@design-system/styles/utilities/mixins" as mx;
 
-
 .swiper {
-    display: flex;
-    justify-content: center;
-    align-items: stretch
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .swiperSlide {
@@ -17,6 +16,6 @@
 }
 
 .image {
-    max-width: 70vw;
-    max-height: 70vh;
+  max-width: 70vw;
+  max-height: 70vh;
 }

@@ -14,12 +14,9 @@ type ModalDialogProps = {
   preventClose?: boolean;
   fullWidth?: boolean;
 } & AriaDialogProps &
-    AriaOverlayProps
-
-
+  AriaOverlayProps;
 
 function ModalDialog(props: ModalDialogProps) {
-
   const { children, onClose, preventClose = false, fullWidth = false } = props;
   const router = useRouter();
   const handleCloseButtonClick = (event: React.MouseEvent) => {
@@ -52,19 +49,26 @@ function ModalDialog(props: ModalDialogProps) {
   }, [router, onClose]);
 
   return (
-      <div className={styles.overlay} {...underlayProps}>
-        <FocusScope contain={false} restoreFocus={false} autoFocus={false}>
-          <div className={cx(styles.modal, {[styles.fullWidth]: fullWidth})} {...overlayProps} {...dialogProps} {...modalProps} ref={ref} style={customStyles}>
-            {preventClose ? null : (
-                <button className={styles.closeButton} onClick={handleCloseButtonClick}>
-                  <CloseIcon />
-                </button>
-            )}
+    <div className={styles.overlay} {...underlayProps}>
+      <FocusScope contain={false} restoreFocus={false} autoFocus={false}>
+        <div
+          className={cx(styles.modal, { [styles.fullWidth]: fullWidth })}
+          {...overlayProps}
+          {...dialogProps}
+          {...modalProps}
+          ref={ref}
+          style={customStyles}
+        >
+          {preventClose ? null : (
+            <button className={styles.closeButton} onClick={handleCloseButtonClick}>
+              <CloseIcon />
+            </button>
+          )}
 
-            <div className={styles.content}>{children}</div>
-          </div>
-        </FocusScope>
-      </div>
+          <div className={styles.content}>{children}</div>
+        </div>
+      </FocusScope>
+    </div>
   );
 }
 

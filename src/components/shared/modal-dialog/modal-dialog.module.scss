@@ -48,11 +48,9 @@
   top: vr.$spacingSizeM;
   cursor: pointer;
   pointer-events: auto;
-
 }
 
 @media (max-width: vr.$breakpointMobile) {
-
   .modal {
     max-width: 95vw;
 
