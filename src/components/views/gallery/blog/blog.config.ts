@@ -4,6 +4,7 @@ type BlogItem = {
   title: {
     [key in Locale]: string;
   };
+  subtitle: string;
   images: Array<{
     url: string;
     alt: string;
@@ -15,10 +16,11 @@ const imageBasePath = "/assets/images/gallery/";
 const blogConfig: BlogItem[] = [
   {
     title: {
-      en: "Integration june 2022",
-      de: "Integration Juni 2022",
-      pl: "Integracja czerwiec 2022",
+      en: "Integration june",
+      de: "Integration Juni",
+      pl: "Integracja czerwiec",
     },
+    subtitle: "2022",
     images: [
       {
         url: `${imageBasePath}czerwiec-22/8v1.jpg`,
@@ -48,10 +50,11 @@ const blogConfig: BlogItem[] = [
   },
   {
     title: {
-      en: "Integration june 2023",
-      de: "Integration Juni 2023",
-      pl: "Integracja czerwiec 2023",
+      en: "Integration june",
+      de: "Integration Juni",
+      pl: "Integracja czerwiec",
     },
+    subtitle: "2023",
     images: [
       {
         url: `${imageBasePath}czerwiec-23/6v1.jpg`,
