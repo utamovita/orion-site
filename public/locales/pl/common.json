@@ -5,5 +5,17 @@
     "pl": "Polski",
     "chooseLang": "Polski"
   },
-  "gallery": "Galeria"
+  "gallery": "Galeria",
+
+  "aboutUs": {
+    "mainTitle": "O nas",
+    "whoWeAre": {
+      "title": "Kim jesteśmy?",
+      "subtitle": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków zarówno z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny wzrost firmy. W naszej firmie kładziemy duży nacisk na innowacyjność i ciągły postęp. Wspieramy się nowoczesnymi narzędziami oraz wykorzystujemy sztuczną inteligencję, aby stale podnosić jakość naszych usług."
+    },
+    "more": {
+      "title": "Więcej o nas",
+      "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą czas rekreacyjny. Posiłki, granie na konsoli czy też niezapomniane wypady to tylko część atrakcji w Orion Express. Organizujemy dla pracowników niezapomniane wydarzenia, które pozwalają oderwać się od rzeczywistości."
+    }
+  }
 }

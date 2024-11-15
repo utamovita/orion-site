@@ -5,5 +5,17 @@
     "pl": "Polski",
     "chooseLang": "English"
   },
-  "gallery": "Gallery"
+  "gallery": "Gallery",
+
+  "aboutUs": {
+    "mainTitle": "About us",
+    "whoWeAre": {
+      "title": "TODO",
+      "subtitle": "TODO"
+    },
+    "more": {
+      "title": "TODO",
+      "subtitle": "TODO"
+    }
+  }
 }
