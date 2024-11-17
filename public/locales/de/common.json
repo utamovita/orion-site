@@ -8,21 +8,38 @@
   "gallery": "Galerie",
 
   "aboutUs": {
-    "mainTitle": "TODO",
+    "mainTitle": "Über uns",
     "whoWeAre": {
-      "title": "TODO",
-      "subtitle": "TODO",
-      "punctuality": "Punctuality",
-      "security": "Security",
-      "partnership": "Partnership"
+      "title": "Wer sind wir?",
+      "subtitle": "Grand Transport Logistics ist eine Gruppe von Spezialisten, die europaweit moderne Logistiklösungen anbieten. Bei unserer Arbeit achten wir darauf, positive Beziehungen sowohl zu unseren Kunden als auch innerhalb des Unternehmens aufrechtzuerhalten. Dies schlägt sich direkt in Arbeitsergebnissen und einem deutlichen, stabilen Wachstum des Unternehmens nieder. In unserem Unternehmen legen wir großen Wert auf Innovation und kontinuierlichen Fortschritt. Wir unterstützen uns mit modernen Tools und nutzen künstliche Intelligenz, um die Qualität unserer Dienstleistungen stetig zu verbessern.",
+      "punctuality": "Pünktlichkeit",
+      "security": "Sicherheit",
+      "partnership": "Partnerschaft"
     },
     "localization": {
-      "title": "TODO",
-      "subtitle": "TODO"
+      "title": "Unser modernes Büro",
+      "subtitle": "Wir befinden uns im Zentrum von Bydgoszcz. Das Büro unseres Unternehmens ist mit erstklassiger moderner und ergonomischer Ausstattung ausgestattet, die Komfort und Effizienz der Arbeit gewährleistet."
     },
     "more": {
-      "title": "TODO",
-      "subtitle": "TODO"
+      "title": "Mehr über uns",
+      "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą czas rekreacyjny. Posiłki, granie na konsoli czy też niezapomniane wypady to tylko część atrakcji w Orion Express. Organizujemy dla pracowników niezapomniane wydarzenia, które pozwalają oderwać się od rzeczywistości."
+    }
+  },
+
+  "career": {
+    "mainTitle": "Karriere",
+    "subtitle": {
+      "firstHalf": "Arbeite bei Grand",
+      "secondHalf": "Transport Logistics"
+    },
+    "text": "Die Arbeit bei Grand Transport Logistics ist eine ideale Gelegenheit für Sie, Ihr Transportangebot zu erweitern oder Ihre Speditionsfähigkeiten weiterzuentwickeln. Die Zusammenarbeit in Projekten, ein attraktives Vergütungssystem und die ständige Weiterentwicklung der Fähigkeiten sind nur einige Merkmale, die unsere Aktivitäten auszeichnen.",
+    "work": {
+      "title": "Stellen verfügbar",
+      "carrier": "Träger",
+      "driver": "Treiber",
+      "dispatcher": "Dispatcher",
+      "forwarder": "Spediteur",
+      "administration": "Verwaltung"
     }
   }
 }
