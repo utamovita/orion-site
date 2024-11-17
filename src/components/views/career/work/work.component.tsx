@@ -12,7 +12,7 @@ function Work() {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <FlexComponent>
+        <FlexComponent className={styles.flex}>
           <div className={styles.section}>
             <h2 className={styles.title}>
               Praca w Grand <br></br>Transport Logistics
@@ -22,8 +22,8 @@ function Work() {
               rozwinięcie swoich umiejętności spedycyjnych. Współpraca w projektach, atrakcyjny system wynagrodzenia czy
               też stałe poszerzanie swoich umiejętności to tylko kilka cech, które charakteryzują naszą działalność.
             </p>
-            <h2 className={styles.xyz}>Dostępne Stanowiska</h2>
-            <div className={styles.xyz2}>
+            <h2 className={styles.secondTitle}>Dostępne Stanowiska</h2>
+            <div className={styles.buttons}>
               <Button className={styles.button}>
                 Przewoźnik <ArrowIcon className={styles.arrow} />
               </Button>
@@ -49,6 +49,7 @@ function Work() {
               quality={100}
               width={811}
               height={610}
+              className={styles.image}
               style={{
                 objectFit: "cover",
               }}

@@ -33,18 +33,17 @@
   font-family: var(--fontFamilyPrimary);
 }
 
-.xyz {
+.secondTitle {
   text-align: center;
   margin: vr.$spacingSizeXL 0;
 }
 
-.xyz2 {
+.buttons {
   max-width: 500px;
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   gap: 30px;
-  //   align-content: center;
   justify-content: center;
 
   .button {
@@ -63,4 +62,66 @@
 .arrow {
   display: inline-block;
   margin-left: vr.$spacingSizeXXS;
+}
+
+@include mx.devices(desktop) {
+  .title {
+    @include mx.fontSize(50px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(20px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .title {
+    @include mx.fontSize(40px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(14px);
+  }
+}
+
+@include mx.devices(mobile) {
+  .title {
+    @include mx.fontSize(50px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(18px);
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .section {
+    &:first-child {
+      padding: 0 0 vr.$spacingSize4XL;
+    }
+
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    padding-top: vr.$spacingSize6XL;
+  }
+
+  .title {
+    @include mx.fontSize(30px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(13px);
+  }
+
+  .image {
+    height: 200px;
+  }
 }
