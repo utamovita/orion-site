@@ -1,4 +1,4 @@
-import {FooterConfig} from "@design-system/layout/footer/config/navigation-data-pl";
+import { FooterConfig } from "@design-system/layout/footer/config/navigation-data-pl";
 
 const footerConfigDE: FooterConfig = {
   mainNavigation: [

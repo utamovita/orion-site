@@ -2,10 +2,10 @@ import Link from "next/link";
 import React from "react";
 import styles from "./bottom-navigation.module.scss";
 import cx from "classnames";
-import {useFooter} from "@design-system/layout/footer/use-footer.hook";
+import { useFooter } from "@design-system/layout/footer/use-footer.hook";
 
 function BottomNavigation() {
-    const {data} = useFooter();
+  const { data } = useFooter();
 
   return (
     <div className={styles.wrapper}>

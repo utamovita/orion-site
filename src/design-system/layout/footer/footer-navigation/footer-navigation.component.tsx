@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./footer-navigation.module.scss";
-import {useFooter} from "@design-system/layout/footer/use-footer.hook";
+import { useFooter } from "@design-system/layout/footer/use-footer.hook";
 
 type FooterItem = {
   title: string;
@@ -9,7 +9,7 @@ type FooterItem = {
 };
 
 function FooterNavigation() {
-  const {data} = useFooter();
+  const { data } = useFooter();
 
   return (
     <ul className={styles.footerList}>

@@ -54,15 +54,15 @@
   }
 }
 .name {
-    font-family: var(--fontFamilySecondary);
-    @include mx.fontSize(62px);
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(62px);
   text-shadow: 3px 3px 0px #587295;
 }
 
 .role {
-    font-family: var(--fontFamilySecondary);
-    @include mx.fontSize(24px);
-    text-shadow: 3px 3px 0px #587295;
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(24px);
+  text-shadow: 3px 3px 0px #587295;
 }
 
 .list {
@@ -75,19 +75,17 @@
 .element {
   display: flex;
   gap: vr.$spacingSizeL;
-    align-items: center;
-
+  align-items: center;
 }
 .iconWrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
   width: 35px;
   height: 35px;
   background: var(--colorWhite);
   border-radius: 50%;
 }
-
 
 @include mx.devices(desktop) {
   .team {

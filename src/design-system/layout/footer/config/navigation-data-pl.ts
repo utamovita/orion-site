@@ -1,9 +1,9 @@
 import { FooterItem } from "@design-system/layout/footer/footer-navigation/footer-navigation.component";
 
 export type FooterConfig = {
-    mainNavigation: FooterItem[];
-    bottomNavigation: FooterItem[];
-}
+  mainNavigation: FooterItem[];
+  bottomNavigation: FooterItem[];
+};
 
 const footerConfigPL: FooterConfig = {
   mainNavigation: [

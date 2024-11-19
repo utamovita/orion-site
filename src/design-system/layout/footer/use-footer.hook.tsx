@@ -1,7 +1,7 @@
 import { Locale } from "@customTypes/pages";
 import { useRouter } from "next/router";
-import {footerConfigDE, footerConfigEN, footerConfigPL} from "@design-system/layout/footer/config";
-import {FooterConfig} from "@design-system/layout/footer/config/navigation-data-pl";
+import { footerConfigDE, footerConfigEN, footerConfigPL } from "@design-system/layout/footer/config";
+import { FooterConfig } from "@design-system/layout/footer/config/navigation-data-pl";
 
 function useFooter() {
   const router = useRouter();
