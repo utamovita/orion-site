@@ -17,7 +17,6 @@ type ButtonProps = {
   className?: string;
 };
 
-
 function Button(props: ButtonProps) {
   const ref = React.useRef(null);
   const { buttonProps } = useButton({ ...props, isDisabled: props.isDisabled || props.isLoading }, ref);

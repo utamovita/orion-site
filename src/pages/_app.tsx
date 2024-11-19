@@ -18,9 +18,9 @@ function App({ Component, pageProps }: AppProps) {
           }
         `}
       </style>
-        <Head>
-            <meta name="robots" content="noindex, nofollow" />
-        </Head>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <main>
         <Component {...pageProps} />
       </main>

@@ -47,10 +47,17 @@ type FlexProps = {
   className?: string;
 };
 
-
-
 function FlexComponent(props: FlexProps) {
-  const { children, direction = "row", flexWrap = "nowrap", justifyContent = "flex-start", alignItems = "stretch", alignContent = "stretch", tag = "div", className = "" } = props;
+  const {
+    children,
+    direction = "row",
+    flexWrap = "nowrap",
+    justifyContent = "flex-start",
+    alignItems = "stretch",
+    alignContent = "stretch",
+    tag = "div",
+    className = "",
+  } = props;
   const directionClass = styles[direction];
   const flexWrapClass = styles[flexWrap];
   const justifyContentClass = styles[justifyContent];
