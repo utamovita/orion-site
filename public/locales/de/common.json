@@ -6,7 +6,6 @@
     "chooseLang": "Deutsch"
   },
   "gallery": "Galerie",
-
   "aboutUs": {
     "mainTitle": "Über uns",
     "whoWeAre": {
@@ -25,7 +24,6 @@
       "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą czas rekreacyjny. Posiłki, granie na konsoli czy też niezapomniane wypady to tylko część atrakcji w Orion Express. Organizujemy dla pracowników niezapomniane wydarzenia, które pozwalają oderwać się od rzeczywistości."
     }
   },
-
   "career": {
     "mainTitle": "Karriere",
     "subtitle": {
@@ -41,5 +39,12 @@
       "forwarder": "Spediteur",
       "administration": "Verwaltung"
     }
+  },
+  "contactForm": {
+    "title": "Kontaktformular"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "subtitle": "Kontaktieren Sie die Spezialisten von Grand Transport Logistics, um die Einzelheiten der Zusammenarbeit zu besprechen. Wir beantworten Ihre Fragen und zerstreuen alle Zweifel bezüglich des Logistiktransports."
   }
 }

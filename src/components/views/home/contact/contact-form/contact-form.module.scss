@@ -1,0 +1,24 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  width: 100%;
+  border: 1px solid var(--colorWhite);
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 400px;
+  position: relative;
+  border-radius: 8px;
+  color: var(--colorWhite);
+}
+
+.backgroundImage {
+  opacity: 0.25;
+}
+
+.title {
+  @include mx.fontSize(32px);
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontGlow(6px);
+  text-align: center;
+  padding: vr.$spacingSizeL vr.$spacingSizeXXL;
+}

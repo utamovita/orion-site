@@ -41,5 +41,12 @@
       "forwarder": "Forwarder",
       "administration": "Administration"
     }
+  },
+  "contactForm": {
+    "title": "Contact form"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Contact Grand Transport Logistics specialists to discuss the details of cooperation. We will answer your questions and dispel any doubts regarding logistics transport."
   }
 }
