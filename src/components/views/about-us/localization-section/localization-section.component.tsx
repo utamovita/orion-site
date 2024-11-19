@@ -1,4 +1,4 @@
-import styles from "./LocalizationSection.module.scss";
+import styles from "./localization-section.module.scss";
 import { useTranslation } from "next-i18next";
 import backgroundImage from "public/assets/images/aboutUs/Map.png";
 import Image from "next/image";

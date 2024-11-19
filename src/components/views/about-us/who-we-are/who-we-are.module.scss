@@ -44,7 +44,7 @@
   right: 0;
   height: 50%;
   width: 2px;
-  background-color: white;
+  background-color: var(--colorWhite);
 }
 
 .sectionWhoWeAre {
@@ -130,7 +130,7 @@
     right: calc(50% - 75px);
     height: 2px;
     width: 150px;
-    background-color: white;
+    background-color: var(--colorWhite);
   }
 
   .sectionWhoWeAre {

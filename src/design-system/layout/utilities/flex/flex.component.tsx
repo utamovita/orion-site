@@ -45,20 +45,12 @@ type FlexProps = {
     | "alignContentFirstBaseline"
     | "alignContentLastBaseline";
   className?: string;
-} & typeof defaultProps;
-
-const defaultProps = {
-  tag: "div",
-  direction: "row",
-  flexWrap: "nowrap",
-  justifyContent: "flex-start",
-  alignItems: "stretch",
-  alignContent: "stretch",
-  className: "",
 };
 
+
+
 function FlexComponent(props: FlexProps) {
-  const { children, direction, flexWrap, justifyContent, alignItems, alignContent, tag, className } = props;
+  const { children, direction = "row", flexWrap = "nowrap", justifyContent = "flex-start", alignItems = "stretch", alignContent = "stretch", tag = "div", className = "" } = props;
   const directionClass = styles[direction];
   const flexWrapClass = styles[flexWrap];
   const justifyContentClass = styles[justifyContent];
@@ -82,5 +74,4 @@ function FlexComponent(props: FlexProps) {
   );
 }
 
-FlexComponent.defaultProps = defaultProps;
 export { FlexComponent };

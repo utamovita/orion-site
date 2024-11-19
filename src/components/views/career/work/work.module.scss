@@ -51,9 +51,9 @@
     height: 40px;
     font-family: var(--fontFamilyPrimary);
     @include mx.fontSize(14px);
-    border: 1px solid white;
-    background-color: black;
-    color: white;
+    border: 1px solid var(--colorWhite);
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
     border-radius: 40px;
     text-transform: none;
   }

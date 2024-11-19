@@ -15,20 +15,13 @@ type ButtonProps = {
   isDisabled?: boolean;
   fullWidth?: boolean;
   className?: string;
-} & typeof defaultProps;
-
-const defaultProps = {
-  type: "button",
-  variant: "primary",
-  isLoading: false,
-  isDisabled: false,
-  fullWidth: false,
 };
+
 
 function Button(props: ButtonProps) {
   const ref = React.useRef(null);
   const { buttonProps } = useButton({ ...props, isDisabled: props.isDisabled || props.isLoading }, ref);
-  const { children, variant, isDisabled, isLoading, fullWidth, className } = props;
+  const { children, variant = "primary", isDisabled = false, isLoading = false, fullWidth = false, className } = props;
 
   const variantClass = styles[variant];
   const loadingClass = isLoading ? styles.loading : false;
@@ -37,7 +30,7 @@ function Button(props: ButtonProps) {
   const classNames = cx(styles.button, variantClass, disabledClass, loadingClass, fullWidthClass, className);
 
   return (
-    <button {...buttonProps} className={classNames} ref={ref}>
+    <button {...buttonProps} className={classNames} ref={ref} type={"button"}>
       <SpinnerWrapper data-testid="spinnerWrapper" show={isLoading}>
         <Spinner show={isLoading} />
       </SpinnerWrapper>
@@ -46,7 +39,5 @@ function Button(props: ButtonProps) {
     </button>
   );
 }
-
-Button.defaultProps = defaultProps;
 
 export { Button };
