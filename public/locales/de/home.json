@@ -1,7 +1,7 @@
 {
   "mainBanner": {
     "title": "Moderne Logistiklösungen\nUnterstützt durch langjährige Erfahrung.",
-    "subtitle": "Moderne Logistiklösungen\nUnterstützt durch langjährige Erfahrung.",
+    "subtitle": "\nTransportkoordination und -planung auf höchstem Niveau. Erfahren Sie mehr über unsere Aktivitäten.",
     "aboutUs": "Über uns",
     "contactUs": "Kontaktiere uns"
   },
@@ -11,6 +11,14 @@
     "button": "Lesen Sie uns"
   },
   "ourOffer": {
-    "mainTitle": "Was wir tun"
+    "mainTitle": "Was wir tun",
+    "offerOne": {
+      "title": "Transport",
+      "description": "Ein umfangreicher und moderner Fuhrpark ermöglicht es uns, höchste Qualitäts- und Sicherheitsstandards zu erfüllen. Wir sind sowohl auf dem nationalen als auch auf dem internationalen Markt tätig und bieten eine breite Palette an Transportlösungen an, die auf die Bedürfnisse unserer Kunden zugeschnitten sind."
+    },
+    "offerTwo": {
+      "title": "Versand",
+      "description": "Wir sind ein führendes Unternehmen, das sich auf die umfassende Organisation von Straßentransporten in ganz Europa spezialisiert hat.  Unabhängig von der Art der Ladung wickelt unser Unternehmen effektiv sowohl Sammelgut- als auch FTL-Transporte ab."
+    }
   }
 }

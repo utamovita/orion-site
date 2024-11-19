@@ -78,7 +78,7 @@
 
 @include mx.devices(mobile) {
   .title {
-    @include mx.fontSize(64px);
+    @include mx.fontSize(42px);
     max-width: 100%;
   }
 

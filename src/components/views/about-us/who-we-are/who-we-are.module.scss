@@ -112,6 +112,9 @@
 }
 
 @include mx.devices(mobile) {
+  .svg {
+    width: 45px;
+  }
   .sectionIcons {
     width: 100%;
     flex-direction: column;
@@ -144,6 +147,14 @@
 
   .subtitle {
     @include mx.fontSize(17px);
+  }
+
+  .sectionIconsChild > p {
+    @include mx.fontSize(32px);
+  }
+
+  .sectionIconsChild:last-child > .svg {
+    width: 65px;
   }
 }
 

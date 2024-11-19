@@ -1,7 +1,7 @@
 {
   "mainBanner": {
-    "title": "en title TODO",
-    "subtitle": "en subtitle TODO",
+    "title": "Modern logistics solutions supported by many years of experience.",
+    "subtitle": "Transport coordination and planning at the highest level. Find out more about our activities.",
     "aboutUs": "About us",
     "contactUs": "Contact us"
   },
@@ -11,6 +11,14 @@
     "button": "Read more"
   },
   "ourOffer": {
-    "mainTitle": "What we do"
+    "mainTitle": "What we do",
+    "offerOne": {
+      "title": "Transport",
+      "description": "An extensive and modern fleet of vehicles allows us to meet the highest quality and safety standards. We operate on both the domestic and international markets, offering a wide range of transport solutions tailored to the needs of our clients."
+    },
+    "offerTwo": {
+      "title": "Shipping",
+      "description": "We are a leading company specializing in the comprehensive organization of road transport throughout Europe.  Regardless of the type of cargo, our company effectively handles both groupage and FTL shipments."
+    }
   }
 }

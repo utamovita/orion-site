@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./footer-navigation.module.scss";
-import { footerConfigPL } from "@design-system/layout/footer/config";
+import {useFooter} from "@design-system/layout/footer/use-footer.hook";
 
 type FooterItem = {
   title: string;
@@ -9,11 +9,11 @@ type FooterItem = {
 };
 
 function FooterNavigation() {
-  const data = footerConfigPL.mainNavigation; //TODO: get data based on language
+  const {data} = useFooter();
 
   return (
     <ul className={styles.footerList}>
-      {data.map((item, index) => (
+      {data.mainNavigation.map((item, index) => (
         <li key={index} className={styles.footerItem}>
           <Link href={item.link} target="_blank">
             {item.title}

@@ -1,9 +1,6 @@
-import { FooterItem } from "@design-system/layout/footer/footer-navigation/footer-navigation.component";
+import {FooterConfig} from "@design-system/layout/footer/config/navigation-data-pl";
 
-const footerConfigDE: {
-  mainNavigation: FooterItem[];
-  bottomNavigation: FooterItem[];
-} = {
+const footerConfigDE: FooterConfig = {
   mainNavigation: [
     {
       title: "Twitter",

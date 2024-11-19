@@ -1,0 +1,144 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  padding: vr.$spacingSize6XL 0;
+}
+
+.title {
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(42px);
+  color: var(--colorBlack);
+  text-align: center;
+  span {
+    display: block;
+  }
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: vr.$spacingSize4XL vr.$spacingSizeXXL;
+  margin-top: vr.$spacingSize6XL;
+  padding: 0 vr.$spacingSize5XL;
+}
+
+.item {
+  display: flex;
+  width: calc(50% - vr.$spacingSizeXL);
+  position: relative;
+  color: var(--colorWhite);
+  justify-content: flex-end;
+}
+
+.content {
+  background: var(--colorBlack);
+  width: 100%;
+  padding: vr.$spacingSizeM vr.$spacingSizeXL vr.$spacingSize4XL;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  width: auto;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+.name {
+    font-family: var(--fontFamilySecondary);
+    @include mx.fontSize(62px);
+  text-shadow: 3px 3px 0px #587295;
+}
+
+.role {
+    font-family: var(--fontFamilySecondary);
+    @include mx.fontSize(24px);
+    text-shadow: 3px 3px 0px #587295;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: vr.$spacingSizeXL;
+  gap: vr.$spacingSizeS;
+}
+
+.element {
+  display: flex;
+  gap: vr.$spacingSizeL;
+    align-items: center;
+
+}
+.iconWrapper {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: var(--colorWhite);
+  border-radius: 50%;
+}
+
+
+@include mx.devices(desktop) {
+  .team {
+    padding: vr.$spacingSizeXXL 0;
+    gap: vr.$spacingSizeL;
+  }
+  .image {
+    height: 350px;
+  }
+
+  .element {
+    display: flex;
+    gap: vr.$spacingSizeS;
+    align-items: center;
+  }
+
+  .content {
+    padding: 0 vr.$spacingSizeL vr.$spacingSizeXL;
+  }
+}
+
+@include mx.devices(tablet) {
+  .item {
+    width: 100%;
+  }
+
+  .team {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+@include mx.devices(mobile) {
+  .wrapper {
+    padding: vr.$spacingSizeXXL 0;
+  }
+  .title {
+    @include mx.fontSize(22px);
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorBlack);
+    border-radius: 15px;
+  }
+  .content {
+    position: relative;
+  }
+
+  .image {
+    height: 300px;
+    margin: auto;
+  }
+}
