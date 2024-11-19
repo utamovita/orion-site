@@ -4,5 +4,13 @@
     "subtitle": "en subtitle TODO",
     "aboutUs": "About us",
     "contactUs": "Contact us"
+  },
+  "meetUs": {
+    "title": "Meet us",
+    "subtitle": "Grand Transport Logistics is a team of specialists dealing with forwarding and road transport throughout Europe. During our daily work, we use the latest solutions and technologies, and each transport is tailored to the individual needs of our customers. A wide fleet of our own vehicles and the possibility of providing forwarding services mean that no transport is a problem for us!",
+    "button": "Read more"
+  },
+  "ourOffer": {
+    "mainTitle": "What we do"
   }
 }

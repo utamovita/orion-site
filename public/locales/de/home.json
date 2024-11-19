@@ -1,8 +1,16 @@
 {
   "mainBanner": {
-    "title": "de title TODO",
-    "subtitle": "de subtitle TODO",
+    "title": "Moderne Logistiklösungen\nUnterstützt durch langjährige Erfahrung.",
+    "subtitle": "Moderne Logistiklösungen\nUnterstützt durch langjährige Erfahrung.",
     "aboutUs": "Über uns",
     "contactUs": "Kontaktiere uns"
+  },
+  "meetUs": {
+    "title": "Treffen Sie uns",
+    "subtitle": "Grand Transport Logistics ist ein Team von Spezialisten, die sich mit Spedition und Straßentransport in ganz Europa befassen. Bei unserer täglichen Arbeit nutzen wir die neuesten Lösungen und Technologien und jeder Transport wird auf die individuellen Bedürfnisse unserer Kunden zugeschnitten. Dank unseres breiten eigenen Fuhrparks und der Möglichkeit, Speditionsdienstleistungen anzubieten, ist der Transport für uns kein Problem!",
+    "button": "Lesen Sie uns"
+  },
+  "ourOffer": {
+    "mainTitle": "Was wir tun"
   }
 }

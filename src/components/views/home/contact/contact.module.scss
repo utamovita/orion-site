@@ -2,10 +2,135 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .wrapper {
-  min-height: 700px;
+  position: relative;
+  padding: vr.$spacingSize8XL 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightgray;
   color: black;
+  background-color: black;
+}
+
+.backgroundImage {
+  opacity: 0.25;
+}
+
+.contentWrapper {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.contactFormWrapper {
+  width: 40%;
+}
+
+.addressWrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: var(--colorWhite);
+  padding-left: vr.$spacingSize4XL;
+  gap: vr.$spacingSizeL;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.title {
+    @include mx.fontSize(42px);
+    font-family: var(--fontFamilySecondary);
+    @include mx.fontGlow(6px);
+}
+
+.subtitle {
+  @include mx.fontSize(18px);
+
+}
+
+.companyTitle {
+    @include mx.fontSize(28px);
+    font-weight: var(--fontWeightBold);
+    @include mx.fontGlow(6px);
+    margin: vr.$spacingSizeXL 0 vr.$spacingSizeS;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: vr.$spacingSizeL;
+}
+
+.element {
+  display: flex;
+  gap: vr.$spacingSizeL;
+  align-items: center;
+  justify-content: space-between;
+
+  &.last {
+    align-items: flex-start;
+  }
+}
+
+.iconWrapper {
+  background: var(--colorWhite);
+  width: 50px;
+  min-width: 50px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nestedList {
+  display: flex;
+  flex-direction: column;
+  gap: vr.$spacingSizeL;
+  margin-top: vr.$spacingSizeXS;
+}
+
+@include mx.devices(tablet) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: vr.$spacingSize3XL;
+  }
+
+  .contactFormWrapper {
+    width: 100%;
+    order: 2;
+  }
+
+  .addressWrapper {
+    width: 100%;
+    order: 1;
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .element {
+    justify-content: flex-start;
+  }
+}
+
+@include mx.devices(mobile) {
+  .wrapper {
+    padding: vr.$spacingSize3XL 0;
+  }
+
+  .title {
+    @include mx.fontSize(32px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(14px);
+  }
+
+  .companyTitle {
+      @include mx.fontSize(24px);
+  }
+
+  .element {
+    @include mx.fontSize(14px);
+  }
 }

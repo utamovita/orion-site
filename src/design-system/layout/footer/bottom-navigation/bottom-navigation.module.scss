@@ -5,6 +5,7 @@
   display: flex;
   gap: vr.$spacingSizeL;
   margin: vr.$spacingSizeL 0 vr.$spacingSize6XL;
+  flex: 1;
 }
 
 .bottomItem {
@@ -17,11 +18,29 @@
   text-decoration: none;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.poweredBy {
+  margin: vr.$spacingSizeL 0 0;
+
+  span {
+    text-decoration: underline;
+  }
+}
 @include mx.devices(mobile) {
   .bottomLinks {
-    margin: vr.$spacingSizeL 0 vr.$spacingSize4XL;
+    margin: vr.$spacingSizeL 0 0;
   }
   .bottomItem {
     @include mx.fontSize(12px);
+  }
+  .poweredBy{
+    width: 100%;
+    margin-bottom: vr.$spacingSizeXXL;
   }
 }

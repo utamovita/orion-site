@@ -1,7 +1,81 @@
 import styles from "./contact.module.scss";
+import Image from "next/image";
+import backgroundImage from "../../../../../public/assets/images/home/contact-bg.png";
+import {ContactForm} from "./contact-form/contact-form.component";
+import {Container} from "@design-system/layout/utilities";
+import {useTranslation} from "next-i18next";
+import EnvelopeIcon from "@components/shared/icons/envelope.icon";
+import DocCheckIcon from "@components/shared/icons/doc-check.icon";
+import HomeIcon from "@components/shared/icons/home.icon";
+import cx from "classnames";
 
 function Contact() {
-  return <div className={styles.wrapper}>Contact TODO</div>;
+    const {t} = useTranslation("common");
+
+    return (
+        <div className={styles.wrapper}>
+            <Container>
+                <Image
+                    alt="background image"
+                    src={backgroundImage}
+                    placeholder="blur"
+                    quality={90}
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: "cover",
+                    }}
+                    className={styles.backgroundImage}
+                />
+                <div className={styles.contentWrapper}>
+                    <div className={styles.contactFormWrapper}>
+                        <ContactForm/>
+                    </div>
+
+                    <div className={styles.addressWrapper}>
+                        <h3 className={styles.title}>{t("contact.title")}</h3>
+                        <p className={styles.subtitle}>
+                            {t("contact.subtitle")}
+                        </p>
+                        <h4 className={styles.companyTitle}>Grand Transport Logistics <span style={{display: "inline-block"}}>Sp. z o.o.</span></h4>
+                        <ul className={styles.list}>
+                            <li className={styles.element}>
+                                <div className={styles.iconWrapper}>
+                                    <HomeIcon/>
+                                </div>
+                                <span>Jana Henryka Dąbrowskiego 77a, 60-529 Poznań</span>
+
+                            </li>
+                            <li className={styles.element}>
+                                <div className={styles.iconWrapper}>
+                                <EnvelopeIcon/>
+                                </div>
+                                <span>office@grandtransportlogistic.eu</span>
+
+                            </li>
+                            <li className={cx(styles.element, styles.last)}>
+                                <div className={styles.iconWrapper}>
+                                <DocCheckIcon/>
+                                </div>
+                                <ul className={styles.nestedList}>
+                                    <li className={styles.nestedElement}>
+                                        NIP: 1231231231
+                                    </li>
+                                    <li className={styles.nestedElement}>
+                                        REGON: 1231231231
+                                    </li>
+                                    <li className={styles.nestedElement}>
+                                        KRS: 1231231231
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </Container>
+        </div>
+    )
 }
 
-export { Contact };
+export {Contact};

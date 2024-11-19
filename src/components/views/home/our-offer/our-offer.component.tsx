@@ -1,7 +1,86 @@
 import styles from "./our-offer.module.scss";
+import backgroundImage from "../../../../../public/assets/images/home/bg.png";
+import offerOneImage from "../../../../../public/assets/images/home/offer1.jpeg";
+import offerTwoImage from "../../../../../public/assets/images/home/offer2.jpeg";
+import Image from "next/image";
+import {useTranslation} from "next-i18next";
+import {ButtonLink} from "@components/shared/button/button-link.component";
 
 function OurOffer() {
-  return <div className={styles.wrapper}>Our offer TODO</div>;
+  const { t } = useTranslation();
+
+  return (
+      <div className={styles.wrapper}>
+    <div className={styles.content}>
+      <h2 className={styles.mainTitle}>{t("home:ourOffer.mainTitle")}</h2>
+
+        <div className={styles.boxWrapper}>
+            <div className={styles.box}>
+                <div className={styles.imgWrapper}>
+                    <Image
+                        alt={t("home:ourOffer.offerOne.title")}
+                        src={offerOneImage}
+                        placeholder="blur"
+                        quality={90}
+                        width={610}
+                        style={{
+                            objectFit: "cover",
+                        }}
+                    />
+                    <div className={styles.imgOverlay}></div>
+                </div>
+                <div className={styles.contentBox}>
+                    <div>
+                    <h3 className={styles.boxTitle}>{t("home:ourOffer.offerOne.title")}</h3>
+                    <p className={styles.boxDescription}>{t("home:ourOffer.offerOne.description")}</p>
+                    </div>
+                        <div className={styles.btnWrapper}>
+                        <ButtonLink to="/gallery" variant={"secondary"} className={styles.boxBtn}>{t("common:gallery")}</ButtonLink>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.box}>
+                <div className={styles.imgWrapper}>
+                    <Image
+                        alt={t("home:ourOffer.offerTwo.title")}
+                        src={offerTwoImage}
+                        placeholder="blur"
+                        quality={90}
+                        width={610}
+                        style={{
+                            objectFit: "cover",
+                        }}
+                    />
+                    <div className={styles.imgOverlay}></div>
+                </div>
+                <div className={styles.contentBox}>
+                    <div>
+                    <h3 className={styles.boxTitle}>{t("home:ourOffer.offerTwo.title")}</h3>
+                    <p className={styles.boxDescription}>{t("home:ourOffer.offerTwo.description")}</p>
+                    </div>
+                        <div className={styles.btnWrapper}>
+                        <ButtonLink to="/gallery" variant={"secondary"}
+                                    className={styles.boxBtn}>{t("common:gallery")}</ButtonLink>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <Image
+          alt="background image"
+          src={backgroundImage}
+          placeholder="blur"
+          quality={90}
+          fill
+          sizes="100vw"
+          style={{
+              objectFit: "cover",
+          }}
+      />
+  </div>
+  )
 }
 
-export { OurOffer };
+export {OurOffer};
