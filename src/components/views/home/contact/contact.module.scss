@@ -37,27 +37,26 @@
 }
 
 .title {
-    @include mx.fontSize(42px);
-    font-family: var(--fontFamilySecondary);
-    @include mx.fontGlow(6px);
+  @include mx.fontSize(42px);
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontGlow(6px);
 }
 
 .subtitle {
   @include mx.fontSize(18px);
-
 }
 
 .companyTitle {
-    @include mx.fontSize(28px);
-    font-weight: var(--fontWeightBold);
-    @include mx.fontGlow(6px);
-    margin: vr.$spacingSizeXL 0 vr.$spacingSizeS;
+  @include mx.fontSize(28px);
+  font-weight: var(--fontWeightBold);
+  @include mx.fontGlow(6px);
+  margin: vr.$spacingSizeXL 0 vr.$spacingSizeS;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: vr.$spacingSizeL;
+  display: flex;
+  flex-direction: column;
+  gap: vr.$spacingSizeL;
 }
 
 .element {
@@ -127,7 +126,7 @@
   }
 
   .companyTitle {
-      @include mx.fontSize(24px);
+    @include mx.fontSize(24px);
   }
 
   .element {
