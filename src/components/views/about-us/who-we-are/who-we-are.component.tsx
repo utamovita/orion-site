@@ -2,9 +2,9 @@ import styles from "./who-we-are.module.scss";
 import { useTranslation } from "next-i18next";
 import { Container, FlexComponent } from "@design-system/layout/utilities";
 import PunctualityIcon from "../../../shared/icons/punctuality.icon";
-import SecurityIcon from "../../../shared/icons/security.icon";
-import PartnershipIcon from "../../../shared/icons/partnership.icon";
-import StarsIcon from "../../../shared/icons/stars.icon";
+import { SecurityIcon } from "../../../shared/icons/security.icon";
+import { PartnershipIcon } from "../../../shared/icons/partnership.icon";
+import { StarsIcon } from "../../../shared/icons/stars.icon";
 
 function WhoWeAre() {
   const { t } = useTranslation("common");

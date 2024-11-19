@@ -10,19 +10,36 @@
   "aboutUs": {
     "mainTitle": "About us",
     "whoWeAre": {
-      "title": "TODO",
-      "subtitle": "TODO",
+      "title": "Who are we?",
+      "subtitle": "Grand Transport Logistics is a group of specialists offering modern logistics solutions throughout Europe. During our work, we make sure to maintain positive relationships both with our clients and within the company. This translates directly into work results and significant, stable growth of the company. In our company, we place great emphasis on innovation and continuous progress. We support ourselves with modern tools and use artificial intelligence to constantly improve the quality of our services.",
       "punctuality": "Punctuality",
       "security": "Security",
       "partnership": "Partnership"
     },
     "localization": {
-      "title": "TODO",
-      "subtitle": "TODO"
+      "title": "Our modern office",
+      "subtitle": "We are located in the very center of Bydgoszcz. Our company's office is equipped with top-shelf modern and ergonomic equipment, ensuring comfort and efficiency of work."
     },
     "more": {
-      "title": "TODO",
-      "subtitle": "TODO"
+      "title": "More about us",
+      "subtitle": "Employee integration is a key element for us in building good relationships. Our team not only works together, but also spends recreational time together. Meals, playing on the console and unforgettable trips are just some of the attractions at Orion Express. We organize unforgettable events for employees that allow them to escape from reality."
+    }
+  },
+
+  "career": {
+    "mainTitle": "Career",
+    "subtitle": {
+      "firstHalf": "Work at Grand",
+      "secondHalf": "Transport Logistics"
+    },
+    "text": "Working at Grand Transport Logistics is an ideal opportunity for you to expand your transport offer or develop your forwarding skills. Cooperation in projects, attractive remuneration system and constant development of skills are just a few features that characterize our activities.",
+    "work": {
+      "title": "Positions available",
+      "carrier": "Carrier",
+      "driver": "Driver",
+      "dispatcher": "Dispatcher",
+      "forwarder": "Forwarder",
+      "administration": "Administration"
     }
   },
   "contactForm": {

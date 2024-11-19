@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-const StarsIcon = (props: SVGProps<SVGSVGElement>) => (
+export const StarsIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg width="132" height="36" viewBox="0 0 132 36" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <g filter="url(#filter0_d_148_2546)">
       <path
@@ -51,4 +51,3 @@ const StarsIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default StarsIcon;

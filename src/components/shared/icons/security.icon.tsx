@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-const SecurityIcon = (props: SVGProps<SVGSVGElement>) => (
+export const SecurityIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg width="60" height="65" viewBox="0 0 60 65" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       fill-rule="evenodd"
@@ -10,4 +10,3 @@ const SecurityIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SecurityIcon;

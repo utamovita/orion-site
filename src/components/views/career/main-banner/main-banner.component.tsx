@@ -22,7 +22,7 @@ function MainBanner() {
         }}
       />
       <Container>
-        <h1 className={styles.title}>{t("career")}</h1>
+        <h1 className={styles.title}>{t("career.mainTitle")}</h1>
       </Container>
     </div>
   );
