@@ -3,9 +3,9 @@
 
 .wrapper {
   position: relative;
-  align-items: flex-end;
+  align-items: center;
   display: flex;
-  padding: 0;
+  padding: vr.$spacingSize9XL 0;
   height: 80vh;
   max-height: 800px;
 
@@ -33,89 +33,56 @@
   bottom: -1px;
   background: rgb(15, 15, 15);
   background: linear-gradient(
-    0deg,
-    rgba(5, 5, 5, 1) 0%,
-    rgba(0, 0, 0, 0.6558998599439776) 18%,
-    rgba(255, 255, 255, 0) 51%
+                  0deg,
+                  rgba(5, 5, 5, 1) 0%,
+                  rgba(0, 0, 0, 0.6558998599439776) 38%,
+                  rgba(255, 255, 255, 0) 81%
   );
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  padding: vr.$spacingSize5XL 0;
 }
 
 .title {
   font-family: var(--fontFamilySecondary);
   font-weight: var(--fontWeightBold);
-  @include mx.fontSize(64px);
+  @include mx.fontSize(72px);
+  @include mx.fontGlow(8px);
   line-height: 1.2em;
   max-width: 1350px;
-  @include mx.fontGlow(8px);
-}
-
-.subtitle {
-  @include mx.fontSize(24px);
-  line-height: 1.5em;
-  max-width: 1350px;
-  margin-top: vr.$spacingSizeXL;
-}
-
-.btnWrapper {
-  gap: vr.$spacingSize3XL;
-  margin-top: vr.$spacingSize3XL;
+  position: absolute;
+  z-index: 1;
+  bottom: vr.$spacingSize8XL;
 }
 
 @include mx.devices(desktop) {
   .wrapper {
     max-height: 700px;
-    min-height: 500px;
   }
 
   .title {
-    @include mx.fontSize(48px);
+    @include mx.fontSize(52px);
     max-width: 950px;
-  }
-
-  .subtitle {
-    @include mx.fontSize(18px);
+    bottom: vr.$spacingSizeXXL;
   }
 }
 
 @include mx.devices(tablet) {
   .title {
-    @include mx.fontSize(32px);
-    max-width: 650px;
+    @include mx.fontSize(42px);
+    max-width: 800px;
   }
 
   .wrapper {
     max-height: 600px;
+    padding: vr.$spacingSizeXXL 0;
   }
 }
 
 @include mx.devices(mobile) {
-  .wrapper {
-    min-height: 300px;
-  }
   .title {
-    @include mx.fontSize(20px);
+    @include mx.fontSize(24px);
     max-width: 100%;
   }
 
-  .subtitle {
-    @include mx.fontSize(14px);
-    max-width: 100%;
-  }
   .wrapper {
     max-height: 400px;
-  }
-
-  .btnWrapper {
-    gap: vr.$spacingSizeS;
-  }
-
-  .content {
-    padding: vr.$spacingSize3XL 0;
   }
 }

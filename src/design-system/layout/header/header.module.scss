@@ -30,6 +30,16 @@
   align-items: center;
 }
 
+.logoWrapper {
+  height: 100%;
+  padding: vr.$spacingSizeXXS;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+}
+
 @include mx.devices(tablet) {
   .header:after {
     display: none;

@@ -20,7 +20,7 @@ type ButtonProps = {
 function Button(props: ButtonProps) {
   const ref = React.useRef(null);
   const { buttonProps } = useButton({ ...props, isDisabled: props.isDisabled || props.isLoading }, ref);
-  const { children, variant = "primary", isDisabled = false, isLoading = false, fullWidth = false, className } = props;
+  const { children, variant = "primary", isDisabled = false, isLoading = false, fullWidth = false, className, type = "button" } = props;
 
   const variantClass = styles[variant];
   const loadingClass = isLoading ? styles.loading : false;
@@ -29,7 +29,7 @@ function Button(props: ButtonProps) {
   const classNames = cx(styles.button, variantClass, disabledClass, loadingClass, fullWidthClass, className);
 
   return (
-    <button {...buttonProps} className={classNames} ref={ref} type={"button"}>
+    <button {...buttonProps} className={classNames} ref={ref} type={type}>
       <SpinnerWrapper data-testid="spinnerWrapper" show={isLoading}>
         <Spinner show={isLoading} />
       </SpinnerWrapper>

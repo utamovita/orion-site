@@ -1,0 +1,6 @@
+{
+  "required": "To pole jest wymagane.",
+  "email": {
+    "wrongFormat": "Proszę podać poprawny adres e-mail."
+  }
+}

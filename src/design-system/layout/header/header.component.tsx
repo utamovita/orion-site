@@ -14,7 +14,9 @@ function Header() {
       <header className={styles.header}>
         <Container className={styles.container}>
           <div className={styles.wrapper}>
-            <Logo />
+              <div className={styles.logoWrapper}>
+                  <Logo />
+              </div>
             <Actions />
             <Hamburger />
           </div>

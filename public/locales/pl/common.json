@@ -11,18 +11,19 @@
     "mainTitle": "O nas",
     "whoWeAre": {
       "title": "Kim jesteśmy?",
-      "subtitle": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków zarówno z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny wzrost firmy. W naszej firmie kładziemy duży nacisk na innowacyjność i ciągły postęp. Wspieramy się nowoczesnymi narzędziami oraz wykorzystujemy sztuczną inteligencję, aby stale podnosić jakość naszych usług.",
+      "subtitle": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny rozwój. ",
       "punctuality": "Terminowość",
       "security": "Bezpieczeństwo",
       "partnership": "Partnerstwo"
     },
     "localization": {
       "title": "Nasze nowoczesne biuro",
-      "subtitle": "Jesteśmy zlokalizowani w samym centrum Bydgoszczy. Biuro naszej firmy wyposażone jest w nowoczesny oraz ergonomiczny sprzęt z najwyższej półki, zapewniający wygodę i efektywność pracy."
+      "subtitle": "Jesteśmy zlokalizowani w samym centrum Bydgoszczy. Biuro naszej firmy wyposażone jest w nowoczesny oraz ergonomiczny sprzęt z najwyższej półki, zapewniający wygodę i efektywność pracy.",
+      "seeOffice": "Zobacz biuro"
     },
     "more": {
       "title": "Więcej o nas",
-      "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą czas rekreacyjny. Posiłki, granie na konsoli czy też niezapomniane wypady to tylko część atrakcji w Grand Transport Logistics. Organizujemy dla pracowników niezapomniane wydarzenia, które pozwalają oderwać się od rzeczywistości."
+      "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą wolne chwile. Dzięki wspólnym zainteresowaniom czas mija nam szybko i przyjemnie."
     }
   },
   "career": {

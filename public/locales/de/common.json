@@ -18,11 +18,12 @@
     },
     "localization": {
       "title": "Unser modernes Büro",
-      "subtitle": "Wir befinden uns im Zentrum von Bydgoszcz. Das Büro unseres Unternehmens ist mit erstklassiger moderner und ergonomischer Ausstattung ausgestattet, die Komfort und Effizienz der Arbeit gewährleistet."
+      "subtitle": "Wir befinden uns im Zentrum von Bydgoszcz. Das Büro unseres Unternehmens ist mit erstklassiger moderner und ergonomischer Ausstattung ausgestattet, die Komfort und Effizienz der Arbeit gewährleistet.",
+      "seeOffice": "Büro ansehen"
     },
     "more": {
       "title": "Mehr über uns",
-      "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą czas rekreacyjny. Posiłki, granie na konsoli czy też niezapomniane wypady to tylko część atrakcji w Orion Express. Organizujemy dla pracowników niezapomniane wydarzenia, które pozwalają oderwać się od rzeczywistości."
+      "subtitle": "Die Integration der Mitarbeiter ist für uns ein Schlüsselelement beim Aufbau guter Beziehungen. Unser Team arbeitet nicht nur zusammen, sondern verbringt auch gemeinsam Freizeit. Mahlzeiten, Spielen an der Konsole und unvergessliche Ausflüge sind nur einige der Attraktionen im Orion Express. Wir organisieren unvergessliche Events für Mitarbeiter, die es ihnen ermöglichen, der Realität zu entfliehen."
     }
   },
   "career": {

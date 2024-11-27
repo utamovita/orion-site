@@ -26,21 +26,19 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 vr.$spacingSizeXXL;
-  max-width: 1100px;
   margin: auto;
   width: 100%;
-  gap: vr.$spacingSize3XL;
+  gap: vr.$spacingSize6XL;
 }
 
 .box {
-  max-width: 600px;
   width: 50%;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
   flex-grow: 1;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .contentBox {
@@ -75,6 +73,7 @@
 .boxTitle {
   font-family: var(--fontFamilySecondary);
   @include mx.fontSize(42px);
+  text-align: center;
 }
 
 .boxDescription {
@@ -87,6 +86,7 @@
   justify-content: center;
   width: 100%;
 }
+
 .boxBtn {
   margin-top: vr.$spacingSize3XL;
   width: auto;
@@ -95,6 +95,9 @@
 @include mx.devices(desktop) {
   .boxDescription {
     @include mx.fontSize(16px);
+  }
+  .boxWrapper {
+    gap: vr.$spacingSize3XL;
   }
 }
 

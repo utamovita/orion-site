@@ -16,8 +16,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
+    "@hookform/resolvers": "^3.9.1",
     "@types/lodash-es": "^4.17.12",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@vis.gl/react-google-maps": "^1.4.1",
     "axios": "^1.6.8",
     "classnames": "^2.5.1",
     "eslint-config-prettier": "^9.1.0",
@@ -35,8 +37,11 @@
     "react": "^18",
     "react-aria": "^3.33.0",
     "react-dom": "^18",
+    "react-hook-form": "^7.53.2",
     "react-i18next": "^15.0.0",
-    "swiper": "^11.1.1"
+    "react-stately": "^3.34.0",
+    "swiper": "^11.1.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

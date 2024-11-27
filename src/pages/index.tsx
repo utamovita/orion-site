@@ -14,7 +14,7 @@ export default function HomePage() {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
     props: {
-      ...(await serverSideTranslations(locale as string, ["common", "home"])),
+      ...(await serverSideTranslations(locale as string, ["common", "home", "validation", "forms"])),
     },
   };
 }

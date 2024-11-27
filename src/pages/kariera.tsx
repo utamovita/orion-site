@@ -14,7 +14,7 @@ export default function CareerPage() {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
     props: {
-      ...(await serverSideTranslations(locale as string, ["common"])),
+      ...(await serverSideTranslations(locale as string, ["common", "validation", "forms"])),
     },
   };
 }
