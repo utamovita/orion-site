@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {useContactFormConfig} from "@components/views/home/contact/contact-form/use-contact-form-config.hook";
+import { useContactFormConfig } from "@components/views/home/contact/contact-form/use-contact-form-config.hook";
 
 export function useContactForm() {
   const { schema, fieldsContact } = useContactFormConfig();
@@ -18,7 +18,6 @@ export function useContactForm() {
   const onSubmit = handleSubmit(async (data) => {
     try {
       console.log(data);
-
     } catch (error) {
       console.error(error);
     }

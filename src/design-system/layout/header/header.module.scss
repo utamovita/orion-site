@@ -34,10 +34,10 @@
   height: 100%;
   padding: vr.$spacingSizeXXS;
 
-    img {
-      height: 100%;
-      width: auto;
-    }
+  img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 @include mx.devices(tablet) {

@@ -46,7 +46,6 @@
       sans-serif;
     letter-spacing: 1px;
   }
-
 }
 
 .halfWidth {
@@ -79,11 +78,10 @@
   width: 20px;
 }
 
-
 .errorText {
-    color: var(--colorErrorText);
-    font-size: 12px;
-    margin-top: vr.$spacingSizeXXS;
+  color: var(--colorErrorText);
+  font-size: 12px;
+  margin-top: vr.$spacingSizeXXS;
   padding-bottom: vr.$spacingSizeXS;
 }
 

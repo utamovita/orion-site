@@ -50,7 +50,9 @@ function Contact() {
                 <div className={styles.iconWrapper}>
                   <EnvelopeIcon />
                 </div>
-                <span><Link href={"mailto:office@grandtrasnportlogistics.eu"}>office@grandtransportlogistics.eu</Link></span>
+                <span>
+                  <Link href={"mailto:office@grandtrasnportlogistics.eu"}>office@grandtransportlogistics.eu</Link>
+                </span>
               </li>
               <li className={cx(styles.element, styles.last)}>
                 <div className={styles.iconWrapper}>

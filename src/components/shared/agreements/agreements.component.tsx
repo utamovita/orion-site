@@ -9,10 +9,14 @@ export type AgreementsProps = {
 
 function Agreements({ isInvalid = false }: AgreementsProps) {
   return (
-      <p className={cx(styles.text, {[styles.invalid]: isInvalid})}>
-        Zaakceptuj nasz {" "} <Link href={"/privacy-policy"} className={styles.link}>regulamin</Link>.
-      </p>
+    <p className={cx(styles.text, { [styles.invalid]: isInvalid })}>
+      Zaakceptuj nasz{" "}
+      <Link href={"/privacy-policy"} className={styles.link}>
+        regulamin
+      </Link>
+      .
+    </p>
   );
 }
 
-export {Agreements};
+export { Agreements };

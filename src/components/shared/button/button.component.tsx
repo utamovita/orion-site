@@ -20,7 +20,15 @@ type ButtonProps = {
 function Button(props: ButtonProps) {
   const ref = React.useRef(null);
   const { buttonProps } = useButton({ ...props, isDisabled: props.isDisabled || props.isLoading }, ref);
-  const { children, variant = "primary", isDisabled = false, isLoading = false, fullWidth = false, className, type = "button" } = props;
+  const {
+    children,
+    variant = "primary",
+    isDisabled = false,
+    isLoading = false,
+    fullWidth = false,
+    className,
+    type = "button",
+  } = props;
 
   const variantClass = styles[variant];
   const loadingClass = isLoading ? styles.loading : false;

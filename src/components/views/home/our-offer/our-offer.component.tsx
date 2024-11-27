@@ -5,7 +5,7 @@ import offerTwoImage from "../../../../../public/assets/images/home/offer2.jpeg"
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { ButtonLink } from "@components/shared/button/button-link.component";
-import {Container} from "@design-system/layout/utilities";
+import { Container } from "@design-system/layout/utilities";
 
 function OurOffer() {
   const { t } = useTranslation();

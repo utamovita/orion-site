@@ -5,8 +5,8 @@ import { useToggleState } from "react-stately";
 import { useCheckbox, useFocusRing, VisuallyHidden } from "react-aria";
 import cx from "classnames";
 import styles from "./checkbox.module.scss";
-import {WarningIcon} from "@components/shared/icons/warning.icon";
-import {TickIcon} from "@components/shared/icons/tick.icon";
+import { WarningIcon } from "@components/shared/icons/warning.icon";
+import { TickIcon } from "@components/shared/icons/tick.icon";
 
 type CheckboxProps = {
   isSelected?: boolean;
@@ -56,9 +56,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>((props, ref) => {
       {isInvalid && isString(error?.message) ? (
         <div className={styles.errorWrapper}>
           <WarningIcon className={styles.iconError} />
-          <p className={styles.errorText}>
-            {error.message}
-          </p>
+          <p className={styles.errorText}>{error.message}</p>
         </div>
       ) : null}
     </div>
