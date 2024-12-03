@@ -40,6 +40,25 @@
       "dispatcher": "Dyspozytor",
       "forwarder": "Spedytor",
       "administration": "Administracja"
+    },
+    "form": {
+      "title": "Twoje dane",
+      "note": "Jeżeli chcesz do nas dołączyć wyślij CV wraz z listem motywacyjnym na adres",
+      "carrier": {
+        "title": "Zgłoszenie na stanowisko przewoźnik"
+      },
+      "administration": {
+        "title": "Zgłoszenie na stanowisko administracja"
+      },
+      "driver": {
+          "title": "Zgłoszenie na stanowisko kierowca"
+      },
+      "dispatcher": {
+        "title": "Zgłoszenie na stanowisko dyspozytor"
+      },
+      "forwarder": {
+        "title": "Zgłoszenie na stanowisko spedytor"
+      }
     }
   },
   "contactForm": {

@@ -3,5 +3,8 @@
   "email": "Email",
   "topic": "Topic",
   "message": "Write a message",
+  "writeAboutYourself": "Write a few words about yourself",
+  "phone": "Phone number",
+  "uploadCV": "Upload CV (PDF)",
   "submit": "Submit"
 }

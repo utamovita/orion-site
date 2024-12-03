@@ -12,18 +12,13 @@ type ButtonLinkProps = {
   fullWidth?: boolean;
   className?: string;
   newTab?: boolean;
-} & typeof defaultProps;
-
-const defaultProps = {
-  variant: "primary",
-  isDisabled: false,
-  fullWidth: false,
 };
+
 
 function ButtonLink(props: ButtonLinkProps) {
   const ref = React.useRef(null);
   const { linkProps } = useLink(props, ref);
-  const { children, variant, isDisabled, to, fullWidth, className, newTab } = props;
+  const { children, variant = "primary", isDisabled = false, to, fullWidth = false, className = "", newTab = false } = props;
 
   const variantClass = styles[variant];
   const disabledClass = isDisabled ? styles.disabled : false;
@@ -44,7 +39,5 @@ function ButtonLink(props: ButtonLinkProps) {
     </Link>
   );
 }
-
-ButtonLink.defaultProps = defaultProps;
 
 export { ButtonLink };

@@ -5,6 +5,7 @@ import { TextField } from "@components/shared/form/text-field/text-field.compone
 import { Agreements } from "@components/shared/agreements/agreements.component";
 import { Checkbox } from "@components/shared/form/checkbox/checkbox.component";
 import { TextAreaField } from "@components/shared/form/textarea/textarea.component";
+import {FileField} from "@components/shared/form/file-field/file-field.component";
 
 type FormFieldsRenderer = {
   fieldList: FieldList;
@@ -53,6 +54,19 @@ export function FormFieldsRenderer(props: FormFieldsRenderer) {
                     type={item.type}
                     ref={ref}
                   />
+                );
+              }
+
+              if (item.type === "file") {
+                return (
+                    <FileField
+                        label={item.label}
+                        name={name}
+                        onChange={onChange}
+                        isInvalid={invalid}
+                        error={error}
+                        ref={ref}
+                    />
                 );
               }
 

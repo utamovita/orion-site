@@ -41,6 +41,25 @@
       "dispatcher": "Dispatcher",
       "forwarder": "Forwarder",
       "administration": "Administration"
+    },
+    "form": {
+      "title": "Your contact details",
+      "note": "If you want to join us, send your CV along with a cover letter to the address",
+      "carrier": {
+        "title": "Application for the Carrier Position"
+      },
+      "administration": {
+        "title": "Application for the Administration Position"
+      },
+      "driver": {
+        "title": "Application for the Driver Position"
+      },
+      "dispatcher": {
+        "title": "Application for the Dispatcher Position"
+      },
+      "forwarder": {
+        "title": "Application for the Forwarder Position"
+      }
     }
   },
   "contactForm": {

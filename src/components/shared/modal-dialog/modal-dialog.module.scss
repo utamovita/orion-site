@@ -15,6 +15,10 @@
   max-height: 95vh;
   margin: 0 16px;
 
+  &.darkTheme {
+    background: rgba(10, 10, 10, 0.95);
+  }
+
   &.fullWidth {
     max-width: 85vw;
   }
@@ -31,6 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(8px);
 }
 
 .content {
@@ -48,6 +53,11 @@
   top: vr.$spacingSizeM;
   cursor: pointer;
   pointer-events: auto;
+
+  &.darkTheme {
+    background: none;
+    fill: white;
+  }
 }
 
 @media (max-width: vr.$breakpointMobile) {

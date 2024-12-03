@@ -2,5 +2,11 @@
   "required": "To pole jest wymagane.",
   "email": {
     "wrongFormat": "Proszę podać poprawny adres e-mail."
+  },
+  "phone": {
+    "wrongFormat": "Proszę podać poprawny numer telefonu."
+  },
+  "file": {
+    "wrongFormat": "Proszę wgrać plik w formacie PDF."
   }
 }

@@ -13,11 +13,12 @@ type ModalDialogProps = {
   maxWidth?: number;
   preventClose?: boolean;
   fullWidth?: boolean;
+  darkTheme?: boolean;
 } & AriaDialogProps &
   AriaOverlayProps;
 
 function ModalDialog(props: ModalDialogProps) {
-  const { children, onClose, preventClose = false, fullWidth = false } = props;
+  const { children, onClose, preventClose = false, fullWidth = false, darkTheme = false } = props;
   const router = useRouter();
   const handleCloseButtonClick = (event: React.MouseEvent) => {
     event.stopPropagation();
@@ -49,10 +50,10 @@ function ModalDialog(props: ModalDialogProps) {
   }, [router, onClose]);
 
   return (
-    <div className={styles.overlay} {...underlayProps}>
+    <div className={cx(styles.overlay, {[styles.darkTheme]: darkTheme})} {...underlayProps}>
       <FocusScope contain={false} restoreFocus={false} autoFocus={false}>
         <div
-          className={cx(styles.modal, { [styles.fullWidth]: fullWidth })}
+          className={cx(styles.modal, { [styles.fullWidth]: fullWidth, [styles.darkTheme]: darkTheme })}
           {...overlayProps}
           {...dialogProps}
           {...modalProps}
@@ -60,7 +61,7 @@ function ModalDialog(props: ModalDialogProps) {
           style={customStyles}
         >
           {preventClose ? null : (
-            <button className={styles.closeButton} onClick={handleCloseButtonClick}>
+            <button className={cx(styles.closeButton, {[styles.darkTheme]: darkTheme})} onClick={handleCloseButtonClick}>
               <CloseIcon />
             </button>
           )}

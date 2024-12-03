@@ -26,6 +26,7 @@
 .title {
   @include mx.fontSize(58px);
   margin-bottom: vr.$spacingSizeXL;
+  @include mx.fontGlow(8px);
 }
 
 .subtitle {
@@ -36,6 +37,7 @@
 .secondTitle {
   text-align: center;
   margin: vr.$spacingSizeXL 0;
+  @include mx.fontGlow(8px);
 }
 
 .buttons {

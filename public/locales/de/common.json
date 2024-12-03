@@ -40,6 +40,25 @@
       "dispatcher": "Dispatcher",
       "forwarder": "Spediteur",
       "administration": "Verwaltung"
+    },
+    "form": {
+      "title": "Ihre Kontaktdaten",
+      "note": "Wenn Sie sich uns anschließen möchten, senden Sie Ihren Lebenslauf zusammen mit einem Anschreiben an die Adresse",
+      "carrier": {
+        "title": "Bewerbung für die Position des Trägers"
+      },
+      "administration": {
+        "title": "Bewerbung für die Position der Verwaltung"
+      },
+      "driver": {
+        "title": "Bewerbung für die Position des Fahrers"
+      },
+      "dispatcher": {
+        "title": "Bewerbung für die Position des Disponenten"
+      },
+      "forwarder": {
+        "title": "Bewerbung für die Position des Spediteurs"
+      }
     }
   },
   "contactForm": {

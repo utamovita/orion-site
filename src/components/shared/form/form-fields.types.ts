@@ -31,5 +31,11 @@ type FormFieldRadio = {
   }>;
 } & FordFieldBase;
 
-export type FormFieldRendererConfig = FormFieldTextInput | FormFieldCheckbox | FormFieldRadio;
+type FormFieldFile = {
+  type: "file";
+  label: string;
+  defaultValue: "";
+} & FordFieldBase;
+
+export type FormFieldRendererConfig = FormFieldTextInput | FormFieldCheckbox | FormFieldRadio | FormFieldFile;
 export type FieldList = [string, FormFieldRendererConfig][];

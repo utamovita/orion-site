@@ -86,6 +86,10 @@
 }
 
 @include mx.devices(mobile) {
+  .wrapper {
+    flex-direction: column;
+  }
+
   .localizationBox {
     width: 90%;
     margin: vr.$spacingSizeXXL auto;
@@ -93,9 +97,9 @@
   }
 
   .btnWrapper {
-    top: vr.$spacingSizeS;
-    left: vr.$spacingSizeS;
-    bottom: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
   .title {
     @include mx.fontSize(32px);

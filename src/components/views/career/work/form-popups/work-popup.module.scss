@@ -1,0 +1,50 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.title {
+  text-align: center;
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(32px);
+  @include mx.fontGlow(6px);
+  margin-bottom: vr.$spacingSizeXXL;
+}
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: vr.$spacingSizeXXL;
+  align-items: stretch;
+}
+
+.formWrapper {
+  width: 50%;
+}
+
+.infoWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+    gap: vr.$spacingSizeXL;
+
+  & > img {
+    border-radius: 15px;
+  }
+}
+
+.noteWrapper {
+  border: 1px solid var(--colorWhite);
+  padding: vr.$spacingSizeXXL;
+  display: flex;
+  flex-direction: column;
+  gap: vr.$spacingSizeXL;
+  border-radius: 15px;
+}
+
+.note {
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(24px);
+  @include mx.fontGlow(8px);
+}
+
+.noteEmail {
+  color: #F200FF;
+}
