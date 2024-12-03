@@ -2,16 +2,13 @@ import { useTranslation } from "next-i18next";
 import { useMemo } from "react";
 import { z } from "zod";
 
-
 import { FormFieldRendererConfig } from "@components/shared/form/form-fields.types";
 import {
-    useValidationSchemaIsRequiredBoolean,
-    useValidationSchemaIsRequiredString
+  useValidationSchemaIsRequiredBoolean,
+  useValidationSchemaIsRequiredString,
 } from "../../../../../../utilities/validationSchema/use-validation-schema-required.hook";
-import {useValidationSchemaEmail} from "../../../../../../utilities/validationSchema/use-validation-schema-email.hook";
-import {
-    useValidationSchemaPhoneRequired
-} from "../../../../../../utilities/validationSchema/use-validation-schema-phone.hook";
+import { useValidationSchemaEmail } from "../../../../../../utilities/validationSchema/use-validation-schema-email.hook";
+import { useValidationSchemaPhoneRequired } from "../../../../../../utilities/validationSchema/use-validation-schema-phone.hook";
 
 export function useCarrierFormConfig() {
   const { t } = useTranslation("forms");
@@ -60,7 +57,13 @@ export function useCarrierFormConfig() {
           fullWidth: true,
         },
       }) as const satisfies Record<string, FormFieldRendererConfig>,
-    [isRequiredStringValidationSchema, isRequiredBooleanValidationSchema, isPhoneRequiredValidationSchema, emailValidationSchema, t],
+    [
+      isRequiredStringValidationSchema,
+      isRequiredBooleanValidationSchema,
+      isPhoneRequiredValidationSchema,
+      emailValidationSchema,
+      t,
+    ],
   );
 
   const schema = useMemo(

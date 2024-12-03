@@ -50,7 +50,7 @@ function ModalDialog(props: ModalDialogProps) {
   }, [router, onClose]);
 
   return (
-    <div className={cx(styles.overlay, {[styles.darkTheme]: darkTheme})} {...underlayProps}>
+    <div className={cx(styles.overlay, { [styles.darkTheme]: darkTheme })} {...underlayProps}>
       <FocusScope contain={false} restoreFocus={false} autoFocus={false}>
         <div
           className={cx(styles.modal, { [styles.fullWidth]: fullWidth, [styles.darkTheme]: darkTheme })}
@@ -61,7 +61,10 @@ function ModalDialog(props: ModalDialogProps) {
           style={customStyles}
         >
           {preventClose ? null : (
-            <button className={cx(styles.closeButton, {[styles.darkTheme]: darkTheme})} onClick={handleCloseButtonClick}>
+            <button
+              className={cx(styles.closeButton, { [styles.darkTheme]: darkTheme })}
+              onClick={handleCloseButtonClick}
+            >
               <CloseIcon />
             </button>
           )}

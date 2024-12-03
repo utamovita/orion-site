@@ -3,10 +3,8 @@ import { useTranslation } from "next-i18next";
 import { Spinner, SpinnerWrapper } from "@components/shared/spinner/spinner.component";
 import { Button } from "@components/shared/button/button.component";
 import { FormFieldsRenderer } from "@components/shared/form/form-fields-renderer.component";
-import {useWorkForm} from "@components/views/career/work/form-popups/work-form/use-work-form.hook";
-import {
-     useWorkFormConfig
-} from "@components/views/career/work/form-popups/work-form/use-work-form-config.hook";
+import { useWorkForm } from "@components/views/career/work/form-popups/work-form/use-work-form.hook";
+import { useWorkFormConfig } from "@components/views/career/work/form-popups/work-form/use-work-form-config.hook";
 
 function WorkForm() {
   const { t } = useTranslation();
@@ -16,7 +14,7 @@ function WorkForm() {
 
   return (
     <div className={styles.wrapper}>
-        <h2 className={styles.title}>{t("career.form.title")}</h2>
+      <h2 className={styles.title}>{t("career.form.title")}</h2>
       <SpinnerWrapper show={isLoading}>
         <Spinner show={isLoading} />
       </SpinnerWrapper>

@@ -24,22 +24,29 @@ const FileField = forwardRef<HTMLInputElement, FileFieldProps>((props, ref) => {
 
   return (
     <div className={styles.textFieldWrapper}>
-        <div className={styles.inputWrap}>
-          <label className={styles.labelText}>{label}</label>
-          <input type={"file"} name={name} onChange={(e) => onChange(e.target.files)} accept="application/pdf" ref={ref} className={cx(styles.input, { [styles.inputError]: isInvalid })} />
-          {isInvalid ? <WarningIcon className={styles.iconError} /> : null}
-        </div>
-        {isInvalid && isString(error?.message) ? (
-          <p className={styles.errorText}>
-            <span dangerouslySetInnerHTML={{ __html: error.message }} />
-          </p>
-        ) : null}
+      <div className={styles.inputWrap}>
+        <label className={styles.labelText}>{label}</label>
+        <input
+          type={"file"}
+          name={name}
+          onChange={(e) => onChange(e.target.files)}
+          accept="application/pdf"
+          ref={ref}
+          className={cx(styles.input, { [styles.inputError]: isInvalid })}
+        />
+        {isInvalid ? <WarningIcon className={styles.iconError} /> : null}
+      </div>
+      {isInvalid && isString(error?.message) ? (
+        <p className={styles.errorText}>
+          <span dangerouslySetInnerHTML={{ __html: error.message }} />
+        </p>
+      ) : null}
 
-        {errorMessage ? (
-          <p className={styles.errorText}>
-            <span dangerouslySetInnerHTML={{ __html: errorMessage }} />
-          </p>
-        ) : null}
+      {errorMessage ? (
+        <p className={styles.errorText}>
+          <span dangerouslySetInnerHTML={{ __html: errorMessage }} />
+        </p>
+      ) : null}
     </div>
   );
 });

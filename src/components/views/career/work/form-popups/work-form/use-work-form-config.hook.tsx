@@ -2,17 +2,14 @@ import { useTranslation } from "next-i18next";
 import { useMemo } from "react";
 import { z } from "zod";
 
-
 import { FormFieldRendererConfig } from "@components/shared/form/form-fields.types";
 import {
-    useValidationSchemaIsRequiredBoolean,
-    useValidationSchemaIsRequiredString
+  useValidationSchemaIsRequiredBoolean,
+  useValidationSchemaIsRequiredString,
 } from "../../../../../../utilities/validationSchema/use-validation-schema-required.hook";
-import {useValidationSchemaEmail} from "../../../../../../utilities/validationSchema/use-validation-schema-email.hook";
-import {
-    useValidationSchemaPhoneRequired
-} from "../../../../../../utilities/validationSchema/use-validation-schema-phone.hook";
-import {useValidationSchemaFile} from "../../../../../../utilities/validationSchema/use-validation-schema-file.hook";
+import { useValidationSchemaEmail } from "../../../../../../utilities/validationSchema/use-validation-schema-email.hook";
+import { useValidationSchemaPhoneRequired } from "../../../../../../utilities/validationSchema/use-validation-schema-phone.hook";
+import { useValidationSchemaFile } from "../../../../../../utilities/validationSchema/use-validation-schema-file.hook";
 
 export function useWorkFormConfig() {
   const { t } = useTranslation("forms");
@@ -68,7 +65,14 @@ export function useWorkFormConfig() {
           fullWidth: true,
         },
       }) as const satisfies Record<string, FormFieldRendererConfig>,
-    [isRequiredStringValidationSchema, isRequiredBooleanValidationSchema, isPhoneRequiredValidationSchema, emailValidationSchema, isFileRequiredValidationSchema, t],
+    [
+      isRequiredStringValidationSchema,
+      isRequiredBooleanValidationSchema,
+      isPhoneRequiredValidationSchema,
+      emailValidationSchema,
+      isFileRequiredValidationSchema,
+      t,
+    ],
   );
 
   const schema = useMemo(

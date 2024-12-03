@@ -5,9 +5,7 @@ import Image from "next/image";
 import { Container, FlexComponent } from "@design-system/layout/utilities";
 import { PinIcon } from "@components/shared/icons/pin.icon";
 import { ButtonLink } from "@components/shared/button/button-link.component";
-import {GoogleMap} from "@components/views/about-us/localization-section/google-map/google-map.component";
-
-
+import { GoogleMap } from "@components/views/about-us/localization-section/google-map/google-map.component";
 
 function LocalizationSection() {
   if (!process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY) {
@@ -16,7 +14,7 @@ function LocalizationSection() {
 
   return (
     <div className={styles.wrapper}>
-        <GoogleMap />
+      <GoogleMap />
 
       <Container>
         <LocalizationBox />

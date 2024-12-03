@@ -23,7 +23,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-    gap: vr.$spacingSizeXL;
+  gap: vr.$spacingSizeXL;
 
   & > img {
     border-radius: 15px;
@@ -46,5 +46,5 @@
 }
 
 .noteEmail {
-  color: #F200FF;
+  color: #f200ff;
 }

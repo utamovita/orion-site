@@ -46,22 +46,28 @@ const blogConfig: BlogItem[] = [
       {
         url: `${imageBasePath}kwiecien-24/2v6.jpg`,
         alt: "gallery blog 1 image 6",
-      },      {
+      },
+      {
         url: `${imageBasePath}kwiecien-24/2v7.jpg`,
         alt: "gallery blog 1 image 7",
-      },      {
+      },
+      {
         url: `${imageBasePath}kwiecien-24/2v8.jpg`,
         alt: "gallery blog 1 image 8",
-      },      {
+      },
+      {
         url: `${imageBasePath}kwiecien-24/2v9.jpg`,
         alt: "gallery blog 1 image 9",
-      },      {
+      },
+      {
         url: `${imageBasePath}kwiecien-24/2v10.jpg`,
         alt: "gallery blog 1 image 10",
-      },      {
+      },
+      {
         url: `${imageBasePath}kwiecien-24/2v11.jpg`,
         alt: "gallery blog 1 image 11",
-      },{
+      },
+      {
         url: `${imageBasePath}kwiecien-24/2v12.jpg`,
         alt: "gallery blog 1 image 12",
       },

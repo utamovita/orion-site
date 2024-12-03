@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {useWorkFormConfig
-} from "@components/views/career/work/form-popups/work-form/use-work-form-config.hook";
+import { useWorkFormConfig } from "@components/views/career/work/form-popups/work-form/use-work-form-config.hook";
 
 export function useCarrierForm() {
   const { schema, fields } = useWorkFormConfig();
