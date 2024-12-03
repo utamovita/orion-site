@@ -48,3 +48,31 @@
 .noteEmail {
   color: #f200ff;
 }
+
+@include mx.devices(tablet) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formWrapper {
+    width: 100%;
+  }
+
+  .infoWrapper {
+    width: 100%;
+  }
+}
+
+@include mx.devices(mobile) {
+  .title {
+    @include mx.fontSize(24px);
+  }
+  .note {
+    @include mx.fontSize(18px);
+  }
+
+  .noteEmail {
+    @include mx.fontSize(12px);
+  }
+}
