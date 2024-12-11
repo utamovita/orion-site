@@ -28,7 +28,7 @@ function Work() {
       <>
         {isJobCarrierOpen && (
           <WorkPopup
-            Form={<CarrierForm />}
+            Form={<CarrierForm position="przewoźnik" />}
             img={carrierImage}
             title={t("career.form.carrier.title")}
             onClose={() => setJobCarrierOpen(false)}
@@ -36,7 +36,7 @@ function Work() {
         )}
         {isJobDriverOpen && (
           <WorkPopup
-            Form={<WorkForm />}
+            Form={<WorkForm position="kierowca" />}
             img={driverImage}
             title={t("career.form.driver.title")}
             onClose={() => setJobDriverOpen(false)}
@@ -44,7 +44,7 @@ function Work() {
         )}
         {isJobDispatcherOpen && (
           <WorkPopup
-            Form={<WorkForm />}
+            Form={<WorkForm position="dyspozytor"/>}
             img={dispatcherImage}
             title={t("career.form.dispatcher.title")}
             onClose={() => setJobDispatcherOpen(false)}
@@ -52,7 +52,7 @@ function Work() {
         )}
         {isJobForwarderOpen && (
           <WorkPopup
-            Form={<WorkForm />}
+            Form={<WorkForm position="spedytor"/>}
             img={forwarderImage}
             title={t("career.form.forwarder.title")}
             onClose={() => setJobForwarderOpen(false)}
@@ -60,7 +60,7 @@ function Work() {
         )}
         {isJobAdministrationOpen && (
           <WorkPopup
-            Form={<WorkForm />}
+            Form={<WorkForm position="administracja" />}
             img={administrationImage}
             title={t("career.form.administration.title")}
             onClose={() => setJobAdministrationOpen(false)}

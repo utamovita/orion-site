@@ -18,12 +18,6 @@ const redirectsDE = [
         locale: false,
     },
     {
-        source: '/de/kontakt',
-        destination: '/de/contact',
-        permanent: true,
-        locale: false,
-    },
-    {
         source: '/de/dokumenty',
         destination: '/de/unterlagen',
         permanent: true,

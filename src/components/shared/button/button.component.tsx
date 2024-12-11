@@ -38,7 +38,7 @@ function Button(props: ButtonProps) {
 
   return (
     <button {...buttonProps} className={classNames} ref={ref} type={type}>
-      <SpinnerWrapper data-testid="spinnerWrapper" show={isLoading}>
+      <SpinnerWrapper show={isLoading}>
         <Spinner show={isLoading} />
       </SpinnerWrapper>
 
