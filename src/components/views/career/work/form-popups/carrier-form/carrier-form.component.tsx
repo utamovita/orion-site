@@ -4,7 +4,7 @@ import { Button } from "@components/shared/button/button.component";
 import { FormFieldsRenderer } from "@components/shared/form/form-fields-renderer.component";
 import { useCarrierForm } from "@components/views/career/work/form-popups/carrier-form/use-carrier-form.hook";
 import { useCarrierFormConfig } from "@components/views/career/work/form-popups/carrier-form/use-carrier-form-config.hook";
-import {WorkFormProps} from "@components/views/career/work/form-popups/work-form/work-form.component";
+import { WorkFormProps } from "@components/views/career/work/form-popups/work-form/work-form.component";
 
 function CarrierForm(props: WorkFormProps) {
   const { position } = props;

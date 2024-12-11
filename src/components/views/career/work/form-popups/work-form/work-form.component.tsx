@@ -6,7 +6,7 @@ import { useWorkForm } from "@components/views/career/work/form-popups/work-form
 import { useWorkFormConfig } from "@components/views/career/work/form-popups/work-form/use-work-form-config.hook";
 
 export type WorkFormProps = {
-    position: string;
+  position: string;
 };
 
 function WorkForm(props: WorkFormProps) {
@@ -14,7 +14,6 @@ function WorkForm(props: WorkFormProps) {
   const { t } = useTranslation();
   const { onSubmit, control, isLoading } = useWorkForm({ position });
   const { fieldList } = useWorkFormConfig();
-
 
   return (
     <div className={styles.wrapper}>

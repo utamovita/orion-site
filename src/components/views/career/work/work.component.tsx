@@ -44,7 +44,7 @@ function Work() {
         )}
         {isJobDispatcherOpen && (
           <WorkPopup
-            Form={<WorkForm position="dyspozytor"/>}
+            Form={<WorkForm position="dyspozytor" />}
             img={dispatcherImage}
             title={t("career.form.dispatcher.title")}
             onClose={() => setJobDispatcherOpen(false)}
@@ -52,7 +52,7 @@ function Work() {
         )}
         {isJobForwarderOpen && (
           <WorkPopup
-            Form={<WorkForm position="spedytor"/>}
+            Form={<WorkForm position="spedytor" />}
             img={forwarderImage}
             title={t("career.form.forwarder.title")}
             onClose={() => setJobForwarderOpen(false)}

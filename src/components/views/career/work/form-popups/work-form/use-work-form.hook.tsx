@@ -4,8 +4,8 @@ import { useWorkFormConfig } from "@components/views/career/work/form-popups/wor
 import { useState } from "react";
 
 type UseWorkFromProps = {
-    position: string;
-}
+  position: string;
+};
 
 export function useWorkForm(props: UseWorkFromProps) {
   const [isLoading, setIsLoading] = useState(false);
@@ -38,7 +38,7 @@ export function useWorkForm(props: UseWorkFromProps) {
 
       const response = await fetch("/api/email/career", {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -46,7 +46,6 @@ export function useWorkForm(props: UseWorkFromProps) {
         setIsLoading(false);
         reset();
         return alert(`Aplikacja na stanowisko ${position} została wysłana. Odezwiemy się wkrótce!`);
-
       }
       setIsLoading(false);
     } catch (error) {

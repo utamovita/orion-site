@@ -1,10 +1,8 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {WorkFormProps} from "@components/views/career/work/form-popups/work-form/work-form.component";
-import {useState} from "react";
-import {
-  useCarrierFormConfig
-} from "@components/views/career/work/form-popups/carrier-form/use-carrier-form-config.hook";
+import { WorkFormProps } from "@components/views/career/work/form-popups/work-form/work-form.component";
+import { useState } from "react";
+import { useCarrierFormConfig } from "@components/views/career/work/form-popups/carrier-form/use-carrier-form-config.hook";
 
 export function useCarrierForm(props: WorkFormProps) {
   const [isLoading, setIsLoading] = useState(false);
@@ -35,7 +33,7 @@ export function useCarrierForm(props: WorkFormProps) {
 
       const response = await fetch("/api/email/career", {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -43,7 +41,6 @@ export function useCarrierForm(props: WorkFormProps) {
         setIsLoading(false);
         reset();
         return alert(`Aplikacja na stanowisko ${position} została wysłana. Odezwiemy się wkrótce!`);
-
       }
       setIsLoading(false);
     } catch (error) {
