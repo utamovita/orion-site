@@ -1,7 +1,7 @@
 type TeamItem = {
   name: string;
+  fullName: string;
   role: string;
-  address: string;
   phone: string;
   email: string;
   img1: string;
@@ -12,48 +12,39 @@ const imageBasePath = "/assets/images/contact/team/";
 
 export const team: TeamItem[] = [
   {
-    name: "Patryk",
-    address: "Opalenica ul. Zamkowa",
-    role: "Freight manager",
-    phone: "+48 733 899 752",
-    email: "p.giel@orionexpress.eu",
-    img1: `${imageBasePath}t1-1.png`,
-    img2: `${imageBasePath}t1-1.png`,
-  },
-  {
-    name: "Patryk",
-    address: "Opalenica ul. Zamkowa",
-    role: "Freight manager",
-    phone: "+48 733 899 752",
-    email: "p.giel@orionexpress.eu",
+    name: "Dominik",
+    fullName: "Dominik Rybarczyk",
+    role: "career.work.internationalForwarder",
+    phone: "+48 733 899 762",
+    email: "d.rybarczyk",
     img1: `${imageBasePath}t2-1.png`,
-    img2: `${imageBasePath}t2-1.png`,
+    img2: `${imageBasePath}t2-2.png`,
   },
   {
-    name: "Patryk",
-    address: "Opalenica ul. Zamkowa",
-    role: "Freight manager",
-    phone: "+48 733 899 752",
-    email: "p.giel@orionexpress.eu",
+    name: "Kacper",
+    fullName: "Kacper Opaczewski",
+    role: "career.work.internationalForwarder",
+    phone: "+48 733 899 292",
+    email: "k.opaczewski",
     img1: `${imageBasePath}t3-1.png`,
-    img2: `${imageBasePath}t3-1.png`,
+    img2: `${imageBasePath}t3-2.png`,
   },
   {
-    name: "Patryk",
-    address: "Opalenica ul. Zamkowa",
-    role: "Freight manager",
-    phone: "+48 733 899 752",
-    email: "p.giel@orionexpress.eu",
+    name: "Sebastian",
+    fullName: "Sebastian Ochociński",
+    role: "career.work.internationalForwarder",
+    phone: "+48 733 899 141",
+    email: "s.ochocinski",
     img1: `${imageBasePath}t4-1.png`,
-    img2: `${imageBasePath}t4-1.png`,
+    img2: `${imageBasePath}t4-2.png`,
   },
   {
-    name: "Patryk",
-    address: "Opalenica ul. Zamkowa",
-    role: "Freight manager",
-    phone: "+48 733 899 752",
-    email: "p.giel@orionexpress.eu",
+    name: "XYZ",
+    fullName: "xyz xyz",
+    role: "career.work.internationalForwarder",
+    phone: "+48 733 899 xyz",
+    email: "xyz",
     img1: `${imageBasePath}t5-1.png`,
-    img2: `${imageBasePath}t5-1.png`,
-  },
+    img2: `${imageBasePath}t5-2.png`,
+  }
 ];

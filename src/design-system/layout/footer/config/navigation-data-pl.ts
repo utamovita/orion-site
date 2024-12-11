@@ -8,30 +8,30 @@ export type FooterConfig = {
 const footerConfigPL: FooterConfig = {
   mainNavigation: [
     {
-      title: "Twitter",
-      link: "https://x.com/?lang=pl",
+      title: "O nas",
+      link: "/o-nas",
     },
     {
-      title: "Telegram",
-      link: "https://web.telegram.org",
+      title: "Galeria",
+      link: "/galeria",
     },
     {
-      title: "Discord",
-      link: "https://discord.com/",
+      title: "Kariera",
+      link: "/kariera",
     },
     {
-      title: "Instagram",
-      link: "https://www.instagram.com",
+      title: "Kontakt",
+      link: "/kontakt",
     },
   ],
   bottomNavigation: [
     {
       title: "Polityka Prywatności",
-      link: "/",
+      link: "/dokumenty",
     },
     {
       title: "Pliki Cookies",
-      link: "/",
+      link: "/dokumenty",
     },
   ],
 };

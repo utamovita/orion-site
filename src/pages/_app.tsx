@@ -5,10 +5,15 @@ import { bebasNeue } from "@design-system/fonts/bebas-neue";
 import { pd } from "@design-system/fonts/pd";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
+import {useEffect} from "react";
+import {Router} from "next/router";
+import NProgress from "nprogress";
+
+NProgress.configure({ showSpinner: false });
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+      <>
       <style jsx global>
         {`
           :root {
@@ -21,11 +26,39 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
+    <PageLoadingIndicator>
       <main>
-        <Component {...pageProps} />
+
+            <Component {...pageProps} />
+
       </main>
-    </>
+    </PageLoadingIndicator>
+      </>
   );
 }
+
+type PageLoadingIndicatorProps = {
+    children: React.ReactNode;
+};
+
+function PageLoadingIndicator(props: PageLoadingIndicatorProps) {
+    useEffect(() => {
+        const handleRouteStart = () => NProgress.start();
+        const handleRouteDone = () => NProgress.done();
+
+        Router.events.on("routeChangeStart", handleRouteStart);
+        Router.events.on("routeChangeComplete", handleRouteDone);
+        Router.events.on("routeChangeError", handleRouteDone);
+
+        return () => {
+            Router.events.off("routeChangeStart", handleRouteStart);
+            Router.events.off("routeChangeComplete", handleRouteDone);
+            Router.events.off("routeChangeError", handleRouteDone);
+        };
+    }, []);
+
+    return <>{props.children}</>;
+}
+
 
 export default appWithTranslation(App);

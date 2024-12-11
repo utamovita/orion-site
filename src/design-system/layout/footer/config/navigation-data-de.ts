@@ -3,30 +3,30 @@ import { FooterConfig } from "@design-system/layout/footer/config/navigation-dat
 const footerConfigDE: FooterConfig = {
   mainNavigation: [
     {
-      title: "Twitter",
-      link: "https://x.com/?lang=pl",
+      title: "Über uns",
+      link: "/uber-uns",
     },
     {
-      title: "Telegram",
-      link: "https://web.telegram.org",
+      title: "Galerie",
+      link: "/galerie",
     },
     {
-      title: "Discord",
-      link: "https://discord.com/",
+      title: "Karriere",
+      link: "/karriere",
     },
     {
-      title: "Instagram",
-      link: "https://www.instagram.com",
+      title: "Kontakt",
+      link: "/kontakt",
     },
   ],
   bottomNavigation: [
     {
       title: "Datenschutzrichtlinie",
-      link: "/",
+      link: "/unterlagen",
     },
     {
       title: "Kekse",
-      link: "/",
+      link: "/unterlagen",
     },
   ],
 };

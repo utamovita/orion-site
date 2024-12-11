@@ -40,7 +40,8 @@
       "driver": "Driver",
       "dispatcher": "Dispatcher",
       "forwarder": "Forwarder",
-      "administration": "Administration"
+      "administration": "Administration",
+      "internationalForwarder": "International Forwarder"
     },
     "form": {
       "title": "Your contact details",

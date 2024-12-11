@@ -39,7 +39,8 @@
       "driver": "Treiber",
       "dispatcher": "Dispatcher",
       "forwarder": "Spediteur",
-      "administration": "Verwaltung"
+      "administration": "Verwaltung",
+      "internationalForwarder": "Internationaler Spediteur"
     },
     "form": {
       "title": "Ihre Kontaktdaten",

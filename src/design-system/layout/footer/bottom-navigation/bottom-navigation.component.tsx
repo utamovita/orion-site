@@ -12,7 +12,7 @@ function BottomNavigation() {
       <ul className={styles.bottomLinks}>
         {data.bottomNavigation.map((item, index) => (
           <li key={index} className={styles.bottomItem}>
-            <Link href={item.link} className={styles.bottomLink} target={"_blank"} rel="noopener noreferrer">
+            <Link href={item.link} className={styles.bottomLink}>
               {item.title}
             </Link>
           </li>

@@ -39,7 +39,8 @@
       "driver": "Kierowca",
       "dispatcher": "Dyspozytor",
       "forwarder": "Spedytor",
-      "administration": "Administracja"
+      "administration": "Administracja",
+      "internationalForwarder": "Spedytor międzynarodowy"
     },
     "form": {
       "title": "Twoje dane",

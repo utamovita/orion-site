@@ -6,5 +6,7 @@
   "writeAboutYourself": "Schreiben Sie ein paar Worte über sich",
   "phone": "Telefonnummer",
   "uploadCV": "Lebenslauf hochladen (PDF)",
-  "submit": "Senden"
+  "submit": "Senden",
+  "acceptOur": "Ich akzeptiere die",
+  "privacyPolicy": "Datenschutzbestimmungen"
 }

@@ -4,7 +4,6 @@ import offerOneImage from "../../../../../public/assets/images/home/offer1.jpeg"
 import offerTwoImage from "../../../../../public/assets/images/home/offer2.jpeg";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
-import { ButtonLink } from "@components/shared/button/button-link.component";
 import { Container } from "@design-system/layout/utilities";
 
 function OurOffer() {
@@ -27,6 +26,7 @@ function OurOffer() {
                   width={610}
                   style={{
                     objectFit: "cover",
+                    width: "100%",
                   }}
                 />
                 <div className={styles.imgOverlay}></div>
@@ -35,11 +35,6 @@ function OurOffer() {
                 <div>
                   <h3 className={styles.boxTitle}>{t("home:ourOffer.offerOne.title")}</h3>
                   <p className={styles.boxDescription}>{t("home:ourOffer.offerOne.description")}</p>
-                </div>
-                <div className={styles.btnWrapper}>
-                  <ButtonLink to="/gallery" variant={"secondary"} className={styles.boxBtn}>
-                    {t("common:gallery")}
-                  </ButtonLink>
                 </div>
               </div>
             </div>
@@ -53,6 +48,7 @@ function OurOffer() {
                   width={610}
                   style={{
                     objectFit: "cover",
+                    width: "100%",
                   }}
                 />
                 <div className={styles.imgOverlay}></div>
@@ -61,11 +57,6 @@ function OurOffer() {
                 <div>
                   <h3 className={styles.boxTitle}>{t("home:ourOffer.offerTwo.title")}</h3>
                   <p className={styles.boxDescription}>{t("home:ourOffer.offerTwo.description")}</p>
-                </div>
-                <div className={styles.btnWrapper}>
-                  <ButtonLink to="/gallery" variant={"secondary"} className={styles.boxBtn}>
-                    {t("common:gallery")}
-                  </ButtonLink>
                 </div>
               </div>
             </div>
@@ -78,7 +69,6 @@ function OurOffer() {
           placeholder="blur"
           quality={90}
           fill
-          sizes="100vw"
           style={{
             objectFit: "cover",
           }}

@@ -4,7 +4,6 @@ import { FieldError } from "react-hook-form";
 import cx from "classnames";
 import { isString } from "lodash-es";
 import styles from "./file-field.module.scss";
-import { WarningIcon } from "@components/shared/icons/warning.icon";
 
 type CustomErrorType = {
   message: string;
@@ -34,7 +33,6 @@ const FileField = forwardRef<HTMLInputElement, FileFieldProps>((props, ref) => {
           ref={ref}
           className={cx(styles.input, { [styles.inputError]: isInvalid })}
         />
-        {isInvalid ? <WarningIcon className={styles.iconError} /> : null}
       </div>
       {isInvalid && isString(error?.message) ? (
         <p className={styles.errorText}>

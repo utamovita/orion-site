@@ -15,7 +15,7 @@ function FooterNavigation() {
     <ul className={styles.footerList}>
       {data.mainNavigation.map((item, index) => (
         <li key={index} className={styles.footerItem}>
-          <Link href={item.link} target="_blank">
+          <Link href={item.link}>
             {item.title}
           </Link>
         </li>

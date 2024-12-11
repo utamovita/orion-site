@@ -1,5 +1,7 @@
 @import "reset";
 @import "./global/swiper";
+@import "./global/page-loading-indicator";
+
 body,
 html {
   font-family: var(--fontFamilyPrimary);

@@ -66,7 +66,7 @@ function MeetUs() {
         <Stack className={styles.content} space={"3XL"}>
           <h2 className={styles.title}>{t("meetUs.title")}</h2>
           <p className={styles.subtitle}>{t("meetUs.subtitle")}</p>
-          <ButtonLink to={"about-us"} className={styles.button}>
+          <ButtonLink to={"o-nas"} className={styles.button}>
             {t("meetUs.button")}
           </ButtonLink>
         </Stack>

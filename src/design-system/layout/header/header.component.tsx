@@ -9,6 +9,7 @@ import styles from "./header.module.scss";
 import cx from "classnames";
 
 function Header() {
+
   return (
     <HeaderProvider>
       <header className={styles.header}>
