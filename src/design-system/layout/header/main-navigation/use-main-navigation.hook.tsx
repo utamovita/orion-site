@@ -6,8 +6,8 @@ import {
 } from "@design-system/layout/header/main-navigation/config";
 import { NavigationItem } from "@design-system/layout/header/main-navigation/main-navigation.component";
 import { useRouter } from "next/router";
-import {useHeaderDispatch, useHeaderState} from "@design-system/layout/header/providers/header.context";
-import {useCallback, useEffect} from "react";
+import { useHeaderDispatch, useHeaderState } from "@design-system/layout/header/providers/header.context";
+import { useCallback, useEffect } from "react";
 
 function useMainNavigation() {
   const router = useRouter();
@@ -19,7 +19,7 @@ function useMainNavigation() {
     if (headerState.isMenuOpen) {
       headerDispatch({ type: "HIDE_MENU" });
     }
-  },[headerState.isMenuOpen, headerDispatch]);
+  }, [headerState.isMenuOpen, headerDispatch]);
 
   useEffect(() => {
     router.events.on("routeChangeComplete", handleRouteChange);

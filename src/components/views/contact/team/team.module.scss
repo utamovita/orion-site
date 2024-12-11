@@ -99,9 +99,8 @@
   border-radius: 50%;
 }
 .emailText {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-
 }
 @include mx.devices(desktop) {
   .team {
@@ -162,7 +161,7 @@
     transition: 0.5s ease-in-out;
 
     &:hover {
-      cursor:pointer;
+      cursor: pointer;
 
       .image1 {
         transform: rotateY(-180deg);

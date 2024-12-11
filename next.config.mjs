@@ -16,7 +16,7 @@ const i18n = {
       domain: "grandtransportlogistics.de",
       defaultLocale: "de",
     },
-  ]
+  ],
 };
 
 const nextConfig = {

@@ -46,5 +46,5 @@ export const team: TeamItem[] = [
     email: "xyz",
     img1: `${imageBasePath}t5-1.png`,
     img2: `${imageBasePath}t5-2.png`,
-  }
+  },
 ];

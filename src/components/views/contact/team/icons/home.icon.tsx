@@ -16,4 +16,4 @@ const HomeIconColored = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export {HomeIconColored};
+export { HomeIconColored };

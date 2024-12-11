@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { Container } from "@design-system/layout/utilities";
 import { team } from "@components/views/contact/team/team.config";
 import Image from "next/image";
-import  {HomeIconColored} from "@components/views/contact/team/icons/home.icon";
+import { HomeIconColored } from "@components/views/contact/team/icons/home.icon";
 import PhoneIconColored from "@components/views/contact/team/icons/phone.icon";
 import ChatIconColored from "@components/views/contact/team/icons/chat.icon";
 
@@ -42,7 +42,10 @@ function Team() {
                     <div className={styles.iconWrapper}>
                       <ChatIconColored />
                     </div>
-                    <span className={styles.emailText}>{item.email}<span>@grandtransportlogistics.eu</span></span>
+                    <span className={styles.emailText}>
+                      {item.email}
+                      <span>@grandtransportlogistics.eu</span>
+                    </span>
                   </li>
                 </ul>
               </div>
