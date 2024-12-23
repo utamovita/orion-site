@@ -41,11 +41,13 @@ function BlogSection(props: BlogSectionProps) {
   const { item, onClick } = props;
   const { locale } = useRouter();
 
+  const title = item.title[locale as Locale];
+  const subtitle = item.subtitle[locale as Locale]
   return (
     <div className={styles.sectionWrapper}>
       <Container className={styles.gridWrapper}>
         <div className={styles.gridItem}>
-          {item.title[locale as Locale]} <span className={styles.subtitle}>{item.subtitle}</span>
+          {title} {subtitle ?<span className={styles.subtitle}>{item.subtitle[locale as Locale]}</span> : null}
         </div>
         {item.images.slice(0, 4).map((image, index) => (
           <div className={styles.gridItem} key={image.alt} onClick={() => onClick(item.images, index)}>

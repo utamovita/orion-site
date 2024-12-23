@@ -4,7 +4,9 @@ type BlogItem = {
   title: {
     [key in Locale]: string;
   };
-  subtitle: string;
+  subtitle: {
+    [key in Locale]: string | null;
+  };
   images: Array<{
     url: string;
     alt: string;
@@ -18,9 +20,13 @@ const blogConfig: BlogItem[] = [
     title: {
       en: "Daily life",
       de: "Alltag",
-      pl: "Życie codzienne",
+      pl: "Życie",
     },
-    subtitle: "",
+    subtitle: {
+        en: null,
+        de: null,
+        pl: "codzienne"
+    },
     images: [
       {
         url: `${imageBasePath}zycie-codzienne/1.jpg`,
