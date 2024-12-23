@@ -63,11 +63,7 @@
   display: flex;
   gap: vr.$spacingSizeL;
   align-items: center;
-  justify-content: space-between;
-
-  &.last {
-    align-items: flex-start;
-  }
+  justify-content: flex-end;
 }
 
 .iconWrapper {
@@ -109,6 +105,14 @@
 
   .element {
     justify-content: flex-start;
+
+    & > span, & > .nestedList {
+      order: 2;
+    }
+  }
+
+  .iconWrapper {
+    order: 1;
   }
 }
 
