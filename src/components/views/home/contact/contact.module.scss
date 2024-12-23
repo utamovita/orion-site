@@ -106,7 +106,8 @@
   .element {
     justify-content: flex-start;
 
-    & > span, & > .nestedList {
+    & > span,
+    & > .nestedList {
       order: 2;
     }
   }

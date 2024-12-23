@@ -41,30 +41,27 @@ function Contact() {
             </h4>
             <ul className={styles.list}>
               <li className={styles.element}>
-
                 <span>Przymuszewo 43, 88-506 Przymuszewo</span>
                 <div className={styles.iconWrapper}>
-                  <HomeIcon/>
+                  <HomeIcon />
                 </div>
               </li>
               <li className={styles.element}>
-
                 <span>
                   <Link href={"mailto:office@grandtrasnportlogistics.eu"}>office@grandtransportlogistics.eu</Link>
                 </span>
                 <div className={styles.iconWrapper}>
-                  <EnvelopeIcon/>
+                  <EnvelopeIcon />
                 </div>
               </li>
               <li className={cx(styles.element, styles.last)}>
-
                 <ul className={styles.nestedList}>
                   <li className={styles.nestedElement}>NIP: 7773385810</li>
                   <li className={styles.nestedElement}>REGON: 521305070</li>
                   <li className={styles.nestedElement}>KRS: 0000956315</li>
                 </ul>
                 <div className={styles.iconWrapper}>
-                  <DocCheckIcon/>
+                  <DocCheckIcon />
                 </div>
               </li>
             </ul>
