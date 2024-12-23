@@ -23,9 +23,9 @@ const blogConfig: BlogItem[] = [
       pl: "Życie",
     },
     subtitle: {
-        en: null,
-        de: null,
-        pl: "codzienne"
+      en: null,
+      de: null,
+      pl: "codzienne",
     },
     images: [
       {
