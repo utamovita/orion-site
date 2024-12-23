@@ -25,28 +25,36 @@ const blogConfig: BlogItem[] = [
       {
         url: `${imageBasePath}zycie-codzienne/1.jpg`,
         alt: "gallery blog 1 image 1",
-      },   {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/2.jpg`,
         alt: "gallery blog 1 image 2",
-      },   {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/3.jpg`,
         alt: "gallery blog 1 image 3",
-      },   {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/4.jpg`,
         alt: "gallery blog 1 image 4",
-      },   {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/5.jpg`,
         alt: "gallery blog 1 image 5",
-      },  {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/6.jpg`,
         alt: "gallery blog 1 image 6",
-      },  {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/7.jpg`,
         alt: "gallery blog 1 image 7",
-      }, {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/8.jpg`,
         alt: "gallery blog 1 image 8",
-      }, {
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/9.jpg`,
         alt: "gallery blog 1 image 9",
       },
