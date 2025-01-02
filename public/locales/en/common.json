@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "title": "Home - Grand Transport Logistics",
+      "description": "Grand Transport Logistics is a dynamic freight and logistics company distinguished by its innovative approach to supply chain management."
+    },
+    "aboutUs": {
+      "title": "About Us - Grand Transport Logistics",
+      "description": "Grand Transport Logistics is a team of specialists offering modern logistics solutions across Europe."
+    },
+    "gallery": {
+      "title": "Gallery - Grand Transport Logistics",
+      "description": "Browse the photo gallery showcasing Grand Transport Logistics' operations – a leader in modern logistics solutions. We provide transport and logistics services tailored to the needs of our clients across Europe."
+    },
+    "career": {
+      "title": "Career - Grand Transport Logistics",
+      "description": "Join the Grand Transport Logistics team and grow your career in the transport and logistics industry. We offer a dynamic work environment, opportunities to enhance your freight forwarding skills, attractive compensation, and collaboration on international projects. Check our current job openings and application documents."
+    },
+    "documents": {
+      "title": "Documents - Grand Transport Logistics",
+      "description": "Find all the necessary documents related to Grand Transport Logistics' operations. Download forms related to transport, GDPR compliance, banking procedures, and other essential formalities. We ensure full transparency and easy access to required documentation."
+    },
+    "contact": {
+      "title": "Contact - Grand Transport Logistics",
+      "description": "Get in touch with Grand Transport Logistics for detailed information about our services and offerings. Our team is ready to assist with inquiries about transport, logistics, and partnerships. Find our contact details and a convenient form to reach us quickly."
+    }
+  },
   "langSwitcher": {
     "en": "English",
     "de": "Deutsch",

@@ -4,7 +4,6 @@ import { poppins } from "@design-system/fonts/poppins";
 import { bebasNeue } from "@design-system/fonts/bebas-neue";
 import { pd } from "@design-system/fonts/pd";
 import { appWithTranslation } from "next-i18next";
-import Head from "next/head";
 import { useEffect } from "react";
 import { Router } from "next/router";
 import NProgress from "nprogress";
@@ -23,9 +22,6 @@ function App({ Component, pageProps }: AppProps) {
           }
         `}
       </style>
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
       <PageLoadingIndicator>
         <main>
           <Component {...pageProps} />

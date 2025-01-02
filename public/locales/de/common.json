@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "title": "Startseite - Grand Transport Logistics",
+      "description": "Grand Transport Logistics ist ein dynamisches Speditions- und Logistikunternehmen, das sich durch seinen innovativen Ansatz im Supply Chain Management auszeichnet."
+    },
+    "aboutUs": {
+      "title": "Über uns - Grand Transport Logistics",
+      "description": "Grand Transport Logistics ist ein Team von Spezialisten, das moderne Logistiklösungen in ganz Europa anbietet."
+    },
+    "gallery": {
+      "title": "Galerie - Grand Transport Logistics",
+      "description": "Durchstöbern Sie die Fotogalerie und entdecken Sie die Aktivitäten von Grand Transport Logistics – einem führenden Anbieter moderner Logistiklösungen. Wir bieten Transport- und Logistikdienstleistungen, die auf die Bedürfnisse unserer Kunden in ganz Europa zugeschnitten sind."
+    },
+    "career": {
+      "title": "Karriere - Grand Transport Logistics",
+      "description": "Werden Sie Teil des Teams von Grand Transport Logistics und entwickeln Sie Ihre Karriere in der Transport- und Logistikbranche. Wir bieten ein dynamisches Arbeitsumfeld, Möglichkeiten zur Weiterentwicklung Ihrer Speditionskompetenzen, attraktive Vergütung und Zusammenarbeit in internationalen Projekten. Sehen Sie sich unsere aktuellen Stellenangebote und Bewerbungsunterlagen an."
+    },
+    "documents": {
+      "title": "Dokumente - Grand Transport Logistics",
+      "description": "Finden Sie alle erforderlichen Dokumente im Zusammenhang mit den Aktivitäten von Grand Transport Logistics. Laden Sie Formulare zu Transport, DSGVO-Compliance, Bankverfahren und anderen wichtigen Formalitäten herunter. Wir gewährleisten volle Transparenz und einfachen Zugang zur benötigten Dokumentation."
+    },
+    "contact": {
+      "title": "Kontakt - Grand Transport Logistics",
+      "description": "Kontaktieren Sie Grand Transport Logistics, um detaillierte Informationen über unsere Dienstleistungen und Angebote zu erhalten. Unser Team steht Ihnen für Fragen zu Transport, Logistik und Partnerschaften zur Verfügung. Hier finden Sie unsere Kontaktdaten sowie ein Formular für eine schnelle und einfache Kontaktaufnahme."
+    }
+  },
   "langSwitcher": {
     "en": "English",
     "de": "Deutsch",

@@ -1,4 +1,31 @@
 {
+  "seo": {
+    "home": {
+      "title": "Strona główna - Grand Transport Logistics",
+      "description": "Grand Transport Logistics to dynamiczna firma spedycyjno-logistyczna, wyróżniająca się innowacyjnym podejściem do obsługi łańcucha dostaw."
+    },
+    "aboutUs": {
+      "title": "O nas - Grand Transport Logistics",
+      "description": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy."
+    },
+    "gallery": {
+      "title": "Galeria - Grand Transport Logistics",
+      "description": "Przejrzyj galerię zdjęć prezentujących działalność Grand Transport Logistics – lidera w nowoczesnych rozwiązaniach logistycznych. Oferujemy usługi transportowe i logistyczne na terenie całej Europy, dostosowane do potrzeb naszych klientów."
+    },
+    "career": {
+      "title": "Kariera - Grand Transport Logistics",
+      "description": "Dołącz do zespołu Grand Transport Logistics i rozwijaj swoją karierę w branży transportu i logistyki. Oferujemy dynamiczne środowisko pracy, możliwość rozwoju umiejętności spedycyjnych, atrakcyjne wynagrodzenie oraz współpracę w międzynarodowych projektach. Sprawdź nasze aktualne oferty i dokumenty potrzebne do aplikacji."
+    },
+    "documents": {
+      "title": "Kariera - Grand Transport Logistics",
+      "description": "Znajdź wszystkie niezbędne dokumenty związane z działalnością Grand Transport Logistics. Pobierz formularze dotyczące transportu, ochrony danych osobowych (RODO), procedur bankowych oraz innych istotnych formalności. Zapewniamy pełną transparentność i łatwy dostęp do wymaganej dokumentacji."
+    },
+    "contact": {
+      "title": "Kontakt - Grand Transport Logistics",
+      "description": "Skontaktuj się z Grand Transport Logistics, aby uzyskać szczegółowe informacje o naszych usługach i ofercie. Nasz zespół jest do Twojej dyspozycji – odpowiemy na pytania dotyczące transportu, logistyki i współpracy. Znajdziesz tu dane kontaktowe oraz formularz, aby szybko i wygodnie się z nami skontaktować."
+    }
+  },
+
   "langSwitcher": {
     "en": "English",
     "de": "Deutsch",
