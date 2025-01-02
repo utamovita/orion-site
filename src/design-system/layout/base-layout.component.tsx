@@ -11,9 +11,9 @@ type BaseLayoutProps = {
 function BaseLayout({ children }: BaseLayoutProps) {
   return (
     <>
-        <Head>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <OverlayProvider>{children}</OverlayProvider>
       <Footer />
