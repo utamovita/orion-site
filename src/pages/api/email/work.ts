@@ -23,7 +23,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_RECEIVER,
-      subject: `Nowe CV na pozycje ${position} od ${name}`,
+      subject: `Nowa aplikacja na stanowisko ${position} od ${name}`,
       text: message,
       html: `<p><strong>Imię i nazwisko:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>

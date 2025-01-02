@@ -31,7 +31,7 @@ export function useCarrierForm(props: WorkFormProps) {
         position,
       };
 
-      const response = await fetch("/api/email/career", {
+      const response = await fetch("/api/email/work", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

@@ -26,20 +26,18 @@ export function useWorkForm(props: UseWorkFromProps) {
   const onSubmit = handleSubmit(async (data) => {
     try {
       setIsLoading(true);
-      const formData = {
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        message: data.message,
-        file: data.file,
-        agreements: data.agreements,
-        position,
-      };
+      const formData = new FormData();
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("phone", data.phone);
+      formData.append("message", data.message);
+      formData.append("file", data.file[0]);
+      formData.append("agreements", data.agreements ? "1" : "0");
+      formData.append("position", position);
 
-      const response = await fetch("/api/email/career", {
+      const response = await fetch("/api/email/workcv", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: formData,
       });
 
       if (response.ok) {
