@@ -114,7 +114,6 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}ubezpieczenie.pdf`,
   },
-
 ];
 
 export { documentsConfig };
