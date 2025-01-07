@@ -17,103 +17,8 @@ type DocumentItem = {
 };
 
 const imageBasePath = "/assets/images/documents/";
-
+const docBasePath = "/assets/docs/";
 const documentsConfig: DocumentItem[] = [
-  {
-    title: {
-      en: "Euro Bank Details",
-      de: "Euro Bank Details",
-      pl: "Euro Bank Details",
-    },
-    subtitle: {
-      en: "Details regarding Euro bank payment methods",
-      de: "Details zu Euro-Bank-Zahlungsmethoden",
-      pl: "Szczegóły dotyczące metod płatności Euro banku",
-    },
-    image: {
-      url: `${imageBasePath}euro-bank-details.png`,
-      alt: "Euro bank details",
-      width: 648,
-      height: 840,
-    },
-    link: "https://orionexpress.pl/wp-content/uploads/2023/08/Euro-bank-details.pdf",
-  },
-  {
-    title: {
-      en: "License",
-      de: "Lizenz",
-      pl: "Licencja",
-    },
-    subtitle: {
-      en: "Official license document for road transport services",
-      de: "Offizielles Lizenzdokument für Straßentransportdienstleistungen",
-      pl: "Na wykonywanie transportu drogowego w zakresie pośrednictwa przy przewozie rzeczy",
-    },
-    image: {
-      url: `${imageBasePath}licencja.jpg`,
-      alt: "Licence",
-      width: 1650,
-      height: 2306,
-    },
-    link: "https://orionexpress.pl/wp-content/uploads/2023/08/License.pdf",
-  },
-  {
-    title: {
-      en: "RODO",
-      de: "RODO",
-      pl: "RODO",
-    },
-    subtitle: {
-      en: "RODO",
-      de: "RODO",
-      pl: "Zgoda na przetwarzanie danych osobowych",
-    },
-    image: {
-      url: `${imageBasePath}rodo.png`,
-      alt: "RODO",
-      width: 625,
-      height: 859,
-    },
-    link: "https://orionexpress.pl/wp-content/uploads/2023/10/Orion-Express-Rekrutacja.pdf",
-  },
-  {
-    title: {
-      en: "OCPDU UE",
-      de: "OCPDU UE",
-      pl: "OCPDU UE",
-    },
-    subtitle: {
-      en: "OCPDU UE",
-      de: "OCPDU UE",
-      pl: "Ubezpieczenie kabotważowe OCPDU UE",
-    },
-    image: {
-      url: `${imageBasePath}OCPDU_2.png`,
-      alt: "Kabotaż UE",
-      width: 451,
-      height: 641,
-    },
-    link: "https://orionexpress.pl/wp-content/uploads/2024/05/Orion-kabotaz-ue-COR520501.pdf",
-  },
-  {
-    title: {
-      en: "OCPDU DE",
-      de: "OCPDU DE",
-      pl: "OCPDU DE",
-    },
-    subtitle: {
-      en: "OCPDU DE",
-      de: "OCPDU DE",
-      pl: "Ubezpieczenie kabotważowe OCPDU DE",
-    },
-    image: {
-      url: `${imageBasePath}Kabotaz_DE.png`,
-      alt: "Kabotaż DE",
-      width: 481,
-      height: 687,
-    },
-    link: "https://orionexpress.pl/wp-content/uploads/2024/05/Orion-kabotaz-de-COR520501.pdf",
-  },
   {
     title: {
       en: "KRS",
@@ -123,35 +28,93 @@ const documentsConfig: DocumentItem[] = [
     subtitle: {
       en: "KRS",
       de: "KRS",
-      pl: "Krajowy Rejestr Sądowy",
+      pl: "Krajowy rejestr sądowy",
     },
     image: {
-      url: `${imageBasePath}KRS.png`,
-      alt: "KRS",
-      width: 512,
-      height: 731,
+      url: `${imageBasePath}krs.png`,
+      alt: "Grand transport logistics KRS",
+      width: 745,
+      height: 964,
     },
-    link: "https://orionexpress.pl/wp-content/uploads/2024/05/Odpis_Pelny_KRS_0000899782.pdf",
+    link: `${docBasePath}krs.pdf`,
   },
   {
     title: {
-      en: "Ubezpieczenie",
-      de: "Ubezpieczenie",
+      en: "Account details PLN",
+      de: "Kontodetails PLN",
+      pl: "Szczegóły konta PLN",
+    },
+    subtitle: {
+      en: "Details regarding Euro bank payment methods",
+      de: "Details zu Euro-Bank-Zahlungsmethoden",
+      pl: "Szczegóły dotyczące metod płatności PLN",
+    },
+    image: {
+      url: `${imageBasePath}szczegoly-konta-pln.png`,
+      alt: "Account details PLN",
+      width: 762,
+      height: 924,
+    },
+    link: `${docBasePath}szczegoly-konta-pln.pdf`,
+  },
+  {
+    title: {
+      en: "Account details EUR",
+      de: "Kontodetails EUR",
+      pl: "Szczegóły konta EUR",
+    },
+    subtitle: {
+      en: "Details regarding Euro bank payment methods",
+      de: "Details zu Euro-Bank-Zahlungsmethoden",
+      pl: "Szczegóły dotyczące metod płatności EUR",
+    },
+    image: {
+      url: `${imageBasePath}szczegoly-konta-eur.png`,
+      alt: "Account details EUR",
+      width: 761,
+      height: 971,
+    },
+    link: `${docBasePath}szczegoly-konta-eur.pdf`,
+  },
+  {
+    title: {
+      en: "Licence",
+      de: "Lizenz",
+      pl: "Licencja",
+    },
+    subtitle: {
+      en: "Licence for road transport in the field of mediation in the transport of goods",
+      de: "Lizenz für den Straßentransport im Bereich der Vermittlung beim Gütertransport",
+      pl: "Licencja na wykonanie transportu drogowego w zakresie pośrednictwa przy przewozie rzeczy",
+    },
+    image: {
+      url: `${imageBasePath}licencja.png`,
+      alt: "Grand transport logistics licencja",
+      width: 735,
+      height: 930,
+    },
+    link: `${docBasePath}licencja.pdf`,
+  },
+  {
+    title: {
+      en: "Insurance",
+      de: "Versicherung",
       pl: "Ubezpieczenie",
     },
     subtitle: {
-      en: "Ubezpieczenie",
-      de: "Ubezpieczenie",
+      en: "Insurance certificate",
+      de: "Versicherungszertifikat",
       pl: "Certyfikat ubezpieczeniowy",
     },
     image: {
       url: `${imageBasePath}ubezpieczenie.png`,
-      alt: "Ubezpieczenie OCPDU",
-      width: 565,
-      height: 802,
+      alt: "Grand transport logistics ubezpieczenie",
+      width: 742,
+      height: 925,
     },
-    link: "https://orionexpress.pl/wp-content/uploads/2024/05/2024_05_1716194701604_ORION_-_certyfikat_ocpdis-COR520501.pdf",
+    link: `${docBasePath}ubezpieczenie.pdf`,
   },
+
 ];
 
 export { documentsConfig };
