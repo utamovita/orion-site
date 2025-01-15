@@ -40,7 +40,7 @@ const documentsConfig: DocumentItem[] = [
   },
   {
     title: {
-      en: "Account details PLN",
+      en: "Account details PLN ",
       de: "Kontodetails PLN",
       pl: "Szczegóły konta PLN",
     },
