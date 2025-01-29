@@ -21,27 +21,26 @@ function Team() {
         <div className={styles.team}>
           {team.map((item, index) => (
             <div key={index} className={styles.item}>
-
               <div className={styles.content}>
                 <h4 className={styles.name}>{item.name}</h4>
                 <h5 className={styles.role}>{t(item.role)}</h5>
                 <ul className={styles.list}>
                   <li className={styles.element}>
                     <div className={styles.iconWrapper}>
-                      <HomeIconColored/>
+                      <HomeIconColored />
                     </div>
 
                     {item.fullName}
                   </li>
                   <li className={styles.element}>
                     <div className={styles.iconWrapper}>
-                      <PhoneIconColored/>
+                      <PhoneIconColored />
                     </div>
                     {item.phone}
                   </li>
                   <li className={styles.element}>
                     <div className={styles.iconWrapper}>
-                      <ChatIconColored/>
+                      <ChatIconColored />
                     </div>
                     <span className={styles.emailText}>
                       {item.email}
@@ -51,24 +50,24 @@ function Team() {
                 </ul>
                 <div className={styles.image}>
                   <Image
-                      src={item.img1}
-                      alt={item.name}
-                      width={445}
-                      height={800}
-                      style={{
-                        objectFit: "cover",
-                      }}
-                      className={styles.image1}
+                    src={item.img1}
+                    alt={item.name}
+                    width={445}
+                    height={800}
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    className={styles.image1}
                   />
                   <Image
-                      src={item.img2}
-                      alt={item.name}
-                      width={445}
-                      height={800}
-                      style={{
-                        objectFit: "cover",
-                      }}
-                      className={styles.image2}
+                    src={item.img2}
+                    alt={item.name}
+                    width={445}
+                    height={800}
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    className={styles.image2}
                   />
                 </div>
               </div>
@@ -80,4 +79,4 @@ function Team() {
   );
 }
 
-export {Team};
+export { Team };
