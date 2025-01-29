@@ -83,9 +83,9 @@ const documentsConfig: DocumentItem[] = [
       pl: "Licencja",
     },
     subtitle: {
-      en: "Licence for road transport in the field of mediation in the transport of goods",
-      de: "Lizenz für den Straßentransport im Bereich der Vermittlung beim Gütertransport",
-      pl: "Licencja na wykonanie transportu drogowego w zakresie pośrednictwa przy przewozie rzeczy",
+      en: "Licence for road transport",
+      de: "Lizenz für den Straßentransport",
+      pl: "Licencja Spedycyjna",
     },
     image: {
       url: `${imageBasePath}licencja.png`,
