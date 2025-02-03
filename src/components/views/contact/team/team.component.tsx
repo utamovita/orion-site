@@ -44,9 +44,7 @@ function Team() {
                     </div>
                     <span className={styles.emailText}>
                       {item.email}
-                      <span>
-                      @grandtransportlogistics.pl
-                        </span>
+                      <span>@grandtransportlogistics.pl</span>
                     </span>
                   </li>
                 </ul>
