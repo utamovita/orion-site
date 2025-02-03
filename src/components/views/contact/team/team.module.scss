@@ -121,8 +121,9 @@
 }
 .emailText {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
+
 @include mx.devices(desktop) {
   .item {
     height: 350px;
@@ -189,6 +190,10 @@
   .list {
     width: 100%;
     white-space: none;
+  }
+
+  .emailText {
+    flex-wrap: wrap;
   }
 }
 
