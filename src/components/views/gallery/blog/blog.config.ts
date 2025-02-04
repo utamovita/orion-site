@@ -29,6 +29,18 @@ const blogConfig: BlogItem[] = [
     },
     images: [
       {
+        url: `${imageBasePath}zycie-codzienne/12.jpg`,
+        alt: "gallery blog 1 image 12",
+      },
+      {
+        url: `${imageBasePath}zycie-codzienne/11.jpg`,
+        alt: "gallery blog 1 image 11",
+      },
+      {
+        url: `${imageBasePath}zycie-codzienne/10.jpg`,
+        alt: "gallery blog 1 image 10",
+      },
+      {
         url: `${imageBasePath}zycie-codzienne/1.jpg`,
         alt: "gallery blog 1 image 1",
       },
