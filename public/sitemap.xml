@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://grandtransportlogistics.pl</loc>
+        <lastmod>2025-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grandtransportlogistics.pl/en"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://grandtransportlogistics.pl/de"/>
+    </url>
+    <url>
+        <loc>https://grandtransportlogistics.pl/o-nas</loc>
+        <lastmod>2025-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grandtransportlogistics.pl/en/about-us"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://grandtransportlogistics.pl/de/uber-uns"/>
+    </url>
+    <url>
+        <loc>https://grandtransportlogistics.pl/galeria</loc>
+        <lastmod>2025-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grandtransportlogistics.pl/en/gallery"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://grandtransportlogistics.pl/de/galerie"/>
+    </url>
+    <url>
+        <loc>https://grandtransportlogistics.pl/kariera</loc>
+        <lastmod>2025-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grandtransportlogistics.pl/en/career"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://grandtransportlogistics.pl/de/karriere"/>
+    </url>
+    <url>
+        <loc>https://grandtransportlogistics.pl/dokumenty</loc>
+        <lastmod>2025-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grandtransportlogistics.pl/en/documents"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://grandtransportlogistics.pl/de/unterlagen"/>
+    </url>
+    <url>
+        <loc>https://grandtransportlogistics.pl/kontakt</loc>
+        <lastmod>2025-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grandtransportlogistics.pl/en/contact"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://grandtransportlogistics.pl/de/kontakt"/>
+    </url>
+</urlset>
