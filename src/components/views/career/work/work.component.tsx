@@ -14,15 +14,17 @@ import administrationImage from "public/assets/images/career/administration.jpeg
 import dynamic from "next/dynamic";
 
 const WorkPopup = dynamic(() =>
-  import("@components/views/career/work/form-popups/work-popup.component").then(mod => mod.WorkPopup)
+  import("@components/views/career/work/form-popups/work-popup.component").then((mod) => mod.WorkPopup),
 );
 
 const WorkForm = dynamic(() =>
-  import("@components/views/career/work/form-popups/work-form/work-form.component").then(mod => mod.WorkForm)
+  import("@components/views/career/work/form-popups/work-form/work-form.component").then((mod) => mod.WorkForm),
 );
 
 const CarrierForm = dynamic(() =>
-  import("@components/views/career/work/form-popups/carrier-form/carrier-form.component").then(mod => mod.CarrierForm)
+  import("@components/views/career/work/form-popups/carrier-form/carrier-form.component").then(
+    (mod) => mod.CarrierForm,
+  ),
 );
 
 function Work() {

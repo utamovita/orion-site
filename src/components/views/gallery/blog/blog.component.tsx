@@ -9,7 +9,7 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 
 const SliderFullscreen = dynamic(() =>
-  import("@components/shared/slider/fullscreen-slider.component").then(mod => mod.SliderFullscreen)
+  import("@components/shared/slider/fullscreen-slider.component").then((mod) => mod.SliderFullscreen),
 );
 
 function Blog() {
