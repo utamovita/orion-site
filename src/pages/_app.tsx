@@ -7,6 +7,7 @@ import { appWithTranslation } from "next-i18next";
 import { useEffect } from "react";
 import { Router } from "next/router";
 import NProgress from "nprogress";
+import { ToastContainer } from "react-toastify";
 
 NProgress.configure({ showSpinner: false });
 
@@ -25,6 +26,7 @@ function App({ Component, pageProps }: AppProps) {
       <PageLoadingIndicator>
         <main>
           <Component {...pageProps} />
+          <ToastContainer />
         </main>
       </PageLoadingIndicator>
     </>

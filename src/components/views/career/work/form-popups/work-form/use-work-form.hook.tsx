@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useWorkFormConfig } from "@components/views/career/work/form-popups/work-form/use-work-form-config.hook";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 type UseWorkFromProps = {
   position: string;
@@ -43,7 +44,7 @@ export function useWorkForm(props: UseWorkFromProps) {
       if (response.ok) {
         setIsLoading(false);
         reset();
-        return alert(`Aplikacja na stanowisko ${position} została wysłana. Odezwiemy się wkrótce!`);
+        toast.success(`Aplikacja na stanowisko ${position} została wysłana. Odezwiemy się wkrótce!`);
       }
       setIsLoading(false);
     } catch (error) {

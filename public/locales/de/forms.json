@@ -8,5 +8,6 @@
   "uploadCV": "Lebenslauf hochladen (PDF)",
   "submit": "Senden",
   "acceptOur": "Ich akzeptiere die",
-  "privacyPolicy": "Datenschutzbestimmungen"
+  "privacyPolicy": "Datenschutzbestimmungen",
+  "messageSent": "Nachricht wurde gesendet!"
 }

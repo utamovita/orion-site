@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useContactFormConfig } from "@components/views/home/contact/contact-form/use-contact-form-config.hook";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export function useContactForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -37,7 +38,7 @@ export function useContactForm() {
       if (response.ok) {
         setIsLoading(false);
         reset();
-        return alert("Wiadomość została wysłana. Odezwiemy się wkrótce!");
+        toast.success("Wiadomość została wysłana. Odezwiemy się wkrótce!");
       }
       setIsLoading(false);
     } catch (error) {

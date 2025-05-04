@@ -5,8 +5,12 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { Locale } from "@customTypes/pages";
 import ZoomIcon from "@components/shared/icons/zoom.icon";
-import { SliderFullscreen } from "@components/shared/slider/fullscreen-slider.component";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+const SliderFullscreen = dynamic(() =>
+  import("@components/shared/slider/fullscreen-slider.component").then(mod => mod.SliderFullscreen)
+);
 
 function Blog() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);

@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { WorkFormProps } from "@components/views/career/work/form-popups/work-form/work-form.component";
 import { useState } from "react";
 import { useCarrierFormConfig } from "@components/views/career/work/form-popups/carrier-form/use-carrier-form-config.hook";
+import { toast } from "react-toastify";
 
 export function useCarrierForm(props: WorkFormProps) {
   const [isLoading, setIsLoading] = useState(false);
@@ -40,7 +41,7 @@ export function useCarrierForm(props: WorkFormProps) {
       if (response.ok) {
         setIsLoading(false);
         reset();
-        return alert(`Aplikacja na stanowisko ${position} została wysłana. Odezwiemy się wkrótce!`);
+        toast.success(`Aplikacja na stanowisko ${position} została wysłana. Odezwiemy się wkrótce!`);
       }
       setIsLoading(false);
     } catch (error) {

@@ -8,5 +8,6 @@
   "uploadCV": "Wgraj CV (PDF)",
   "submit": "Wyślij",
   "acceptOur": "Zaakceptuj nasz",
-  "privacyPolicy": "regulamin"
+  "privacyPolicy": "regulamin",
+  "messageSent": "Wiadomość została wysłana!"
 }

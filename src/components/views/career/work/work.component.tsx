@@ -6,14 +6,24 @@ import { Button } from "../../../shared/button/button.component";
 import { ArrowIcon } from "../../../shared/icons/arrow.icon";
 import Image from "next/image";
 import { useState } from "react";
-import { WorkPopup } from "@components/views/career/work/form-popups/work-popup.component";
 import carrierImage from "public/assets/images/career/carrier.jpeg";
 import driverImage from "public/assets/images/career/driver.jpeg";
 import dispatcherImage from "public/assets/images/career/dispatcher.jpeg";
 import forwarderImage from "public/assets/images/career/forwarder.jpeg";
 import administrationImage from "public/assets/images/career/administration.jpeg";
-import { WorkForm } from "@components/views/career/work/form-popups/work-form/work-form.component";
-import { CarrierForm } from "@components/views/career/work/form-popups/carrier-form/carrier-form.component";
+import dynamic from "next/dynamic";
+
+const WorkPopup = dynamic(() =>
+  import("@components/views/career/work/form-popups/work-popup.component").then(mod => mod.WorkPopup)
+);
+
+const WorkForm = dynamic(() =>
+  import("@components/views/career/work/form-popups/work-form/work-form.component").then(mod => mod.WorkForm)
+);
+
+const CarrierForm = dynamic(() =>
+  import("@components/views/career/work/form-popups/carrier-form/carrier-form.component").then(mod => mod.CarrierForm)
+);
 
 function Work() {
   const { t } = useTranslation("common");

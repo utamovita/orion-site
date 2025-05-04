@@ -10,6 +10,7 @@ type BlogItem = {
   images: Array<{
     url: string;
     alt: string;
+    ytLink?: string;
   }>;
 };
 
